@@ -142,13 +142,17 @@ export function openDialog(
   };
 }
 
-/** 떠 있는 마침 단추(M3 extended FAB): "기도를 마쳤습니다", "읽었습니다". 다시 누르면 풀린다. */
+/**
+ * 떠 있는 마침 단추(M3 extended FAB): "기도를 마쳤습니다", "읽었습니다". 다시 누르면 풀린다.
+ * 마친 뒤에는 더 세게가 아니라 더 조용하게: surface 면에 높이를 낮춘다(lowered).
+ */
 export function doneFab(label: string, isDone: () => boolean, setDone: (done: boolean) => void): HTMLElement {
   const glyph = icon('check', 'icon');
   const fab = h('md-fab', { label }, glyph);
   const paint = () => {
     const done = isDone();
-    fab.variant = done ? 'secondary' : 'primary';
+    fab.variant = done ? 'surface' : 'primary';
+    fab.lowered = done;
     glyph.textContent = done ? 'check_circle' : 'check';
     fab.setAttribute('aria-label', done ? `${label}, 체크함` : label);
   };

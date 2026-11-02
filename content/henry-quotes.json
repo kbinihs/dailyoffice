@@ -133,8 +133,8 @@
      "id": "h2.02",
      "discourse": 2,
      "en": "[To wait on God is] to look upon him as one always near us, always at our right hand, and that has his eye upon us, wherever we are and whatever we are doing.",
-     "ko": "하나님을 바란다는 것은, 그분을 늘 가까이 계신 분, 늘 우리 오른편에 계신 분으로 여기는 것입니다. 우리가 어디에 있든 무엇을 하든, 그분의 눈이 우리 위에 있습니다.",
-     "ko_status": "확인",
+     "ko": "하나님을 바란다는 것은, 그분을 늘 가까이 계신 분, 늘 우리 오른편에 계신 분으로 여기는 것입니다. 우리가 어디에 있든 무엇을 하든, 그분의 눈길이 우리에게 머뭅니다.",
+     "ko_status": "초안",
      "anchor": {
       "ref": "Ps 16:8",
       "label": "시편 16:8",
@@ -169,8 +169,8 @@
      "id": "h2.03",
      "discourse": 2,
      "en": "Herein consists that uprightness which is our evangelical perfection, in walking at all time as before God, and studying to approve ourselves to him.",
-     "ko": "복음이 말하는 온전함은, 언제나 하나님 앞에서 걷듯 걷고 그분께 인정받기를 힘쓰는 데 있습니다.",
-     "ko_status": "확인",
+     "ko": "복음이 말하는 온전함은, 언제나 하나님 앞에서 걷듯 살고 그분께 인정받기를 힘쓰는 데 있습니다.",
+     "ko_status": "초안",
      "anchor": {
       "ref": "Gen 17:1",
       "label": "창세기 17:1",
@@ -229,7 +229,7 @@
      "id": "h1.04",
      "discourse": 1,
      "en": "the throne of grace is always open, and humble supplicants are always welcome, and cannot come unseasonably.",
-     "ko": "은혜의 보좌는 언제나 열려 있습니다. 겸손히 구하는 이는 언제나 환영받으니, 어느 때에 나아가도 때가 아닌 때는 없습니다.",
+     "ko": "은혜의 보좌는 언제나 열려 있습니다. 겸손히 구하는 이는 언제나 환영받으니, 언제 나아가도 때가 어긋나는 법이 없습니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Heb 4:16",
@@ -241,7 +241,7 @@
      "id": "h3.04",
      "discourse": 3,
      "en": "That will break a worldly man's heart, which will not break a godly man's sleep",
-     "ko": "세상만 바라는 사람의 마음을 무너뜨릴 일도, 하나님을 경외하는 사람의 잠은 깨뜨리지 못합니다.",
+     "ko": "세상만 바라는 사람의 마음을 무너뜨릴 일도, 하나님을 경외하는 사람의 잠은 깨우지 못합니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Ps 4:8",
@@ -253,8 +253,8 @@
      "id": "h2.06",
      "discourse": 2,
      "en": "We must manage our daily business for him … and to his glory, as our highest end in all. This sanctifies our common actions to God, and sweetens them, and makes them pleasant to ourselves.",
-     "ko": "날마다의 일을 그분을 위해, 그분의 영광을 바라보며 할 때, 평범한 일이 하나님께 거룩해지고 달고 즐거운 일이 됩니다.",
-     "ko_status": "확인",
+     "ko": "날마다 하는 일을 그분을 위해, 그분의 영광을 바라보며 할 때, 평범한 일도 거룩한 일이 되고 달고 즐거운 일이 됩니다.",
+     "ko_status": "초안",
      "anchor": {
       "ref": "Col 3:17",
       "label": "골로새서 3:17",
@@ -265,7 +265,7 @@
      "id": "h1.05",
      "discourse": 1,
      "en": "wherever God finds a praying heart, he will be found a prayer-hearing God; though the voice of prayer be a low voice, a weak voice, yet if it come from an upright heart, it is a voice that God will hear",
-     "ko": "하나님은 기도하는 마음을 만나시는 곳마다 기도를 들으시는 하나님이 되어 주십니다. 기도하는 소리가 낮고 힘없어도, 정직한 마음에서 나온 소리라면 하나님이 들으십니다.",
+     "ko": "기도하는 마음이 있는 곳마다, 하나님은 기도를 들으시는 하나님으로 계십니다. 기도 소리가 낮고 힘없어도, 정직한 마음에서 나온 소리라면 하나님이 들으십니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Ps 65:2",
@@ -325,7 +325,7 @@
      "id": "h3.06",
      "discourse": 3,
      "en": "If your passion has not cooled before, let it be abated by the cool of the evening, and quite disappear with the setting sun.",
-     "ko": "그때까지 노여움이 식지 않았다면, 서늘한 저녁에 누그러뜨리고 지는 해와 함께 아주 사라지게 하십시오.",
+     "ko": "아직 노여움이 식지 않았다면, 저녁의 서늘함으로 누그러뜨리고 지는 해와 함께 말끔히 사라지게 하십시오.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Eph 4:26",
@@ -397,7 +397,7 @@
      "id": "h3.08",
      "discourse": 3,
      "en": "Let us therefore ease ourselves of this burthen, by casting it on him who careth for us, what need he care, and we care too?",
-     "ko": "그러니 이 짐을 우리를 돌보시는 분께 맡기고 가벼워집시다. 그분이 염려하시는데, 우리까지 염려할 까닭이 무엇입니까?",
+     "ko": "우리를 돌보시는 분께 이 짐을 맡기고 가벼워집시다. 그분이 돌보시는데, 우리까지 염려할 까닭이 무엇입니까?",
      "ko_status": "초안",
      "anchor": {
       "ref": "1Pet 5:7",
@@ -433,7 +433,7 @@
      "id": "h1.09",
      "discourse": 1,
      "en": "In the morning therefore let us converse with God, and apply ourselves to the concerns of the other life, before we are entangled in the affairs of this life.",
-     "ko": "그러니 아침에는 하나님과 이야기를 나눕시다. 이 세상 일에 얽혀 들기 전에, 영원한 삶의 일부터 돌봅시다.",
+     "ko": "아침에는 먼저 하나님과 이야기를 나눕시다. 이 세상일에 얽혀 들기 전에, 영원한 삶의 일부터 돌봅시다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Mark 1:35",
@@ -445,7 +445,7 @@
      "id": "h3.09",
      "discourse": 3,
      "en": "To thy grace, O God, and to the word of thy grace I now commend myself. It is good to fall asleep, with a fresh surrender of our whole selves, body, soul and spirit to God",
-     "ko": "하나님, 이제 주의 은혜와 주의 은혜의 말씀에 저를 맡깁니다. 몸과 혼과 영, 우리 자신 전부를 하나님께 새로 드리며 잠드는 것이 좋습니다.",
+     "ko": "하나님, 이제 주님의 은혜와 그 은혜의 말씀에 저를 맡깁니다. 몸과 혼과 영, 우리 자신 전부를 하나님께 새로 드리며 잠드는 것이 좋습니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Ps 31:5",
@@ -493,7 +493,7 @@
      "id": "h2.14",
      "discourse": 2,
      "en": "This life of communion with God, and constant attendance upon him is a heaven upon earth.",
-     "ko": "하나님과 사귀며 늘 그분 곁에 머무는 이 삶이, 땅 위의 하늘입니다.",
+     "ko": "하나님과 사귀며 늘 그분 곁에 머무는 이 삶이, 땅 위에서 누리는 천국입니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Phil 3:20",
@@ -505,7 +505,7 @@
      "id": "h1.11",
      "discourse": 1,
      "en": "it is not enough to say your prayers, but you must pray your prayers, must pray in praying, as Elijah did",
-     "ko": "기도를 입으로 말하는 것으로는 부족합니다. 기도를 기도해야 합니다. 엘리야처럼, 기도하면서 참으로 기도해야 합니다.",
+     "ko": "기도를 입으로 말하는 것으로는 부족합니다. 기도를 참으로 기도해야 합니다. 엘리야처럼 간절히 기도해야 합니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Jas 5:17",
@@ -517,7 +517,7 @@
      "id": "h3.11",
      "discourse": 3,
      "en": "It is what I have often said, and will abide by. That a holy heavenly life spent in the service of God, and in communion with him, is the most pleasant comfortable life any body can live in this world.",
-     "ko": "저는 이 말을 자주 해 왔고, 앞으로도 그렇게 말할 것입니다. 하나님을 섬기고 그분과 사귀며 보내는 거룩하고 하늘에 속한 삶이, 이 세상에서 누구나 살 수 있는 가장 즐겁고 평안한 삶입니다.",
+     "ko": "저는 이 말을 자주 해 왔고, 앞으로도 그렇게 말할 것입니다. 하나님을 섬기고 그분과 사귀며 보내는 거룩하고 하늘에 속한 삶이, 이 세상에서 사람이 살 수 있는 가장 즐겁고 평안한 삶입니다.",
      "ko_status": "초안",
      "anchor": {
       "ref": "Prov 3:17",

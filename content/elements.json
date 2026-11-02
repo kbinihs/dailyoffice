@@ -58,7 +58,7 @@
    "variants": [
     {
      "en": "Let us humbly confess our sins to Almighty God.",
-     "ko": "하나님께 우리의 죄를 고백합시다.",
+     "ko": "전능하신 하나님께 우리의 죄를 겸손히 고백합시다.",
      "source": "BCP 2019 p.11",
      "origin": "BCP 2019 짧은 부름(1662 권면의 축약)",
      "rights": "acna-2019",
@@ -74,7 +74,7 @@
    "variants": [
     {
      "en": "Almighty and most merciful Father, we have erred and strayed from your ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against your holy laws. We have left undone those things which we ought to have done, and we have done those things which we ought not to have done; and apart from your grace, there is no health in us. O Lord, have mercy upon us. Spare all those who confess their faults. Restore all those who are penitent, according to your promises declared to all people in Christ Jesus our Lord. And grant, O most merciful Father, for his sake, that we may now live a godly, righteous, and sober life, to the glory of your holy Name. Amen.",
-     "ko": "전능하시고 자비로우신 아버지,\n우리는 아버지의 길에서 벗어나\n제 마음의 욕심을 따라 살았습니다.\n아버지의 거룩한 계명을 어겼고,\n마땅히 할 일은 하지 않았으며\n해서는 안 될 일을 행하였습니다.\n아버지의 은혜 없이는 우리 안에 온전한 것이 하나도 없습니다.\n주님, 우리를 불쌍히 여기소서.\n죄를 고백하는 우리를 용서하시고,\n그리스도 예수 안에서 약속하신 대로\n돌이키는 우리를 다시 일으켜 주소서.\n자비로우신 아버지, 그리스도 안에서,\n우리가 이제부터 경건하고 의롭고 절제하는 삶을 살아\n아버지의 거룩한 이름에 영광을 돌리게 하소서. 아멘.",
+     "ko": "전능하시고 자비로우신 아버지,\n우리는 아버지의 길에서 벗어나\n제 마음의 욕심을 따라 살았습니다.\n아버지의 거룩한 계명을 어겼고,\n마땅히 할 일은 하지 않았으며\n해서는 안 될 일을 행하였습니다.\n아버지의 은혜 없이는 우리 안에 온전한 것이 하나도 없습니다.\n주님, 우리를 불쌍히 여기소서.\n죄를 고백하는 우리를 용서하시고,\n그리스도 예수 안에서 약속하신 대로\n돌이키는 우리를 다시 일으켜 주소서.\n자비로우신 아버지, 그리스도로 말미암아\n우리가 이제부터 경건하고 의롭고 절제하는 삶을 살아\n아버지의 거룩한 이름에 영광을 돌리게 하소서. 아멘.",
      "source": "BCP 2019 p.11",
      "origin": "1662 General Confession",
      "rights": "acna-2019",
@@ -121,7 +121,7 @@
    "variants": [
     {
      "en": "Almighty God, Father of all mercies, we your unworthy servants give you humble thanks for all your goodness and loving-kindness to us and to all whom you have made. We bless you for our creation, preservation, and all the blessings of this life; but above all for your immeasurable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we pray, give us such an awareness of your mercies, that with truly thankful hearts we may show forth your praise, not only with our lips, but in our lives, by giving up our selves to your service, and by walking before you in holiness and righteousness all our days; Through Jesus Christ our Lord, to whom, with you and the Holy Spirit, be honor and glory throughout all ages. Amen.",
-     "ko": "전능하시고 자비로우신 하나님,\n우리와 모든 사람에게 베푸신 아버지의 선하심과 사랑을 감사합니다.\n우리를 지으시고 지키시며\n이 삶의 모든 복을 누리게 하심을 찬양합니다.\n무엇보다 우리 주 예수 그리스도를 통해 세상을 구원하신 한없는 사랑과,\n은혜를 누리는 길과 영광의 소망을 주심에 감사합니다.\n간절히 구하오니, 아버지의 자비를 깊이 깨닫게 하시고\n입술로만이 아니라 삶으로 아버지를 찬양하게 하소서.\n우리 자신을 아버지께 드려\n평생 거룩하고 의롭게 아버지 앞에서 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하시고 자비로우신 하나님,\n우리와 모든 사람에게 베푸신\n아버지의 선하심과 사랑을 감사합니다.\n우리를 지으시고 지키시며\n이 삶의 모든 복을 누리게 하심을 찬양합니다.\n무엇보다 우리 주 예수 그리스도를 통해\n세상을 구원하신 한없는 사랑과,\n은혜를 누리는 길과 영광의 소망을 주심에 감사합니다.\n간절히 구하오니, 아버지의 자비를 깊이 깨닫게 하시고\n참으로 감사하는 마음으로,\n입술로만이 아니라 삶으로 아버지를 찬양하게 하소서.\n우리 자신을 아버지께 드려\n평생 거룩하고 의롭게 아버지 앞에서 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.24",
      "origin": "1662 General Thanksgiving",
      "rights": "acna-2019",
@@ -468,7 +468,7 @@
     },
     {
      "en": "O God, the King eternal, whose light divides the day from the night and turns the shadow of death into the morning: Drive far from us all wrong desires, incline our hearts to keep your law, and guide our feet into the way of peace; that, having done your will with cheerfulness during the day, we may, when night comes, rejoice to give you thanks; through Jesus Christ our Lord. Amen.",
-     "ko": "영원하신 왕 하나님,\n아버지의 빛은 낮과 밤을 가르고\n죽음의 그늘을 아침으로 바꿉니다.\n모든 그릇된 욕심을 우리에게서 멀리 몰아내시고,\n우리 마음이 아버지의 법을 지키게 하시며,\n우리 발걸음을 평화의 길로 인도하소서.\n그리하여 낮 동안 기쁘게 아버지의 뜻을 행하고,\n밤이 오면 즐거이 감사하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "영원한 왕이신 하나님,\n아버지의 빛은 낮과 밤을 가르고\n죽음의 그늘을 아침으로 바꿉니다.\n모든 그릇된 욕심을 우리에게서 멀리 몰아내시고,\n우리 마음이 아버지의 법을 지키게 하시며,\n우리 발걸음을 평화의 길로 인도하소서.\n그리하여 낮 동안 기쁘게 아버지의 뜻을 행하고,\n밤이 오면 즐거이 감사하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 pp.22-23",
      "origin": "1979 MP",
      "rights": "acna-2019",
@@ -494,7 +494,7 @@
     },
     {
      "en": "O Lord, our heavenly Father, almighty and everlasting God, you have brought us safely to the beginning of this day: Defend us by your mighty power, that we may not fall into sin nor run into any danger; and that, guided by your Spirit, we may do what is righteous in your sight; through Jesus Christ our Lord. Amen.",
-     "ko": "하늘에 계신 우리 아버지,\n전능하시고 영원하신 하나님,\n우리를 지키셔서 이 하루를 시작하게 하셨습니다.\n아버지의 크신 능력으로 우리를 보호하셔서\n죄에 빠지지 않고 어떤 위험에도 이르지 않게 하소서.\n또한 성령의 인도를 따라\n아버지 보시기에 의로운 일을 행하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하늘에 계신 우리 아버지,\n전능하시고 영원하신 하나님,\n우리를 지키셔서 오늘 이 하루를 맞게 하셨습니다.\n아버지의 크신 능력으로 우리를 보호하셔서\n죄에 빠지지 않고 어떤 위험도 만나지 않게 하소서.\n또한 성령의 인도를 따라\n아버지 보시기에 의로운 일을 행하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 pp.22-23",
      "origin": "1662 MP",
      "rights": "acna-2019",
@@ -668,7 +668,7 @@
    "variants": [
     {
      "en": "Blessed Savior, at this hour you hung upon the Cross, stretching out your loving arms: Grant that all the peoples of the earth may look to you and be saved; for your tender mercies’ sake. Amen.",
-     "ko": "복되신 구주,\n이 시간 주님은 십자가에 달려 사랑의 팔을 펼치셨습니다.\n온 땅의 모든 사람이 주님을 바라보고 구원을 얻게 하소서.\n주님의 자비에 의지하여 기도합니다. 아멘.",
+     "ko": "복되신 구주,\n이 시간 주님은 십자가에 달려 사랑의 팔을 벌리셨습니다.\n온 땅의 모든 사람이 주님을 바라보고 구원을 얻게 하소서.\n주님의 자비에 의지하여 기도합니다. 아멘.",
      "source": "BCP 2019 p.69",
      "origin": "1979 Noonday Prayer",
      "rights": "acna-2019",
@@ -854,7 +854,7 @@
     },
     {
      "en": "O God, the source of all holy desires, all good counsels, and all just works: Give to your servants that peace which the world cannot give, that our hearts may be set to obey your commandments, and that we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Savior. Amen.",
-     "ko": "하나님, 거룩한 소원과 올바른 판단과 의로운 행동이\n모두 하나님께로부터 말미암습니다.\n세상이 줄 수 없는 평화를 우리에게 베푸시고,\n우리가 한마음으로 아버지의 계명에 순종하게 하소서.\n또한 아버지의 보호하심으로 모든 두려움에서 벗어나,\n참된 안식과 고요함 가운데 머물게 하소서.\n우리 구주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하나님,\n거룩한 소원과 선한 생각과 의로운 일이\n모두 하나님께로부터 옵니다.\n세상이 줄 수 없는 평화를 우리에게 주셔서\n우리 마음이 한결같이 아버지의 계명을 따르게 하소서.\n또한 우리를 지켜 주셔서 원수를 두려워하지 않고\n우리의 날들을 평안하고 고요하게 보내게 하소서.\n우리 구주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 pp.48-49",
      "origin": "1662 EP",
      "rights": "acna-2019",
@@ -867,7 +867,7 @@
     },
     {
      "en": "Lighten our darkness, we beseech you, O Lord; and by your great mercy defend us from all perils and dangers of this night; for the love of your only Son, our Savior Jesus Christ. Amen.",
-     "ko": "주님, 어둠 속에서 우리의 빛이 되소서.\n크신 자비로 이 밤의 모든 재난과 위험에서 우리를 지키소서.\n하나님의 외아들 예수 그리스도의 사랑에 의지하여 기도합니다. 아멘.",
+     "ko": "주님, 우리의 어둠을 밝히소서.\n크신 자비로 이 밤의 모든 재난과 위험에서 우리를 지키소서.\n하나님의 외아들 예수 그리스도의 사랑에 의지하여 기도합니다. 아멘.",
      "source": "BCP 2019 pp.48-49",
      "origin": "1662 EP",
      "rights": "acna-2019",
@@ -880,7 +880,7 @@
     },
     {
      "en": "O God, the life of all who live, the light of the faithful, the strength of those who labor, and the repose of the dead: We thank you for the blessings of the day that is past, and humbly ask for your protection through the coming night. Bring us in safety to the morning hours; through him who died and rose again for us, your Son our Savior Jesus Christ. Amen.",
-     "ko": "살아 있는 모든 이의 생명, 믿는 이의 빛,\n일하는 이의 힘, 죽은 이의 안식이신 하나님,\n오늘 하루 복 가운데 지내게 하심을 감사합니다.\n겸손히 구하오니, 이 밤에 우리를 지키시고\n안전하게 내일 아침을 맞게 하소서.\n우리를 위해 죽으시고 부활하신\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "살아 있는 모든 이의 생명, 믿는 이의 빛,\n일하는 이의 힘, 죽은 이의 안식이신 하나님,\n오늘 하루 베푸신 복을 감사합니다.\n겸손히 구하오니, 이 밤에 우리를 지키시고\n안전하게 내일 아침을 맞게 하소서.\n우리를 위해 죽으시고 부활하신\n우리 구주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 pp.48-49",
      "origin": "1979 EP",
      "rights": "acna-2019",
@@ -951,7 +951,7 @@
     },
     {
      "en": "Keep watch, dear Lord, with those who work, or watch, or weep this night, and give your angels charge over those who sleep. Tend the sick, Lord Christ; give rest to the weary, bless the dying, soothe the suffering, pity the afflicted, shield the joyous; and all for your love’s sake. Amen.",
-     "ko": "사랑의 주님,\n이 밤에 일하는 이들과 잠들지 못하는 이들을 보호하시고,\n슬피 우는 이들과 고통받는 이들을 위로하소서.\n병든 이들을 돌보시고, 삶에 지친 이들에게 쉼을 주시며,\n죽음의 문턱에 있는 이들 곁에 함께하시고,\n기뻐하는 이들을 지키소서.\n이 밤에 잠드는 모든 이들을 지켜 주소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
+     "ko": "사랑의 주님,\n이 밤에 일하는 이들과 잠들지 못하는 이들과\n눈물 흘리는 이들 곁에서 함께 깨어 계시고,\n잠든 이들은 주님의 천사들이 지키게 하소서.\n주 그리스도,\n병든 이들을 돌보시고 지친 이들에게 쉼을 주소서.\n죽음을 앞둔 이들에게 복을 주시고,\n아파하는 이들을 어루만지시며,\n괴로움 당하는 이들을 불쌍히 여기시고,\n기뻐하는 이들을 지켜 주소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
      "source": "BCP 2019 p.50",
      "origin": "1979 EP",
      "rights": "acna-2019",
@@ -962,7 +962,7 @@
     },
     {
      "en": "O God, you manifest in your servants the signs of your presence: Send forth upon us the Spirit of love, that in companionship with one another your abounding grace may increase among us; through Jesus Christ our Lord. Amen.",
-     "ko": "하나님, 우리 가운데 당신의 살아 계심을 나타내심에 감사합니다.\n성령 안에서 우리 가운데 아버지의 은혜가 더욱 자라나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하나님,\n당신을 섬기는 이들 가운데\n함께 계심을 보여 주시니 감사합니다.\n우리에게 사랑의 영을 보내 주셔서\n서로 사귀는 가운데\n아버지의 넘치는 은혜가 우리 사이에 더욱 자라게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.50",
      "origin": "1979 EP",
      "rights": "acna-2019",
@@ -1008,7 +1008,7 @@
      },
      "title": "대림절 셋째 주",
      "en": "O Lord Jesus Christ, you sent your messengers the prophets to preach repentance and prepare the way for our salvation: Grant that the ministers and stewards of your mysteries may likewise make ready your way, by turning the hearts of the disobedient toward the wisdom of the just, that at your second coming to judge the world, we may be found a people acceptable in your sight; for with the Father and the Holy Spirit you live and reign, one God, now and for ever. Amen.",
-     "ko": "주 예수 그리스도,\n주님은 예언자들을 보내 회개를 전하게 하시고\n구원의 길을 예비하셨습니다.\n주님의 일을 맡은 이들도 그와 같이 주님의 길을 예비하게 하시고,\n순종하지 않는 마음을 의로운 지혜로 돌이키게 하소서.\n주님이 세상을 심판하러 다시 오실 때,\n우리가 주님 앞에 합당한 백성으로 서게 하소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
+     "ko": "주 예수 그리스도,\n주님은 예언자들을 보내 회개를 전하게 하시고\n구원의 길을 예비하셨습니다.\n주님의 일을 맡은 이들도 그와 같이\n주님의 길을 예비하게 하시고,\n순종하지 않는 마음을 의인의 지혜로 돌이키게 하소서.\n주님이 세상을 심판하러 다시 오실 때,\n우리가 주님 앞에 합당한 백성으로 서게 하소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
      "source": "BCP 2019 p.598",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1053,7 +1053,7 @@
      },
      "title": "성탄 후 둘째 주",
      "en": "O God, who wonderfully created, and yet more wonderfully restored, the dignity of human nature: Grant that we may share the divine life of him who humbled himself to share our humanity, your Son Jesus Christ our Lord; who lives and reigns with you, in the unity of the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "하나님, 사람의 존엄을 놀랍게 지으시고\n더욱 놀랍게 회복하셨습니다.\n스스로 낮아져 우리와 같이 되신 아들 예수 그리스도의\n생명을 우리도 함께 나누게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하나님, 사람의 존엄을 놀랍게 지으시고\n더욱 놀랍게 회복하셨습니다.\n스스로 낮아져 우리와 같은 사람이 되신\n아들 예수 그리스도의 거룩한 생명을\n우리도 함께 나누게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.600",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1064,7 +1064,7 @@
      },
      "title": "재의 수요일",
      "en": "Almighty and everlasting God, you hate nothing you have made, and you forgive the sins of all who are penitent: Create and make in us new and contrite hearts, that we, worthily lamenting our sins and acknowledging our wretchedness, may obtain of you, the God of all mercy, perfect remission and forgiveness; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하시고 영원하신 하나님,\n아버지는 지으신 것을 하나도 미워하지 않으시고\n회개하는 모든 사람의 죄를 용서하십니다.\n우리 안에 새롭고 통회하는 마음을 지으셔서,\n우리가 죄를 슬퍼하고 우리의 비참함을 깨닫고,\n모든 자비의 하나님이신 아버지께 온전한 용서를 받게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하시고 영원하신 하나님,\n아버지는 지으신 것을 하나도 미워하지 않으시고\n회개하는 모든 사람의 죄를 용서하십니다.\n우리 안에 새롭고 통회하는 마음을 지으셔서,\n우리가 죄를 마땅히 슬퍼하고 우리의 비참함을 깨달아,\n모든 자비의 하나님이신 아버지께 온전한 용서를 받게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.604",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1075,7 +1075,7 @@
      },
      "title": "사순절 첫째 주",
      "en": "Almighty God, whose blessed Son was led by the Spirit to be tempted by Satan: Come quickly to help us who are assaulted by many temptations, and, as you know the weaknesses of each of us, let each one find you mighty to save; through Jesus Christ your Son our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
-     "ko": "전능하신 하나님,\n아버지의 아들은 성령에 이끌려 광야에서 사탄에게 시험을 받으셨습니다.\n많은 유혹에 시달리는 우리를 속히 도우소서.\n아버지는 우리 각자의 약함을 아시니,\n우리 모두가 아버지의 구원하시는 능력을 만나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 하나님,\n아버지의 아들은 성령에 이끌려\n광야에서 사탄에게 시험을 받으셨습니다.\n많은 유혹에 시달리는 우리를 속히 도우소서.\n아버지는 우리 각자의 약함을 아시니,\n우리 한 사람 한 사람이 아버지의 구원하시는 능력을 만나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.604",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1097,7 +1097,7 @@
      },
      "title": "사순절 셋째 주",
      "en": "Heavenly Father, you have made us for yourself, and our hearts are restless until they rest in you: Look with compassion upon the heartfelt desires of your servants, and purify our disordered affections, that we may behold your eternal glory in the face of Christ Jesus; who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "하늘에 계신 아버지,\n아버지께서 당신을 위해 우리를 지으셨으니,\n우리 마음은 아버지 안에서 쉬기까지 평안하지 못합니다.\n아버지의 종들의 간절한 소원을 긍휼히 돌아보시고\n우리의 어지러운 마음을 깨끗하게 하셔서,\n그리스도 예수의 얼굴에서 아버지의 영원한 영광을 보게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하늘에 계신 아버지,\n아버지께서 당신을 위해 우리를 지으셨으니,\n우리 마음은 아버지 안에서 쉬기까지 평안하지 못합니다.\n아버지의 종인 우리의 간절한 소원을 긍휼히 돌아보시고\n우리의 어지러운 마음을 깨끗하게 하셔서,\n그리스도 예수의 얼굴에서 아버지의 영원한 영광을 보게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.605",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1108,7 +1108,7 @@
      },
      "title": "사순절 넷째 주",
      "en": "Gracious Father, whose blessed Son Jesus Christ came down from heaven to be the true bread which gives life to the world: Evermore give us this bread, that he may live in us, and we in him; who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
-     "ko": "은혜로우신 아버지,\n아버지의 아들 예수 그리스도는 하늘에서 내려오신 참된 빵,\n세상에 생명을 주는 빵이십니다.\n이 빵을 우리에게 늘 주셔서,\n그분이 우리 안에, 우리가 그분 안에 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "은혜로우신 아버지,\n아버지의 아들 예수 그리스도는 하늘에서 내려오신 참된 떡,\n세상에 생명을 주는 떡이십니다.\n이 떡을 우리에게 늘 주셔서,\n그분이 우리 안에, 우리가 그분 안에 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.605",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1119,7 +1119,7 @@
      },
      "title": "사순절 다섯째 주",
      "en": "Almighty God, you alone can bring into order the unruly wills and affections of sinners: Grant your people grace to love what you command and desire what you promise; that, among the swift and varied changes of this world, our hearts may surely there be fixed where true joys are to be found; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
-     "ko": "전능하신 하나님,\n죄인의 어지러운 뜻과 마음을 바로잡으실 분은 아버지뿐입니다.\n아버지의 백성에게 은혜를 주셔서,\n아버지가 명하신 것을 사랑하고 약속하신 것을 바라게 하소서.\n그리하여 빠르게 변하는 이 세상 가운데서도\n우리 마음이 참된 기쁨이 있는 곳에 굳게 머물게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 하나님,\n죄인의 어지러운 뜻과 마음을 바로잡으실 분은 아버지뿐입니다.\n아버지의 백성에게 은혜를 주셔서,\n아버지께서 명하신 것을 사랑하고 약속하신 것을 바라게 하소서.\n그리하여 빠르게 변하는 이 세상 가운데서도\n우리 마음이 참된 기쁨이 있는 곳에 굳게 머물게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.605",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1130,7 +1130,7 @@
      },
      "title": "종려주일",
      "en": "Almighty and everlasting God, in your tender love for us you sent your Son our Savior Jesus Christ to take upon himself our nature, and to suffer death upon the Cross, giving us the example of his great humility: Mercifully grant that we may walk in the way of his suffering, and come to share in his resurrection; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하시고 영원하신 하나님,\n아버지는 우리를 사랑하셔서 아들 우리 구주 예수 그리스도를 보내시고,\n우리와 같은 몸을 입어 십자가의 죽음을 겪게 하심으로\n크신 겸손의 본을 보여 주셨습니다.\n자비를 베푸셔서, 우리가 그분의 고난의 길을 걷고\n그분의 부활에 함께 이르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하시고 영원하신 하나님,\n아버지는 우리를 사랑하셔서\n아들 우리 구주 예수 그리스도를 보내시고,\n우리와 같은 몸을 입어 십자가의 죽음을 겪게 하심으로\n크신 겸손의 본을 보여 주셨습니다.\n자비를 베푸셔서, 우리가 그분의 고난의 길을 걷고\n그분의 부활에 함께 이르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.606",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1141,7 +1141,7 @@
      },
      "title": "성목요일",
      "en": "Almighty Father, whose most dear Son, on the night before he suffered, instituted the Sacrament of his Body and Blood: Mercifully grant that we may receive it in thankful remembrance of Jesus Christ our Savior, who in these holy mysteries gives us a pledge of eternal life; and who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하신 아버지,\n아버지의 사랑하는 아들은 고난받기 전날 밤\n자신의 몸과 피의 성찬을 세우셨습니다.\n우리가 감사함으로 이 성찬을 받으며\n우리 구주 예수 그리스도를 기억하게 하소서.\n그분은 이 거룩한 신비 가운데 영원한 생명의 보증을 주십니다.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 아버지,\n아버지의 사랑하는 아들은 고난받기 전날 밤\n자신의 몸과 피의 성찬을 세우셨습니다.\n우리가 감사함으로 이 성찬을 받으며,\n이 거룩한 신비 가운데 영원한 생명의 보증을 주시는\n우리 구주 예수 그리스도를 기억하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.607",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1152,7 +1152,7 @@
      },
      "title": "성금요일",
      "en": "Almighty God, we beseech you graciously to behold this your family, for whom our Lord Jesus Christ was willing to be betrayed and given into the hands of sinners, and to suffer death upon the Cross; who now lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하신 하나님,\n아버지께서 가족으로 삼으신 우리를 은혜로 돌아보소서.\n우리 주 예수 그리스도께서는 우리를 위해\n배반당하고 죄인들의 손에 넘겨지셔서\n십자가의 죽음을 받아들이셨습니다.\n그분은 지금 아버지와 성령과 함께 영원히 살아 계시며 다스리십니다. 아멘.",
+     "ko": "전능하신 하나님,\n우리 주 예수 그리스도께서는 우리를 위해\n기꺼이 배반당하시고 죄인들의 손에 넘겨지셔서\n십자가의 죽음을 받아들이셨습니다.\n아버지의 가족인 우리를 은혜로 돌아보소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.607",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1174,7 +1174,7 @@
      },
      "title": "부활주일",
      "en": "Almighty God, who through your only-begotten Son Jesus Christ overcame death and opened to us the gate of everlasting life: Grant that we, who celebrate with joy the day of the Lord’s resurrection, may, by your life-giving Spirit, be delivered from sin and raised from death; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
-     "ko": "전능하신 하나님,\n아버지는 외아들 예수 그리스도로 죽음을 이기시고\n우리에게 영원한 생명의 문을 여셨습니다.\n주님의 부활을 기쁨으로 기념하는 우리를\n생명을 주시는 성령으로 죄에서 건지시고\n죽음에서 일으키소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 하나님,\n아버지는 외아들 예수 그리스도를 통해 죽음을 이기시고\n우리에게 영원한 생명의 문을 여셨습니다.\n주님의 부활을 기쁨으로 맞는 우리를\n생명을 주시는 성령으로 죄에서 건지시고\n죽음에서 일으키소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.608",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1196,7 +1196,7 @@
      },
      "title": "부활절 셋째 주",
      "en": "Almighty God, you gave your only Son to be for us both a sacrifice for sin and an example of godly living: Give us grace thankfully to receive his inestimable benefits, and daily to follow the blessed steps of his most holy life; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하신 하나님,\n아버지는 외아들을 우리를 위한 속죄의 제물로,\n또한 경건한 삶의 본으로 주셨습니다.\n우리가 그분이 주신 헤아릴 수 없는 은혜를 감사함으로 받고,\n날마다 그분의 거룩한 삶의 발자취를 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 하나님,\n아버지는 우리를 위해 외아들을 속죄의 제물로,\n또한 경건한 삶의 본으로 주셨습니다.\n우리가 그분이 주신 헤아릴 수 없는 은혜를 감사함으로 받고,\n날마다 그분의 거룩한 삶의 발자취를 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.611",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1218,7 +1218,7 @@
      },
      "title": "부활절 다섯째 주",
      "en": "Almighty God, whom truly to know is everlasting life: Grant us so perfectly to know your Son Jesus Christ to be the way, the truth, and the life, that we may steadfastly follow his steps in the way that leads to eternal glory; through Jesus Christ your Son our Lord, who lives and reigns with you, in the unity of the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "전능하신 하나님,\n아버지를 참으로 아는 것이 영원한 생명입니다.\n아버지의 아들 예수 그리스도가 길이요 진리요 생명이심을\n우리가 온전히 알게 하셔서,\n영원한 영광에 이르는 길에서 그분의 발자취를 굳게 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "전능하신 하나님,\n아버지를 참으로 아는 것이 영원한 생명입니다.\n아버지의 아들 예수 그리스도께서 길이요 진리요 생명이심을\n우리가 온전히 알게 하셔서,\n영원한 영광에 이르는 길에서 그분의 발자취를 굳게 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.611",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1229,7 +1229,7 @@
      },
      "title": "부활절 여섯째 주",
      "en": "O God, you have prepared for those who love you such good things as surpass our understanding: Pour into our hearts such love towards you, that we, loving you in all things and above all things, may obtain your promises, which exceed all that we can desire; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
-     "ko": "하나님,\n아버지께서는 당신을 사랑하는 이들을 위해\n우리의 생각을 뛰어넘는 좋은 것을 마련하셨습니다.\n우리 마음에 아버지를 향한 사랑을 부어 주셔서,\n모든 일에서 무엇보다 아버지를 사랑하고,\n우리가 바라는 모든 것을 넘어서는 아버지의 약속을 받게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "하나님,\n아버지께서는 당신을 사랑하는 이들을 위해\n우리의 생각을 뛰어넘는 좋은 것을 마련하셨습니다.\n우리 마음에 아버지를 향한 사랑을 부어 주셔서,\n모든 일에서 무엇보다 아버지를 사랑하고,\n우리가 바라는 모든 것보다 큰\n아버지의 약속을 받아 누리게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.612",
      "rights": "acna-2019",
      "ko_status": "초벌2"
@@ -1251,7 +1251,7 @@
      },
      "title": "부활절 일곱째 주",
      "en": "O God, the King of glory, you have exalted your only Son Jesus Christ with great triumph to your kingdom in heaven: Do not leave us comfortless, but send us your Holy Spirit to strengthen us, and exalt us to that place where our Savior Christ has gone before; who lives and reigns with you and the Holy Spirit, one God, in glory everlasting. Amen.",
-     "ko": "영광의 왕이신 하나님,\n아버지는 외아들 예수 그리스도를 큰 승리 가운데\n하늘나라로 높이 올리셨습니다.\n우리를 홀로 두지 마시고 성령을 보내셔서 우리를 굳세게 하시고,\n우리 구주 그리스도께서 먼저 가신 그곳으로 우리도 올리소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "ko": "영광의 왕이신 하나님,\n아버지는 외아들 예수 그리스도를 큰 승리 가운데\n하늘나라로 높이 올리셨습니다.\n우리를 홀로 두지 마시고\n성령을 보내셔서 우리를 굳세게 하시고,\n우리 구주 그리스도께서 먼저 가신 그곳으로 우리도 올리소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
      "source": "BCP 2019 p.612",
      "rights": "acna-2019",
      "ko_status": "초벌2"

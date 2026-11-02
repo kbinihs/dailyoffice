@@ -121,12 +121,11 @@ describe('홈의 오늘의 인용(henry-quotes.json slots.home)', () => {
     assert.equal(homeQuote('2026-11-02').id, homeQuote('2026-11-02').id);
   });
 
-  test('인용마다 강론·한글 본문·개역한글 구절이 있고, 가족을 가리키는 말을 쓰지 않는다', () => {
+  test('인용마다 강론·한글 본문·개역한글 구절이 있다', () => {
     assert.equal(new Set(homeQuotes.map((q) => q.id)).size, homeQuotes.length);
     for (const q of homeQuotes) {
       assert.ok(q.en && q.ko && q.anchor.ref && q.anchor.label && q.anchor.krv, q.id);
       assert.ok(discourseTitle(q), q.id);
-      assert.doesNotMatch(q.ko, /가족|부모|자녀|배우자|아이/, q.id);
     }
   });
 
@@ -140,6 +139,17 @@ describe('홈의 오늘의 인용(henry-quotes.json slots.home)', () => {
         .map(([, t]) => t)
         .join(' ');
       for (const part of q.anchor.krv.split(' … ')) assert.ok(text.includes(part), `${q.id} ${q.anchor.ref}: ${part}`);
+    }
+  });
+});
+
+describe('지시문(CLAUDE.md 규칙 4)', () => {
+  // 함께 기도하는 사람이 가족이 아닐 수도 있다. 기도문·성경 본문은 원문대로 두고 지시문만 본다.
+  test('지시문에 가족을 가리키는 말을 쓰지 않는다', () => {
+    for (const e of elements) {
+      for (const text of [e.rubric, e.rubric_after]) {
+        if (text) assert.doesNotMatch(text, /가족|부모|자녀|배우자|아이/, e.id);
+      }
     }
   });
 });

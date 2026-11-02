@@ -91,6 +91,17 @@ function render(): void {
   else releaseScreen();
 }
 
+/**
+ * 화면을 옮길 때 새 화면이 짧게 떠오른다(M3 fade-through의 들어오는 쪽).
+ * 주소가 바뀔 때만 부른다. 다시 볼 때·설치 안내·설정을 다시 그릴 때는 깜박이지 않게 쓰지 않는다.
+ */
+function fadeIn(): void {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document
+    .getElementById('screen')
+    ?.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 210, easing: 'cubic-bezier(0.05, 0.7, 0.1, 1)' });
+}
+
 /** 본문이 스크롤되면 상단 바가 한 단계 올라온다(M3 scrolled state). */
 function markScrolled(): void {
   document.body.classList.toggle('scrolled', window.scrollY > 0);
@@ -139,7 +150,10 @@ const ready = loadStore().then(() => {
     render();
     window.scrollTo(0, 0);
     markScrolled();
+    fadeIn();
   });
+  // 자동 밝기일 때 기기 설정이 바뀌면 상태 표시줄 색도 따라 바꾼다
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyDisplay);
   window.addEventListener('scroll', markScrolled, { passive: true });
   // 다시 볼 때: 다른 탭·창에서 남긴 기록을 읽어 오고, 04:00을 넘겼으면 날짜도 바뀐다.
   document.addEventListener('visibilitychange', () => {

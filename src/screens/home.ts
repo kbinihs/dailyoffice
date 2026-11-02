@@ -57,16 +57,17 @@ function prayerCard(date: DateKey): HTMLElement {
 
 function readingCard(date: DateKey): HTMLElement {
   const status = readingStatus(date, store.readDays(planStart(date).slice(0, 4)));
-  const read = h('md-text-button', { href: '#/read', 'trailing-icon': '' }, '읽기', icon('chevron_right', 'icon'));
   const line =
     status.today !== null ? `오늘 ${josa(planEntry(status.today).label, '을/를')} 읽습니다.` : readingLine(resolve(date));
   const meta = status.today !== null ? `${status.today}일차 · 진도 ${status.percent}%` : `진도 ${status.percent}%`;
-  return h(
-    'section',
-    { class: 'card' },
-    // 단추를 제목 밖에 두어 낭독기가 제목을 "오늘의 말씀"으로만 읽게 한다
-    h('div', { class: 'card-head' }, h('h2', null, '오늘의 말씀'), read),
-    h('p', { class: 'card-reading' }, line),
-    h('p', { class: 'card-meta' }, meta),
+  // 기도 카드의 타일처럼 카드 전체가 누르는 곳 하나. 낭독기는 링크 이름 한 줄로 읽는다.
+  return pressable(
+    h(
+      'a',
+      { class: 'card card-link', href: '#/read', 'aria-label': `오늘의 말씀, ${line} ${meta}` },
+      h('div', { class: 'card-head' }, h('h2', null, '오늘의 말씀'), icon('chevron_right')),
+      h('p', { class: 'card-reading' }, line),
+      h('p', { class: 'card-meta' }, meta),
+    ),
   );
 }

@@ -1,4 +1,4 @@
-// 첫 화면(모션). 앱을 처음 열 때 한 번, 2.6초 안에 끝난다. 아무 데나 누르면 바로 넘어간다(디자인 시스템 Splash).
+// 첫 화면(모션). 앱을 처음 열 때 한 번, 1.7초 안에 끝난다. 아무 데나 누르면 바로 넘어간다(디자인 시스템 Splash).
 // 그동안 기록을 불러오고 홈을 그려 두었다가, "매일, 함께"와 십자가가 상단 바의 제목 자리로 날아가 앉으며 보라 면이 걷힌다.
 import { h } from './ui.ts';
 
@@ -23,7 +23,7 @@ export function runSplash(ready: Promise<unknown>): Promise<void> {
   document.body.append(splash);
   requestAnimationFrame(() => splash.classList.add('play'));
 
-  const shown = new Promise((r) => setTimeout(r, reduce ? 600 : 2000));
+  const shown = new Promise((r) => setTimeout(r, reduce ? 300 : 1200));
   const skipped = new Promise((r) => splash.addEventListener('click', r, { once: true }));
   return Promise.race([Promise.all([shown, ready]), Promise.all([skipped, ready])]).then(() => lift(splash, reduce));
 }
@@ -76,8 +76,9 @@ async function lift(splash: HTMLElement, reduce: boolean): Promise<void> {
   const cx = m.left + 3.5 * k2 - a.left - 24 * k * sx;
   const cy = m.top + 1 * k2 - a.top - 8 * k * sy;
 
-  const fly: KeyframeAnimationOptions = { duration: 650, easing: 'cubic-bezier(0.2, 0, 0, 1)', fill: 'forwards' };
-  const fade: KeyframeAnimationOptions = { duration: 200, easing: 'linear', fill: 'forwards' };
+  // 제목 자리에 들어와 앉는 움직임이라 M3 emphasized-decelerate
+  const fly: KeyframeAnimationOptions = { duration: 500, easing: 'cubic-bezier(0.05, 0.7, 0.1, 1)', fill: 'forwards' };
+  const fade: KeyframeAnimationOptions = { duration: 150, easing: 'linear', fill: 'forwards' };
   name.style.transformOrigin = '0 0';
   art.style.transformOrigin = '0 0';
   splash.style.pointerEvents = 'none';
@@ -98,14 +99,14 @@ async function lift(splash: HTMLElement, reduce: boolean): Promise<void> {
     ),
     splash.animate(
       [{ backgroundColor: getComputedStyle(splash).backgroundColor }, { backgroundColor: 'transparent' }],
-      { duration: 450, delay: 120, easing: 'linear', fill: 'forwards' },
+      { duration: 350, delay: 100, easing: 'linear', fill: 'forwards' },
     ),
     ...[...splash.querySelectorAll('.splash-rays, .splash-line')].map((el) =>
       el.animate([{ opacity: getComputedStyle(el).opacity }, { opacity: 0 }], fade),
     ),
   ];
   // 숨은 탭에서는 애니메이션이 멈출 수 있어 시간으로도 끝낸다
-  await Promise.race([Promise.all(animations.map((x) => x.finished)), wait(900)]);
+  await Promise.race([Promise.all(animations.map((x) => x.finished)), wait(700)]);
   document.body.classList.remove('splash-flying');
   splash.remove();
 }
