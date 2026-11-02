@@ -134,6 +134,20 @@ function prefetchToday(date: DateKey): void {
 
 // 기록을 다 불러온 뒤에야 화면을 그리고 조작을 받는다(빈 기록 위에 체크해 기기의 기록을 덮지 않게).
 // 그동안 첫 화면 모션이 앞을 가리고, 다 그리고 나면 위로 걷힌다.
+/**
+ * 지난번에 받아 둔 새 판이 기다리고 있으면, 첫 화면이 떠 있는 동안 바꿔 끼우고 한 번 다시 연다.
+ * 기도를 시작한 뒤에는 바꾸지 않는다(이번 실행 중에 새로 받은 판은 다음에 열 때 적용).
+ */
+function applyWaitingUpdate(): void {
+  navigator.serviceWorker?.getRegistration().then((reg) => {
+    if (!reg?.waiting || !navigator.serviceWorker.controller) return;
+    navigator.serviceWorker.addEventListener('controllerchange', () => location.reload(), { once: true });
+    reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+  });
+}
+
+applyWaitingUpdate();
+
 const ready = loadStore().then(() => {
   showStorageNotice(storageStatus());
   onStorageStatus(showStorageNotice);

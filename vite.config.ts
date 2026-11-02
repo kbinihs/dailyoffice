@@ -10,8 +10,9 @@ const YEAR = 60 * 60 * 24 * 365;
 export default defineConfig({
   plugins: [
     VitePWA({
-      // 새 판은 다음에 열 때 적용한다. 기도 중에 화면을 다시 불러오지 않는다(registerSW.js는 등록만 한다).
-      registerType: 'autoUpdate',
+      // 새 판의 서비스 워커는 받아 두고 기다린다. 다음에 앱을 열 때 첫 화면 동안 바꿔 끼운다(src/main.ts).
+      // 바로 맡게 하면(skipWaiting) 옛 화면이 지워진 옛 파일을 찾다 빈 화면이 된다(2026-11-02 배포에서 겪음).
+      registerType: 'prompt',
       injectRegister: 'script-defer',
       manifest: {
         name: '매일, 함께',
@@ -33,10 +34,6 @@ export default defineConfig({
       // 아이콘은 아래 globPatterns로 담는다(두 번 담지 않게)
       includeManifestIcons: false,
       workbox: {
-        // 새 판의 서비스 워커는 기다리지 않고 바로 맡는다. 열려 있는 화면은 그대로 두고, 다음에 열 때 새 판이 뜬다.
-        // (설치한 앱은 완전히 닫히는 일이 드물어, 기다리게 두면 새 판이 한참 뜨지 않는다)
-        skipWaiting: true,
-        clientsClaim: true,
         globPatterns: ['**/*.{js,css,html,svg,png}'],
         // 성경 66권(4.6MB)은 미리 담지 않고 펼친 책만 담는다. 미리보기 이미지는 앱에서 쓰지 않는다.
         globIgnores: ['bible/**', 'og.png'],
