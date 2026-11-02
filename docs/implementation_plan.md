@@ -132,7 +132,8 @@ Material 3 뼈대에 교회 보라·한글 글꼴을 입힌 디자인 시스템 
 → 2026-11-02 배포 전까지 마침. 첫 화면 내려받기 약 0.45MB(앱 92KB gzip + 글꼴 0.34MB) + 3초 뒤 오늘 성경 책 0.32MB(압축 전), 1MB 이하. 테스트 93개.
 → 아이콘을 한 결로([Bin], 같은 날): 시간대·기도 탭의 컬러 이모지와 채운 아이콘을 빼고 Material Symbols Rounded 선 아이콘만(`wb_twilight`·`sunny`·`bedtime`·`folded_hands`). design.md 8절 고침. 디자인 시스템 산출물(claude.ai)은 아직 이모지 안.
 → 화면 다듬기([Bin], 같은 날): 첫 화면의 이름·십자가가 상단 바 제목 자리로 날아가 앉음(`src/splash.ts`, 끝 위치가 제목과 같은지 재어 확인), 고르는 단추를 칸마다 떨어진 둥근 사각형으로, 기도·말씀의 요소 제목을 본문보다 크고 굵게(주색), 홈의 설치 카드는 빼고 설정에서만.
-→ **남은 것**: git·GitHub 저장소·Pages 켜기([Bin] 결정) → 배포 → 실제 휴대폰(iPhone Safari, 안드로이드 크롬, 카카오톡 안 브라우저)에서 미리보기·설치·비행기 모드 확인 → 완료 기준.
+→ 2026-11-02 배포: 정적 구조로 결정([Bin], design.md 11절 "백엔드"). 공개 저장소 https://github.com/kbinihs/dailyoffice, 주소 **https://kbinihs.github.io/dailyoffice/**. 첫 워크플로(테스트 → 빌드 → 배포) 통과. 배포 주소에서 og:image 절대 주소, manifest(start_url·scope `/dailyoffice/`), 서비스 워커 등록, 오늘 통독·밤 시편 불러오기·담아 두기 확인(PC 브라우저).
+→ **남은 것**: 실제 휴대폰(iPhone Safari, 안드로이드 크롬, 카카오톡 안 브라우저)에서 카카오톡 미리보기·설치·비행기 모드 확인 → 완료 기준.
 
 ## 7단계 — 파일럿 (2주, 코드 소량)
 
