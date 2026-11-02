@@ -1,0 +1,8 @@
+# 참고 자료 — 저작권 있는 PDF(BCP 2019, 성공회 성무일과, 절기 소책자)는 저장소에 올리지 않는다
+refs/
+_archive/
+# 빌드·의존성
+node_modules/
+dist/
+generated/
+.DS_Store

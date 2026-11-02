@@ -1,0 +1,248 @@
+{
+ "meta": {
+  "title": "매일, 함께 — 절기 규칙",
+  "scope": "대림·성탄·사순·고난주간·부활(승천·성령강림 포함). 그 밖(주현절, 성령강림 후)은 평상시.",
+  "collectRule": "절기 안에서는 가장 최근 주일(또는 축일)의 기도를 그 주 내내 쓴다. 고난주간 목·금·토만 그날 기도. 아침·밤 예식에서 요일 기도 앞에 추가한다. 낮 예식은 바꾸지 않는다.",
+  "openingRule": "절기 여는 말씀이 요일 여는 말씀을 대신한다(아침·밤).",
+  "dismissalRule": "부활주일~성령강림주일에는 마침 교송에 \"알렐루야, 알렐루야\"를 붙인다."
+ },
+ "anchors": {
+  "easter": "그레고리력 부활절(Meeus/Jones/Butcher 계산식)",
+  "ashWednesday": "easter - 46",
+  "palmSunday": "easter - 7",
+  "ascension": "easter + 39",
+  "pentecost": "easter + 49",
+  "advent1": "12월 25일 직전 주일 - 21일 (12월 25일이 주일이면 12월 18일 - 21일)",
+  "christmas1": "12월 26일~1월 1일 사이의 주일",
+  "christmas2": "1월 2일~5일 사이의 주일(있을 때만)"
+ },
+ "seasons": [
+  {
+   "id": "advent",
+   "name": "대림절",
+   "from": "advent1",
+   "to": "12-24"
+  },
+  {
+   "id": "christmas",
+   "name": "성탄절",
+   "from": "12-25",
+   "to": "01-05",
+   "note": "해를 넘김"
+  },
+  {
+   "id": "lent",
+   "name": "사순절",
+   "from": "ashWednesday",
+   "to": "palmSunday - 1"
+  },
+  {
+   "id": "holyweek",
+   "name": "고난주간",
+   "from": "palmSunday",
+   "to": "easter - 1"
+  },
+  {
+   "id": "easter",
+   "name": "부활절",
+   "from": "easter",
+   "to": "pentecost",
+   "openingSub": [
+    {
+     "id": "easter",
+     "from": "easter",
+     "to": "ascension - 1"
+    },
+    {
+     "id": "ascension",
+     "from": "ascension",
+     "to": "pentecost - 1"
+    },
+    {
+     "id": "pentecost",
+     "from": "pentecost",
+     "to": "pentecost"
+    }
+   ]
+  }
+ ],
+ "collects": [
+  {
+   "id": "adv1",
+   "from": "advent1",
+   "to": "advent1 + 6"
+  },
+  {
+   "id": "adv2",
+   "from": "advent1 + 7",
+   "to": "advent1 + 13"
+  },
+  {
+   "id": "adv3",
+   "from": "advent1 + 14",
+   "to": "advent1 + 20"
+  },
+  {
+   "id": "adv4",
+   "from": "advent1 + 21",
+   "to": "12-24"
+  },
+  {
+   "id": "christmas",
+   "from": "12-25",
+   "to": "christmas1 - 1"
+  },
+  {
+   "id": "christmas1",
+   "from": "christmas1",
+   "to": "christmas2 - 1 또는 01-05"
+  },
+  {
+   "id": "christmas2",
+   "from": "christmas2",
+   "to": "01-05"
+  },
+  {
+   "id": "ash",
+   "from": "ashWednesday",
+   "to": "ashWednesday + 3"
+  },
+  {
+   "id": "lent1",
+   "from": "ashWednesday + 4",
+   "to": "ashWednesday + 10"
+  },
+  {
+   "id": "lent2",
+   "from": "ashWednesday + 11",
+   "to": "ashWednesday + 17"
+  },
+  {
+   "id": "lent3",
+   "from": "ashWednesday + 18",
+   "to": "ashWednesday + 24"
+  },
+  {
+   "id": "lent4",
+   "from": "ashWednesday + 25",
+   "to": "ashWednesday + 31"
+  },
+  {
+   "id": "lent5",
+   "from": "ashWednesday + 32",
+   "to": "palmSunday - 1"
+  },
+  {
+   "id": "palm",
+   "from": "palmSunday",
+   "to": "palmSunday + 3"
+  },
+  {
+   "id": "maundy",
+   "from": "easter - 3",
+   "to": "easter - 3"
+  },
+  {
+   "id": "goodfri",
+   "from": "easter - 2",
+   "to": "easter - 2"
+  },
+  {
+   "id": "holysat",
+   "from": "easter - 1",
+   "to": "easter - 1"
+  },
+  {
+   "id": "easter",
+   "from": "easter",
+   "to": "easter + 6"
+  },
+  {
+   "id": "easter2",
+   "from": "easter + 7",
+   "to": "easter + 13"
+  },
+  {
+   "id": "easter3",
+   "from": "easter + 14",
+   "to": "easter + 20"
+  },
+  {
+   "id": "easter4",
+   "from": "easter + 21",
+   "to": "easter + 27"
+  },
+  {
+   "id": "easter5",
+   "from": "easter + 28",
+   "to": "easter + 34"
+  },
+  {
+   "id": "easter6",
+   "from": "easter + 35",
+   "to": "ascension - 1"
+  },
+  {
+   "id": "ascension",
+   "from": "ascension",
+   "to": "easter + 41"
+  },
+  {
+   "id": "easter7",
+   "from": "easter + 42",
+   "to": "pentecost - 1"
+  },
+  {
+   "id": "pentecost",
+   "from": "pentecost",
+   "to": "pentecost"
+  }
+ ],
+ "check": [
+  {
+   "year": 2026,
+   "advent1": "2026-11-29",
+   "ashWednesday": "2026-02-18",
+   "palmSunday": "2026-03-29",
+   "easter": "2026-04-05",
+   "ascension": "2026-05-14",
+   "pentecost": "2026-05-24"
+  },
+  {
+   "year": 2027,
+   "advent1": "2027-11-28",
+   "ashWednesday": "2027-02-10",
+   "palmSunday": "2027-03-21",
+   "easter": "2027-03-28",
+   "ascension": "2027-05-06",
+   "pentecost": "2027-05-16"
+  },
+  {
+   "year": 2028,
+   "advent1": "2028-12-03",
+   "ashWednesday": "2028-03-01",
+   "palmSunday": "2028-04-09",
+   "easter": "2028-04-16",
+   "ascension": "2028-05-25",
+   "pentecost": "2028-06-04"
+  },
+  {
+   "year": 2029,
+   "advent1": "2029-12-02",
+   "ashWednesday": "2029-02-14",
+   "palmSunday": "2029-03-25",
+   "easter": "2029-04-01",
+   "ascension": "2029-05-10",
+   "pentecost": "2029-05-20"
+  },
+  {
+   "year": 2030,
+   "advent1": "2030-12-01",
+   "ashWednesday": "2030-03-06",
+   "palmSunday": "2030-04-14",
+   "easter": "2030-04-21",
+   "ascension": "2030-05-30",
+   "pentecost": "2030-06-09"
+  }
+ ]
+}

@@ -1,0 +1,543 @@
+{
+ "meta": {
+  "source": "Matthew Henry, Directions for Daily Communion with God (1712). 퍼블릭 도메인.",
+  "use": "홈 화면의 오늘 인용(slots.home, 날마다 차례로). 아침·낮·밤 슬롯은 2026-11-02 기도 화면에서 빼고 보관만 한다(그 인용들은 home에도 옮겨 두었다).",
+  "display": "primary 한 문장 + 헨리가 본문으로 삼은 시편 구절(개역한글). 나머지는 후보.",
+  "translation": "한글은 초안(검토 전). 시편 25:5 개역한글 '바라나이다'에 맞춰 wait on은 '바라다'로 옮겼다."
+ },
+ "slots": {
+  "morning": {
+   "discourse": "The First Discourse: Showing How to Begin Every Day with God",
+   "anchor": {
+    "ref": "Ps 5:3",
+    "label": "시편 5:3",
+    "krv": "여호와여 아침에 주께서 나의 소리를 들으시리니 아침에 내가 주께 기도하고 바라리이다"
+   },
+   "quotes": [
+    {
+     "id": "m1",
+     "primary": true,
+     "en": "It is our wisdom and duty, to begin every day with God.",
+     "ko": "날마다 하루를 하나님과 함께 시작하는 것, 이것이 우리의 지혜이고 마땅한 도리입니다."
+    },
+    {
+     "id": "m2",
+     "primary": false,
+     "en": "The morning is the first part of the day, and it is fit that he that is the first should have the first, and be first served.",
+     "ko": "아침은 하루의 첫머리입니다. 처음이신 분께 처음을 드리고, 그분을 가장 먼저 섬기는 것이 마땅합니다."
+    },
+    {
+     "id": "m3",
+     "primary": false,
+     "en": "We must look up as one that has shot an arrow looks after it to see how near it comes to the mark.",
+     "ko": "활을 쏜 사람이 화살이 과녁에 얼마나 가까이 갔는지 눈으로 좇듯, 기도한 뒤에도 위를 바라보아야 합니다."
+    }
+   ]
+  },
+  "midday": {
+   "discourse": "The Second Discourse: Showing How to Spend Every Day With God",
+   "anchor": {
+    "ref": "Ps 25:5",
+    "label": "시편 25:5",
+    "krv": "주의 진리로 나를 지도하시고 교훈하소서 주는 내 구원의 하나님이시니 내가 종일 주를 바라나이다"
+   },
+   "quotes": [
+    {
+     "id": "d1",
+     "primary": true,
+     "en": "It is not enough for us to begin every day with God, but on him we must wait every day, and all the day long.",
+     "ko": "하루를 하나님과 함께 시작하는 것으로 끝나지 않습니다. 날마다, 그리고 온종일 그분을 바라야 합니다."
+    },
+    {
+     "id": "d2",
+     "primary": false,
+     "en": "To wait on God is to live a life of desire towards him, delight in him, dependence on him, and devotedness to him.",
+     "ko": "하나님을 바란다는 것은 그분을 사모하고, 그분을 기뻐하고, 그분께 기대고, 그분께 나를 드리며 사는 것입니다."
+    }
+   ]
+  },
+  "evening": {
+   "discourse": "The Third Discourse: Showing How to Close Every Day with God",
+   "anchor": {
+    "ref": "Ps 4:8",
+    "label": "시편 4:8",
+    "krv": "내가 평안히 눕고 자기도 하리니 나를 안전히 거하게 하시는 이는 오직 여호와시니이다"
+   },
+   "quotes": [
+    {
+     "id": "e1",
+     "primary": true,
+     "en": "As we must begin the day with God, and wait upon him all the day, so we must endeavour to close it with him.",
+     "ko": "하루를 하나님과 함께 시작하고 온종일 그분을 바랐듯이, 하루를 닫을 때에도 그분과 함께하기를 힘써야 합니다."
+    },
+    {
+     "id": "e2",
+     "primary": false,
+     "en": "The evening sacrifice was to be a sacrifice of praise.",
+     "ko": "저녁 제사는 찬양의 제사였습니다."
+    },
+    {
+     "id": "e3",
+     "primary": false,
+     "en": "[He] concludes the day, as he opened it, with meditations on God, and sweet communion with him.",
+     "ko": "하루를 열었던 그대로, 하나님을 묵상하며 그분과 다정히 사귀는 가운데 하루를 마칩니다."
+    }
+   ]
+  },
+  "home": {
+   "discourses_ko": {
+    "1": "하루를 하나님과 함께 시작하는 법",
+    "2": "하루를 하나님과 함께 보내는 법",
+    "3": "하루를 하나님과 함께 닫는 법"
+   },
+   "rule": "quotes[(1970-01-01부터 센 날 수) % 편 수]. 날마다 다음 편으로 넘어가 한 바퀴 돈다. 줄 순서는 세 강론이 고르게 섞이도록 짰다.",
+   "ko_status": "편마다 ko_status. '확인'은 [Bin]이 괜찮다고 한 번역(2026-11-02), '초안'은 같은 날 더한 것.",
+   "quotes": [
+    {
+     "id": "h2.01",
+     "discourse": 2,
+     "en": "It is not enough for us to begin every day with God, but on him we must wait every day, and all the day long.",
+     "ko": "하루를 하나님과 함께 시작하는 것으로 끝나지 않습니다. 날마다, 그리고 온종일 그분을 바라야 합니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 25:5",
+      "label": "시편 25:5",
+      "krv": "주의 진리로 나를 지도하시고 교훈하소서 주는 내 구원의 하나님이시니 내가 종일 주를 바라나이다"
+     }
+    },
+    {
+     "id": "h1.01",
+     "discourse": 1,
+     "en": "It is our wisdom and duty, to begin every day with God.",
+     "ko": "날마다 하루를 하나님과 함께 시작하는 것, 이것이 우리의 지혜이고 마땅한 도리입니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 5:3",
+      "label": "시편 5:3",
+      "krv": "여호와여 아침에 주께서 나의 소리를 들으시리니 아침에 내가 주께 기도하고 바라리이다"
+     }
+    },
+    {
+     "id": "h3.01",
+     "discourse": 3,
+     "en": "As we must begin the day with God, and wait upon him all the day, so we must endeavour to close it with him.",
+     "ko": "하루를 하나님과 함께 시작하고 온종일 그분을 바랐듯이, 하루를 닫을 때에도 그분과 함께하기를 힘써야 합니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 4:8",
+      "label": "시편 4:8",
+      "krv": "내가 평안히 눕고 자기도 하리니 나를 안전히 거하게 하시는 이는 오직 여호와시니이다"
+     }
+    },
+    {
+     "id": "h2.02",
+     "discourse": 2,
+     "en": "[To wait on God is] to look upon him as one always near us, always at our right hand, and that has his eye upon us, wherever we are and whatever we are doing.",
+     "ko": "하나님을 바란다는 것은, 그분을 늘 가까이 계신 분, 늘 우리 오른편에 계신 분으로 여기는 것입니다. 우리가 어디에 있든 무엇을 하든, 그분의 눈이 우리 위에 있습니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 16:8",
+      "label": "시편 16:8",
+      "krv": "내가 여호와를 항상 내 앞에 모심이여 그가 내 우편에 계시므로 내가 요동치 아니하리로다"
+     }
+    },
+    {
+     "id": "h1.02",
+     "discourse": 1,
+     "en": "The morning is the first part of the day, and it is fit that he that is the first should have the first, and be first served.",
+     "ko": "아침은 하루의 첫머리입니다. 처음이신 분께 처음을 드리고, 그분을 가장 먼저 섬기는 것이 마땅합니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Prov 3:9",
+      "label": "잠언 3:9",
+      "krv": "네 재물과 네 소산물의 처음 익은 열매로 여호와를 공경하라"
+     }
+    },
+    {
+     "id": "h3.02",
+     "discourse": 3,
+     "en": "The evening sacrifice was to be a sacrifice of praise.",
+     "ko": "저녁 제사는 찬양의 제사였습니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 141:2",
+      "label": "시편 141:2",
+      "krv": "나의 기도가 주의 앞에 분향함과 같이 되며 나의 손 드는 것이 저녁 제사 같이 되게 하소서"
+     }
+    },
+    {
+     "id": "h2.03",
+     "discourse": 2,
+     "en": "Herein consists that uprightness which is our evangelical perfection, in walking at all time as before God, and studying to approve ourselves to him.",
+     "ko": "복음이 말하는 온전함은, 언제나 하나님 앞에서 걷듯 걷고 그분께 인정받기를 힘쓰는 데 있습니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Gen 17:1",
+      "label": "창세기 17:1",
+      "krv": "나는 전능한 하나님이라 너는 내 앞에서 행하여 완전하라"
+     }
+    },
+    {
+     "id": "h1.03",
+     "discourse": 1,
+     "en": "We must look up as one that has shot an arrow looks after it to see how near it comes to the mark.",
+     "ko": "활을 쏜 사람이 화살이 과녁에 얼마나 가까이 갔는지 눈으로 좇듯, 기도한 뒤에도 위를 바라보아야 합니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 5:3",
+      "label": "시편 5:3",
+      "krv": "여호와여 아침에 주께서 나의 소리를 들으시리니 아침에 내가 주께 기도하고 바라리이다"
+     }
+    },
+    {
+     "id": "h3.03",
+     "discourse": 3,
+     "en": "[He] concludes the day, as he opened it, with meditations on God, and sweet communion with him.",
+     "ko": "하루를 열었던 그대로, 하나님을 묵상하며 그분과 다정히 사귀는 가운데 하루를 마칩니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 63:6",
+      "label": "시편 63:6",
+      "krv": "내가 나의 침상에서 주를 기억하며 밤중에 주를 묵상할 때에 하오리니"
+     }
+    },
+    {
+     "id": "h2.04",
+     "discourse": 2,
+     "en": "In all the actions of life, and in all the affairs of life, we must walk in his hand.",
+     "ko": "삶의 모든 행동과 모든 일에서, 우리는 그분의 손을 잡고 걸어야 합니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Prov 3:6",
+      "label": "잠언 3:6",
+      "krv": "너는 범사에 그를 인정하라 그리하면 네 길을 지도하시리라"
+     }
+    },
+    {
+     "id": "h2.05",
+     "discourse": 2,
+     "en": "Whatever change there may be of our employment, this must be the constant disposition of our souls, we must attend upon God, and have our eyes ever towards him.",
+     "ko": "하는 일은 바뀌어도 우리 영혼의 자세는 한결같아야 합니다. 하나님을 섬기고, 눈을 늘 그분께 두는 것입니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 25:15",
+      "label": "시편 25:15",
+      "krv": "내 눈이 항상 여호와를 앙망함은 내 발을 그물에서 벗어나게 하실 것임이로다"
+     }
+    },
+    {
+     "id": "h1.04",
+     "discourse": 1,
+     "en": "the throne of grace is always open, and humble supplicants are always welcome, and cannot come unseasonably.",
+     "ko": "은혜의 보좌는 언제나 열려 있습니다. 겸손히 구하는 이는 언제나 환영받으니, 어느 때에 나아가도 때가 아닌 때는 없습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Heb 4:16",
+      "label": "히브리서 4:16",
+      "krv": "그러므로 우리가 긍휼하심을 받고 때를 따라 돕는 은혜를 얻기 위하여 은혜의 보좌 앞에 담대히 나아갈 것이니라"
+     }
+    },
+    {
+     "id": "h3.04",
+     "discourse": 3,
+     "en": "That will break a worldly man's heart, which will not break a godly man's sleep",
+     "ko": "세상만 바라는 사람의 마음을 무너뜨릴 일도, 하나님을 경외하는 사람의 잠은 깨뜨리지 못합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 4:8",
+      "label": "시편 4:8",
+      "krv": "내가 평안히 눕고 자기도 하리니 나를 안전히 거하게 하시는 이는 오직 여호와시니이다"
+     }
+    },
+    {
+     "id": "h2.06",
+     "discourse": 2,
+     "en": "We must manage our daily business for him … and to his glory, as our highest end in all. This sanctifies our common actions to God, and sweetens them, and makes them pleasant to ourselves.",
+     "ko": "날마다의 일을 그분을 위해, 그분의 영광을 바라보며 할 때, 평범한 일이 하나님께 거룩해지고 달고 즐거운 일이 됩니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Col 3:17",
+      "label": "골로새서 3:17",
+      "krv": "또 무엇을 하든지 말에나 일에나 다 주 예수의 이름으로 하고 그를 힘입어 하나님 아버지께 감사하라"
+     }
+    },
+    {
+     "id": "h1.05",
+     "discourse": 1,
+     "en": "wherever God finds a praying heart, he will be found a prayer-hearing God; though the voice of prayer be a low voice, a weak voice, yet if it come from an upright heart, it is a voice that God will hear",
+     "ko": "하나님은 기도하는 마음을 만나시는 곳마다 기도를 들으시는 하나님이 되어 주십니다. 기도하는 소리가 낮고 힘없어도, 정직한 마음에서 나온 소리라면 하나님이 들으십니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 65:2",
+      "label": "시편 65:2",
+      "krv": "기도를 들으시는 주여 모든 육체가 주께 나아오리이다"
+     }
+    },
+    {
+     "id": "h3.05",
+     "discourse": 3,
+     "en": "The same wisdom, power and goodness that makes the morning, makes the evening also to rejoice; and gives us cause to be thankful for the drawing of the curtains of the night about us in favour to our repose",
+     "ko": "아침을 즐겁게 하시는 그 지혜와 능력과 선하심이 저녁도 즐겁게 하십니다. 우리가 쉬도록 밤의 휘장을 둘러 주시니, 감사할 까닭이 있습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 65:8",
+      "label": "시편 65:8",
+      "krv": "주께서 아침 되는 것과 저녁 되는 것을 즐거워하게 하시며"
+     }
+    },
+    {
+     "id": "h2.07",
+     "discourse": 2,
+     "en": "Every bite we eat, and every drop we drink is his mercy, every breath we draw, and every step we take, is his mercy.",
+     "ko": "우리가 먹는 한 입, 마시는 한 모금이 그분의 자비이고, 들이쉬는 숨 한 번, 내딛는 걸음 한 걸음이 그분의 자비입니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Lam 3:22-23",
+      "label": "예레미야애가 3:22-23",
+      "krv": "여호와의 자비와 긍휼이 무궁하시므로 우리가 진멸되지 아니함이니이다 이것이 아침마다 새로우니 주의 성실이 크도소이다"
+     }
+    },
+    {
+     "id": "h1.06",
+     "discourse": 1,
+     "en": "Prayer is heart's ease to a good Christian; and when we have prayed, we should look up as those that through grace have found it so.",
+     "ko": "기도는 그리스도인의 마음을 편하게 합니다. 기도한 뒤에는, 은혜로 그 평안을 얻은 사람답게 고개를 들어야 합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "1Sam 1:18",
+      "label": "사무엘상 1:18",
+      "krv": "가로되 당신의 여종이 당신께 은혜 입기를 원하나이다 하고 가서 먹고 얼굴에 다시는 수색이 없으니라"
+     }
+    },
+    {
+     "id": "h2.08",
+     "discourse": 2,
+     "en": "To wait on God is to live a life of desire towards him, delight in him, dependence on him, and devotedness to him.",
+     "ko": "하나님을 바란다는 것은 그분을 사모하고, 그분을 기뻐하고, 그분께 기대고, 그분께 나를 드리며 사는 것입니다.",
+     "ko_status": "확인",
+     "anchor": {
+      "ref": "Ps 37:4",
+      "label": "시편 37:4",
+      "krv": "또 여호와를 기뻐하라 저가 네 마음의 소원을 이루어 주시리로다"
+     }
+    },
+    {
+     "id": "h3.06",
+     "discourse": 3,
+     "en": "If your passion has not cooled before, let it be abated by the cool of the evening, and quite disappear with the setting sun.",
+     "ko": "그때까지 노여움이 식지 않았다면, 서늘한 저녁에 누그러뜨리고 지는 해와 함께 아주 사라지게 하십시오.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Eph 4:26",
+      "label": "에베소서 4:26",
+      "krv": "분을 내어도 죄를 짓지 말며 해가 지도록 분을 품지 말고"
+     }
+    },
+    {
+     "id": "h2.09",
+     "discourse": 2,
+     "en": "Desire is love in motion, as a bird upon the wing; delight is love at rest, as a bird upon the nest",
+     "ko": "사모함은 날아가는 새처럼 움직이는 사랑이고, 기뻐함은 둥지에 앉은 새처럼 쉬는 사랑입니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 73:25",
+      "label": "시편 73:25",
+      "krv": "하늘에서는 주 외에 누가 내게 있으리요 땅에서는 주 밖에 나의 사모할 자 없나이다"
+     }
+    },
+    {
+     "id": "h1.07",
+     "discourse": 1,
+     "en": "He is continually doing us good, and loading us with his benefits. Every day we have reason to bless him, for every day he is blessing us",
+     "ko": "그분은 쉬지 않고 우리에게 선을 베푸시며 은혜를 한가득 안겨 주십니다. 날마다 그분이 우리에게 복을 주시니, 날마다 우리가 그분을 찬송할 까닭이 있습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 68:19",
+      "label": "시편 68:19",
+      "krv": "날마다 우리 짐을 지시는 주 곧 우리의 구원이신 하나님을 찬송할찌로다"
+     }
+    },
+    {
+     "id": "h3.07",
+     "discourse": 3,
+     "en": "Though through the weakness of the flesh we fall into sin daily, if we get up again by renewed repentance at night, we are not, nor ought we to think ourselves utterly cast down. The sin that humbles us shall not ruin us.",
+     "ko": "육신이 약해 날마다 죄에 넘어지더라도, 밤에 다시 회개하고 일어나면 우리는 아주 엎드러진 것이 아닙니다. 그렇게 여길 까닭도 없습니다. 우리를 낮추는 죄는 우리를 망하게 하지 못합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 37:24",
+      "label": "시편 37:24",
+      "krv": "저는 넘어지나 아주 엎드러지지 아니함은 여호와께서 손으로 붙드심이로다"
+     }
+    },
+    {
+     "id": "h2.10",
+     "discourse": 2,
+     "en": "Even then when our hands are working about the world, our hearts may be waiting on our God",
+     "ko": "손으로 세상일을 하고 있을 때에도, 마음은 우리 하나님을 바랄 수 있습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 62:5",
+      "label": "시편 62:5",
+      "krv": "나의 영혼아 잠잠히 하나님만 바라라 대저 나의 소망이 저로 좇아 나는도다"
+     }
+    },
+    {
+     "id": "h1.08",
+     "discourse": 1,
+     "en": "we have laid us down and slept without any disturbance, and our sleep was sweet and refreshing, the pleasant parenthesis of our cares and toils; it is God that has given us sleep, has given it us as he gives it to his beloved.",
+     "ko": "우리는 누워 아무 방해 없이 잤고, 잠은 달고 새 힘을 주었습니다. 걱정과 수고 사이의 즐거운 쉼표였습니다. 우리에게 잠을 주신 분은 하나님이십니다. 사랑하시는 이에게 주시듯 주셨습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 3:5",
+      "label": "시편 3:5",
+      "krv": "내가 누워 자고 깨었으니 여호와께서 나를 붙드심이로다"
+     }
+    },
+    {
+     "id": "h3.08",
+     "discourse": 3,
+     "en": "Let us therefore ease ourselves of this burthen, by casting it on him who careth for us, what need he care, and we care too?",
+     "ko": "그러니 이 짐을 우리를 돌보시는 분께 맡기고 가벼워집시다. 그분이 염려하시는데, 우리까지 염려할 까닭이 무엇입니까?",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "1Pet 5:7",
+      "label": "베드로전서 5:7",
+      "krv": "너희 염려를 다 주께 맡겨 버리라 이는 저가 너희를 권고하심이니라"
+     }
+    },
+    {
+     "id": "h2.11",
+     "discourse": 2,
+     "en": "When God's way is in the sea, so that he cannot be traced, yet we are sure his way is in the sanctuary, so that he may be trusted",
+     "ko": "하나님의 길이 바다에 있어 그 자취를 좇을 수 없을 때에도, 그분의 길이 성소에 있음을 우리는 압니다. 그러니 그분을 믿고 맡길 수 있습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 77:19",
+      "label": "시편 77:19",
+      "krv": "주의 길이 바다에 있었고 주의 첩경이 큰 물에 있었으나 주의 종적을 알 수 없었나이다"
+     }
+    },
+    {
+     "id": "h2.12",
+     "discourse": 2,
+     "en": "It is no longer than God hath appointed, and we are sure his time is the best time; and his favours are worth waiting for.",
+     "ko": "기다림은 하나님이 정하신 때보다 길지 않습니다. 그분의 때가 가장 좋은 때이고, 그분의 은혜는 기다릴 만합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Zech 14:7",
+      "label": "스가랴 14:7",
+      "krv": "여호와의 아시는 한 날이 있으리니 낮도 아니요 밤도 아니라 어두워 갈 때에 빛이 있으리로다"
+     }
+    },
+    {
+     "id": "h1.09",
+     "discourse": 1,
+     "en": "In the morning therefore let us converse with God, and apply ourselves to the concerns of the other life, before we are entangled in the affairs of this life.",
+     "ko": "그러니 아침에는 하나님과 이야기를 나눕시다. 이 세상 일에 얽혀 들기 전에, 영원한 삶의 일부터 돌봅시다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Mark 1:35",
+      "label": "마가복음 1:35",
+      "krv": "새벽 오히려 미명에 예수께서 일어나 나가 한적한 곳으로 가사 거기서 기도하시더니"
+     }
+    },
+    {
+     "id": "h3.09",
+     "discourse": 3,
+     "en": "To thy grace, O God, and to the word of thy grace I now commend myself. It is good to fall asleep, with a fresh surrender of our whole selves, body, soul and spirit to God",
+     "ko": "하나님, 이제 주의 은혜와 주의 은혜의 말씀에 저를 맡깁니다. 몸과 혼과 영, 우리 자신 전부를 하나님께 새로 드리며 잠드는 것이 좋습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 31:5",
+      "label": "시편 31:5",
+      "krv": "내가 나의 영을 주의 손에 부탁하나이다 진리의 하나님 여호와여 나를 구속하셨나이다"
+     }
+    },
+    {
+     "id": "h2.13",
+     "discourse": 2,
+     "en": "In waiting upon God we must often speak to him, must take all occasions to speak to him; and when we have not opportunity for a solemn address to him, he will accept of a sudden address, if it come from an honest heart.",
+     "ko": "하나님을 바라는 사람은 틈나는 대로 그분께 말씀드려야 합니다. 정식으로 기도할 겨를이 없을 때에도, 정직한 마음에서 나온 짧은 한마디 기도를 그분은 받으십니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 25:1",
+      "label": "시편 25:1",
+      "krv": "여호와여 나의 영혼이 주를 우러러 보나이다"
+     }
+    },
+    {
+     "id": "h1.10",
+     "discourse": 1,
+     "en": "We shall find that sufficient unto the day is the evil thereof, and that therefore, as it is folly to take thought for tomorrow's event, so it is wisdom to take thought for today's duty",
+     "ko": "한 날의 괴로움은 그날로 족합니다. 그러니 내일 일어날 일을 염려하는 것은 어리석고, 오늘 할 일을 마음에 두는 것은 지혜롭습니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Matt 6:34",
+      "label": "마태복음 6:34",
+      "krv": "그러므로 내일 일을 위하여 염려하지 말라 내일 일은 내일 염려할 것이요 한 날 괴로움은 그 날에 족하니라"
+     }
+    },
+    {
+     "id": "h3.10",
+     "discourse": 3,
+     "en": "O that when I awake I may be still with God; that the parenthesis of sleep, though long, may not break off the thread of my communion with God, but that as soon as I wake I may resume it.",
+     "ko": "깰 때에도 하나님과 함께 있기를 원합니다. 잠이라는 쉼표가 길더라도 하나님과 사귀는 실이 끊기지 않고, 눈뜨자마자 다시 이어지기를 원합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Ps 139:18",
+      "label": "시편 139:18",
+      "krv": "내가 깰 때에도 오히려 주와 함께 있나이다"
+     }
+    },
+    {
+     "id": "h2.14",
+     "discourse": 2,
+     "en": "This life of communion with God, and constant attendance upon him is a heaven upon earth.",
+     "ko": "하나님과 사귀며 늘 그분 곁에 머무는 이 삶이, 땅 위의 하늘입니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Phil 3:20",
+      "label": "빌립보서 3:20",
+      "krv": "오직 우리의 시민권은 하늘에 있는지라 거기로서 구원하는 자 곧 주 예수 그리스도를 기다리노니"
+     }
+    },
+    {
+     "id": "h1.11",
+     "discourse": 1,
+     "en": "it is not enough to say your prayers, but you must pray your prayers, must pray in praying, as Elijah did",
+     "ko": "기도를 입으로 말하는 것으로는 부족합니다. 기도를 기도해야 합니다. 엘리야처럼, 기도하면서 참으로 기도해야 합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Jas 5:17",
+      "label": "야고보서 5:17",
+      "krv": "엘리야는 우리와 성정이 같은 사람이로되 저가 비 오지 않기를 간절히 기도한즉 삼년 육개월 동안 땅에 비가 아니 오고"
+     }
+    },
+    {
+     "id": "h3.11",
+     "discourse": 3,
+     "en": "It is what I have often said, and will abide by. That a holy heavenly life spent in the service of God, and in communion with him, is the most pleasant comfortable life any body can live in this world.",
+     "ko": "저는 이 말을 자주 해 왔고, 앞으로도 그렇게 말할 것입니다. 하나님을 섬기고 그분과 사귀며 보내는 거룩하고 하늘에 속한 삶이, 이 세상에서 누구나 살 수 있는 가장 즐겁고 평안한 삶입니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "Prov 3:17",
+      "label": "잠언 3:17",
+      "krv": "그 길은 즐거운 길이요 그 첩경은 다 평강이니라"
+     }
+    },
+    {
+     "id": "h2.15",
+     "discourse": 2,
+     "en": "When we are alone, we must not be alone, but the Father must be with us, and we with him.",
+     "ko": "혼자 있을 때에도 혼자가 아니어야 합니다. 아버지께서 우리와 함께 계시고, 우리도 그분과 함께 있어야 합니다.",
+     "ko_status": "초안",
+     "anchor": {
+      "ref": "John 16:32",
+      "label": "요한복음 16:32",
+      "krv": "내가 혼자 있는 것이 아니라 아버지께서 나와 함께 계시느니라"
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,1273 @@
+{
+ "meta": {
+  "title": "매일, 함께 — 기도 요소",
+  "version": "0.4 번역 1차 완료(48편)",
+  "fields": {
+   "role": "leader 인도자 / together 다 함께 / mutual 서로에게 / antiphonal 교독 / versicle 주고받음 / none 안내",
+   "when": "weekday 0=일…6=토 / cycle3 0~2 / season / collect",
+   "rights": "acna-2019 BCP 2019 본문(출판사 허가 확인 중) / krv-pd 개역한글(성명표시) / lp-ok 새주기도문(비영리 사용 가능 확인) / pd 퍼블릭 도메인",
+   "ko": "비어 있으면 번역 대상"
+  },
+  "translation": "번역 원문은 BCP 2019(일일기도 pp.11-75, 절기 기도 pp.597-613). origin은 기도의 내력 기록용.",
+  "translation_notes": "content/translation-notes.md"
+ },
+ "elements": [
+  {
+   "id": "henry.morning",
+   "title": "헨리 인용구",
+   "role": "none",
+   "type": "quote",
+   "display": "안내문(기도문 아님), 설정에서 숨김 가능",
+   "variants": [
+    {
+     "from": "henry-quotes.json#morning"
+    }
+   ]
+  },
+  {
+   "id": "henry.midday",
+   "title": "헨리 인용구",
+   "role": "none",
+   "type": "quote",
+   "display": "안내문(기도문 아님), 설정에서 숨김 가능",
+   "variants": [
+    {
+     "from": "henry-quotes.json#midday"
+    }
+   ]
+  },
+  {
+   "id": "henry.evening",
+   "title": "헨리 인용구",
+   "role": "none",
+   "type": "quote",
+   "display": "안내문(기도문 아님), 설정에서 숨김 가능",
+   "variants": [
+    {
+     "from": "henry-quotes.json#evening"
+    }
+   ]
+  },
+  {
+   "id": "common.confession.invite",
+   "title": "죄의 고백으로 부름",
+   "role": "leader",
+   "type": "prayer",
+   "rubric_note": "뒤에 잠시 침묵",
+   "rubric_after": "잠시 침묵합니다.",
+   "variants": [
+    {
+     "en": "Let us humbly confess our sins to Almighty God.",
+     "ko": "하나님께 우리의 죄를 고백합시다.",
+     "source": "BCP 2019 p.11",
+     "origin": "BCP 2019 짧은 부름(1662 권면의 축약)",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    }
+   ]
+  },
+  {
+   "id": "common.confession",
+   "title": "죄의 고백",
+   "role": "together",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "Almighty and most merciful Father, we have erred and strayed from your ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against your holy laws. We have left undone those things which we ought to have done, and we have done those things which we ought not to have done; and apart from your grace, there is no health in us. O Lord, have mercy upon us. Spare all those who confess their faults. Restore all those who are penitent, according to your promises declared to all people in Christ Jesus our Lord. And grant, O most merciful Father, for his sake, that we may now live a godly, righteous, and sober life, to the glory of your holy Name. Amen.",
+     "ko": "전능하시고 자비로우신 아버지,\n우리는 아버지의 길에서 벗어나\n제 마음의 욕심을 따라 살았습니다.\n아버지의 거룩한 계명을 어겼고,\n마땅히 할 일은 하지 않았으며\n해서는 안 될 일을 행하였습니다.\n아버지의 은혜 없이는 우리 안에 온전한 것이 하나도 없습니다.\n주님, 우리를 불쌍히 여기소서.\n죄를 고백하는 우리를 용서하시고,\n그리스도 예수 안에서 약속하신 대로\n돌이키는 우리를 다시 일으켜 주소서.\n자비로우신 아버지, 그리스도 안에서,\n우리가 이제부터 경건하고 의롭고 절제하는 삶을 살아\n아버지의 거룩한 이름에 영광을 돌리게 하소서. 아멘.",
+     "source": "BCP 2019 p.11",
+     "origin": "1662 General Confession",
+     "rights": "acna-2019",
+     "ko_status": "검수"
+    }
+   ]
+  },
+  {
+   "id": "common.absolution.lay",
+   "title": "용서를 구하는 기도",
+   "role": "leader",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "Grant to your faithful people, merciful Lord, pardon and peace; that we may be cleansed from all our sins, and serve you with a quiet mind; through Jesus Christ our Lord. Amen.",
+     "ko": "자비로우신 주님,\n주님을 믿는 우리에게 용서와 평화를 베푸소서.\n모든 죄에서 깨끗하게 하시고\n평안한 마음으로 주님을 섬기게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.12",
+     "origin": "1662 삼위일체 후 21주일 기도",
+     "rights": "acna-2019",
+     "note": "사제 사죄 선언 대신 평신도가 드리는 기도. 가정 예배에 맞음",
+     "ko_status": "초벌2"
+    }
+   ]
+  },
+  {
+   "id": "common.lordsPrayer",
+   "title": "주기도문",
+   "role": "together",
+   "type": "fixed",
+   "variants": [
+    {
+     "ko": "하늘에 계신 우리 아버지,\n아버지의 이름을 거룩하게 하시며\n아버지의 나라가 오게 하시며,\n아버지의 뜻이 하늘에서와 같이\n땅에서도 이루어지게 하소서.\n오늘 우리에게 일용할 양식을 주시고,\n우리가 우리에게 잘못한 사람을 용서하여 준 것같이\n우리 죄를 용서하여 주시고,\n우리를 시험에 빠지지 않게 하시고 악에서 구하소서.\n나라와 권능과 영광이 영원히 아버지의 것입니다.\n아멘",
+     "source": "새주기도문(교회가 쓰는 문구, 줄바꿈 그대로)",
+     "rights": "lp-ok",
+     "note": "비영리 사용 가능 확인(2026-11-02)"
+    }
+   ]
+  },
+  {
+   "id": "common.thanksgiving",
+   "title": "감사의 기도",
+   "role": "together",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "Almighty God, Father of all mercies, we your unworthy servants give you humble thanks for all your goodness and loving-kindness to us and to all whom you have made. We bless you for our creation, preservation, and all the blessings of this life; but above all for your immeasurable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we pray, give us such an awareness of your mercies, that with truly thankful hearts we may show forth your praise, not only with our lips, but in our lives, by giving up our selves to your service, and by walking before you in holiness and righteousness all our days; Through Jesus Christ our Lord, to whom, with you and the Holy Spirit, be honor and glory throughout all ages. Amen.",
+     "ko": "전능하시고 자비로우신 하나님,\n우리와 모든 사람에게 베푸신 아버지의 선하심과 사랑을 감사합니다.\n우리를 지으시고 지키시며\n이 삶의 모든 복을 누리게 하심을 찬양합니다.\n무엇보다 우리 주 예수 그리스도를 통해 세상을 구원하신 한없는 사랑과,\n은혜를 누리는 길과 영광의 소망을 주심에 감사합니다.\n간절히 구하오니, 아버지의 자비를 깊이 깨닫게 하시고\n입술로만이 아니라 삶으로 아버지를 찬양하게 하소서.\n우리 자신을 아버지께 드려\n평생 거룩하고 의롭게 아버지 앞에서 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.24",
+     "origin": "1662 General Thanksgiving",
+     "rights": "acna-2019",
+     "ko_status": "검수"
+    }
+   ]
+  },
+  {
+   "id": "common.grace",
+   "title": "은혜의 기원",
+   "role": "together",
+   "type": "scripture-adapted",
+   "variants": [
+    {
+     "ref": "2Cor 13:13",
+     "label": "고린도후서 13:13을 따라",
+     "krv": "주 예수 그리스도의 은혜와 하나님의 사랑과 성령의 교통하심이 너희 무리와 함께 있을찌어다",
+     "rights": "krv-pd",
+     "bcp_ref": "2 Cor 13:14",
+     "ko": "주 예수 그리스도의 은혜와 하나님의 사랑과\n성령의 교통하심이 우리 모두와 항상 함께하소서. 아멘.",
+     "note": "개역한글은 \"너희 무리와 함께\"(2인칭). 함께 말하는 기원으로 쓰려면 \"우리\"로 바꿔야 함 → 번역 세션에서 결정. 한국어 성경은 13:13",
+     "ko_status": "초벌2"
+    }
+   ]
+  },
+  {
+   "id": "common.blessing",
+   "title": "축복",
+   "role": "mutual",
+   "type": "scripture-adapted",
+   "rubric": "둘 이상이면 서로를 향해 읽습니다. 한 사람이면 받는 말씀으로 읽습니다.",
+   "variants": [
+    {
+     "ref": "Num 6:24-26",
+     "label": "민수기 6:24-26",
+     "krv": "여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그 얼굴로 네게 비취사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라 할찌니라 하라",
+     "rights": "krv-pd",
+     "form": "2인칭",
+     "ko": "여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그 얼굴로 네게 비취사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라.",
+     "note": "26절 끝 \"할찌니라 하라\"는 모세에게 주신 지시이므로 뺌. 둘 이상이면 서로를 향해, 혼자면 받는 말씀으로",
+     "ko_status": "초벌"
+    },
+    {
+     "ref": "Num 6:24-26",
+     "label": "민수기 6:24-26을 따라",
+     "krv": "여호와는 네게 복을 주시고 너를 지키시기를 원하며 여호와는 그 얼굴로 네게 비취사 은혜 베푸시기를 원하며 여호와는 그 얼굴을 네게로 향하여 드사 평강 주시기를 원하노라 할찌니라 하라",
+     "rights": "krv-pd",
+     "form": "1인칭 복수",
+     "ko": "여호와께서 우리에게 복을 주시고 우리를 지키시며,\n여호와께서 그 얼굴을 우리에게 비추사 은혜를 베푸시며,\n여호와께서 그 얼굴을 우리에게 향하사 평강을 주시기를 원합니다. 아멘.",
+     "note": "\"우리에게 복을 주시고…\" 꼴. 성경 본문을 바꾸는 것이므로 \"민수기 6:24-26을 따라\"로 표기. 번역 세션에서 문장 확정",
+     "ko_status": "초벌2"
+    }
+   ]
+  },
+  {
+   "id": "common.dismissal",
+   "title": "마침",
+   "role": "versicle",
+   "type": "versicle",
+   "variants": [
+    {
+     "leader_en": "Let us bless the Lord.",
+     "people_en": "Thanks be to God.",
+     "leader_ko": "주님을 찬양합니다.",
+     "people_ko": "하나님, 감사합니다.",
+     "source": "BCP 2019 p.25",
+     "origin": "1662",
+     "rights": "acna-2019",
+     "ko_status": "검수"
+    },
+    {
+     "when": {
+      "season": "easter"
+     },
+     "leader_en": "Let us bless the Lord. Alleluia, alleluia.",
+     "people_en": "Thanks be to God. Alleluia, alleluia.",
+     "leader_ko": "주님을 찬양합니다. 알렐루야, 알렐루야.",
+     "people_ko": "하나님, 감사합니다. 알렐루야, 알렐루야.",
+     "source": "BCP 2019 p.25 루브릭",
+     "origin": "1979",
+     "rights": "acna-2019",
+     "note": "부활절기(부활주일~성령강림주일)",
+     "ko_status": "검수"
+    }
+   ]
+  },
+  {
+   "id": "morning.opening",
+   "title": "여는 말씀",
+   "role": "leader",
+   "type": "scripture",
+   "source": "BCP 2019 p.11(평상시 7구절), pp.26-27(절기)",
+   "rule": "절기 변형이 있으면 요일 변형보다 우선",
+   "variants": [
+    {
+     "ref": "Ps 122:1",
+     "label": "시편 122:1",
+     "krv": "사람이 내게 말하기를 여호와의 집에 올라가자 할 때에 내가 기뻐하였도다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 0
+     }
+    },
+    {
+     "ref": "Phil 1:2",
+     "label": "빌립보서 1:2",
+     "krv": "하나님 우리 아버지와 주 예수 그리스도에게로서 은혜와 평강이 너희에게 있을찌어다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 1
+     }
+    },
+    {
+     "ref": "Ps 19:14",
+     "label": "시편 19:14",
+     "krv": "나의 반석이시요 나의 구속자이신 여호와여 내 입의 말과 마음의 묵상이 주의 앞에 열납되기를 원하나이다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 2
+     }
+    },
+    {
+     "ref": "Hab 2:20",
+     "label": "하박국 2:20",
+     "krv": "오직 여호와는 그 성전에 계시니 온 천하는 그 앞에서 잠잠할찌니라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 3
+     }
+    },
+    {
+     "ref": "Ps 43:3",
+     "label": "시편 43:3",
+     "krv": "주의 빛과 주의 진리를 보내어 나를 인도하사 주의 성산과 장막에 이르게 하소서",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 4
+     }
+    },
+    {
+     "ref": "Isa 57:15",
+     "label": "이사야 57:15",
+     "krv": "지존무상하며 영원히 거하며 거룩하다 이름하는 자가 이같이 말씀하시되 내가 높고 거룩한 곳에 거하며 또한 통회하고 마음이 겸손한 자와 함께 거하나니 이는 겸손한 자의 영을 소성케 하며 통회하는 자의 마음을 소성케 하려 함이라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 5
+     }
+    },
+    {
+     "ref": "John 4:23",
+     "label": "요한복음 4:23",
+     "krv": "아버지께 참으로 예배하는 자들은 신령과 진정으로 예배할 때가 오나니 곧 이때라 아버지께서는 이렇게 자기에게 예배하는 자들을 찾으시느니라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 6
+     }
+    },
+    {
+     "ref": "Isa 40:3",
+     "label": "이사야 40:3",
+     "krv": "외치는 자의 소리여 가로되 너희는 광야에서 여호와의 길을 예비하라 사막에서 우리 하나님의 대로를 평탄케 하라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "advent"
+     }
+    },
+    {
+     "ref": "Luke 2:10-11",
+     "label": "누가복음 2:10-11",
+     "krv": "천사가 이르되 무서워 말라 보라 내가 온 백성에게 미칠 큰 기쁨의 좋은 소식을 너희에게 전하노라 오늘날 다윗의 동네에 너희를 위하여 구주가 나셨으니 곧 그리스도 주시니라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "christmas"
+     }
+    },
+    {
+     "ref": "Mark 8:34",
+     "label": "마가복음 8:34",
+     "krv": "무리와 제자들을 불러 이르시되 아무든지 나를 따라 오려거든 자기를 부인하고 자기 십자가를 지고 나를 좇을 것이니라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "lent"
+     },
+     "bcp_ref": "Matt 3:2",
+     "note": "개역한글 문장이 끊겨 같은 목록의 다른 구절로 바꿈"
+    },
+    {
+     "ref": "Lam 1:12",
+     "label": "예레미야애가 1:12",
+     "krv": "무릇 지나가는 자여 너희에게는 관계가 없는가 내게 임한 근심 같은 근심이 있는가 볼찌어다 여호와께서 진노하신 날에 나를 괴롭게 하신 것이로다",
+     "rights": "krv-pd",
+     "when": {
+      "season": "holyweek"
+     }
+    },
+    {
+     "ref": "Col 3:1",
+     "label": "골로새서 3:1",
+     "krv": "그러므로 너희가 그리스도와 함께 다시 살리심을 받았으면 위엣 것을 찾으라 거기는 그리스도께서 하나님 우편에 앉아 계시느니라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "easter"
+     }
+    },
+    {
+     "ref": "Heb 4:14,16",
+     "label": "히브리서 4:14,16",
+     "krv": "그러므로 우리에게 큰 대제사장이 있으니 승천하신 자 곧 하나님 아들 예수시라 우리가 믿는 도리를 굳게 잡을찌어다 그러므로 우리가 긍휼하심을 받고 때를 따라 돕는 은혜를 얻기 위하여 은혜의 보좌 앞에 담대히 나아갈 것이니라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "ascension"
+     }
+    },
+    {
+     "ref": "Acts 1:8",
+     "label": "사도행전 1:8",
+     "krv": "오직 성령이 너희에게 임하시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅끝까지 이르러 내 증인이 되리라 하시니라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "pentecost"
+     }
+    }
+   ]
+  },
+  {
+   "id": "morning.psalm",
+   "title": "시편",
+   "role": "together",
+   "type": "scripture",
+   "source": "BCP 2019 Family Prayer p.66(지정 시편)",
+   "variants": [
+    {
+     "ref": "Ps 51:10-12",
+     "label": "시편 51:10-12",
+     "krv": "하나님이여 내 속에 정한 마음을 창조하시고 내 안에 정직한 영을 새롭게 하소서 나를 주 앞에서 쫓아내지 마시며 주의 성신을 내게서 거두지 마소서 주의 구원의 즐거움을 내게 회복시키시고 자원하는 심령을 주사 나를 붙드소서",
+     "rights": "krv-pd"
+    }
+   ]
+  },
+  {
+   "id": "morning.reading",
+   "title": "짧은 성경 말씀",
+   "role": "leader",
+   "type": "scripture",
+   "source": "BCP 2019 Family Prayer p.66-67 + 요일 기도 주제와 짝",
+   "variants": [
+    {
+     "ref": "Col 3:1-4",
+     "label": "골로새서 3:1-4",
+     "krv": "그러므로 너희가 그리스도와 함께 다시 살리심을 받았으면 위엣 것을 찾으라 거기는 그리스도께서 하나님 우편에 앉아 계시느니라 위엣 것을 생각하고 땅엣 것을 생각지 말라 이는 너희가 죽었고 너희 생명이 그리스도와 함께 하나님 안에 감취었음이니라 우리 생명이신 그리스도께서 나타나실 그 때에 너희도 그와 함께 영광 중에 나타나리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 0
+     },
+     "note": "BCP",
+     "status": "확정"
+    },
+    {
+     "ref": "1Pet 1:3-4",
+     "label": "베드로전서 1:3-4",
+     "krv": "찬송하리로다 우리 주 예수 그리스도의 아버지 하나님이 그 많으신 긍휼대로 예수 그리스도의 죽은 자 가운데서 부활하심으로 말미암아 우리를 거듭나게 하사 산 소망이 있게 하시며 썩지 않고 더럽지 않고 쇠하지 아니하는 기업을 잇게 하시나니 곧 너희를 위하여 하늘에 간직하신 것이라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 1
+     },
+     "note": "BCP(3절) + 4절: 개역한글 문장 끝맺음",
+     "status": "확정"
+    },
+    {
+     "ref": "John 14:27",
+     "label": "요한복음 14:27",
+     "krv": "평안을 너희에게 끼치노니 곧 나의 평안을 너희에게 주노라 내가 너희에게 주는 것은 세상이 주는 것 같지 아니하니라 너희는 마음에 근심도 말고 두려워하지도 말라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 2
+     },
+     "note": "화요일 평화의 기도와 짝",
+     "status": "확정"
+    },
+    {
+     "ref": "Col 1:12-14",
+     "label": "골로새서 1:12-14",
+     "krv": "우리로 하여금 빛 가운데서 성도의 기업의 부분을 얻기에 합당하게 하신 아버지께 감사하게 하시기를 원하노라 그가 우리를 흑암의 권세에서 건져내사 그의 사랑의 아들의 나라로 옮기셨으니 그 아들 안에서 우리가 구속 곧 죄 사함을 얻었도다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 3
+     },
+     "note": "BCP",
+     "status": "확정"
+    },
+    {
+     "ref": "Prov 3:5-6",
+     "label": "잠언 3:5-6",
+     "krv": "너는 마음을 다하여 여호와를 의뢰하고 네 명철을 의지하지 말라 너는 범사에 그를 인정하라 그리하면 네 길을 지도하시리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 4
+     },
+     "note": "목요일 인도의 기도와 짝",
+     "status": "확정"
+    },
+    {
+     "ref": "Heb 12:2",
+     "label": "히브리서 12:2",
+     "krv": "믿음의 주요 또 온전케 하시는 이인 예수를 바라보자 저는 그 앞에 있는 즐거움을 위하여 십자가를 참으사 부끄러움을 개의치 아니하시더니 하나님 보좌 우편에 앉으셨느니라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 5
+     },
+     "note": "금요일 기도(\"기쁨에 앞서 고난\")와 짝",
+     "status": "확정"
+    },
+    {
+     "ref": "Matt 11:28",
+     "label": "마태복음 11:28",
+     "krv": "수고하고 무거운 짐진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 6
+     },
+     "note": "토요일 안식의 기도와 짝",
+     "status": "확정"
+    }
+   ]
+  },
+  {
+   "id": "morning.collect.weekday",
+   "title": "요일 기도",
+   "role": "leader",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "O God our King, by the resurrection of your Son Jesus Christ on the first day of the week, you conquered sin, put death to flight, and gave us the hope of everlasting life: Redeem all our days by this victory; forgive our sins, banish our fears, make us bold to praise you and to do your will; and steel us to wait for the consummation of your kingdom on the last great Day; through Jesus Christ our Lord. Amen.",
+     "ko": "우리의 왕이신 하나님,\n아버지는 한 주의 첫날 아들 예수 그리스도를 다시 살리셔서\n죄를 이기시고 죽음을 물리치시며\n우리에게 영원한 생명의 소망을 주셨습니다.\n이 승리로 우리의 모든 날을 새롭게 하소서.\n우리 죄를 용서하시고 두려움을 몰아내시며,\n담대히 아버지를 찬양하고 아버지의 뜻을 행하게 하소서.\n또한 마지막 날 아버지의 나라가 완성될 때까지\n굳게 서서 기다리게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "미확인(1979에 없음)",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 0
+     },
+     "title_en": "A Collect for Strength to Await Christ’s Return",
+     "ko_status": "초벌2",
+     "title_ko": "그리스도의 다시 오심을 기다리는 기도"
+    },
+    {
+     "en": "O God, the King eternal, whose light divides the day from the night and turns the shadow of death into the morning: Drive far from us all wrong desires, incline our hearts to keep your law, and guide our feet into the way of peace; that, having done your will with cheerfulness during the day, we may, when night comes, rejoice to give you thanks; through Jesus Christ our Lord. Amen.",
+     "ko": "영원하신 왕 하나님,\n아버지의 빛은 낮과 밤을 가르고\n죽음의 그늘을 아침으로 바꿉니다.\n모든 그릇된 욕심을 우리에게서 멀리 몰아내시고,\n우리 마음이 아버지의 법을 지키게 하시며,\n우리 발걸음을 평화의 길로 인도하소서.\n그리하여 낮 동안 기쁘게 아버지의 뜻을 행하고,\n밤이 오면 즐거이 감사하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1979 MP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 1
+     },
+     "title_en": "A Collect for the Renewal of Life",
+     "ko_status": "초벌2",
+     "title_ko": "새로운 삶을 위한 기도"
+    },
+    {
+     "en": "O God, the author of peace and lover of concord, to know you is eternal life and to serve you is perfect freedom: Defend us, your humble servants, in all assaults of our enemies; that we, surely trusting in your defense, may not fear the power of any adversaries, through the might of Jesus Christ our Lord. Amen.",
+     "ko": "평화를 지으시고 화합을 사랑하시는 하나님,\n하나님을 아는 것이 영원한 생명이고\n하나님을 섬기는 것이 참된 자유입니다.\n아버지의 종인 우리를 모든 원수의 공격에서 지키시고,\n아버지의 보호하심을 굳게 믿어\n어떤 대적의 힘도 두려워하지 않게 하소서.\n우리 주 예수 그리스도의 능력에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1662 MP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 2
+     },
+     "title_en": "A Collect for Peace",
+     "ko_status": "초벌2",
+     "title_ko": "평화를 위한 기도"
+    },
+    {
+     "en": "O Lord, our heavenly Father, almighty and everlasting God, you have brought us safely to the beginning of this day: Defend us by your mighty power, that we may not fall into sin nor run into any danger; and that, guided by your Spirit, we may do what is righteous in your sight; through Jesus Christ our Lord. Amen.",
+     "ko": "하늘에 계신 우리 아버지,\n전능하시고 영원하신 하나님,\n우리를 지키셔서 이 하루를 시작하게 하셨습니다.\n아버지의 크신 능력으로 우리를 보호하셔서\n죄에 빠지지 않고 어떤 위험에도 이르지 않게 하소서.\n또한 성령의 인도를 따라\n아버지 보시기에 의로운 일을 행하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1662 MP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 3
+     },
+     "title_en": "A Collect for Grace",
+     "ko_status": "초벌2",
+     "title_ko": "은혜를 구하는 기도"
+    },
+    {
+     "en": "Heavenly Father, in you we live and move and have our being: We humbly pray you so to guide and govern us by your Holy Spirit, that in all the cares and occupations of our life we may not forget you, but may remember that we are ever walking in your sight; through Jesus Christ our Lord. Amen.",
+     "ko": "하늘에 계신 아버지,\n우리는 아버지 안에서 살고 움직이며 존재합니다.\n겸손히 구하오니, 성령으로 우리를 이끌고 다스리셔서\n삶의 온갖 염려와 일 가운데서도 아버지를 잊지 않고,\n언제나 아버지 앞에서 살아가고 있음을 기억하게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1979 MP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 4
+     },
+     "title_en": "A Collect for Guidance",
+     "ko_status": "초벌2",
+     "title_ko": "인도를 구하는 기도"
+    },
+    {
+     "en": "Almighty God, whose most dear Son went not up to joy but first he suffered pain, and entered not into glory before he was crucified: Mercifully grant that we, walking in the way of the Cross, may find it none other than the way of life and peace; through Jesus Christ your Son our Lord. Amen.",
+     "ko": "전능하신 하나님,\n아버지의 사랑하는 아들은 기쁨에 앞서 고난을 받으셨고,\n십자가에 달리신 뒤에야 영광에 들어가셨습니다.\n자비를 베푸셔서, 십자가의 길을 걷는 우리가\n그 길이 곧 생명과 평화의 길임을 깨닫게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1928/1979",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 5
+     },
+     "title_en": "A Collect for Endurance",
+     "ko_status": "초벌2",
+     "title_ko": "인내를 위한 기도"
+    },
+    {
+     "en": "Almighty God, who after the creation of the world rested from all your works and sanctified a day of rest for all your creatures: Grant that we, putting away all earthly anxieties, may be duly prepared for the service of your sanctuary, and that our rest here upon earth may be a preparation for the eternal rest promised to your people in heaven; through Jesus Christ our Lord. Amen.",
+     "ko": "전능하신 하나님,\n아버지는 세상을 지으신 뒤 모든 일에서 쉬시고,\n모든 피조물을 위해 쉬는 날을 거룩하게 하셨습니다.\n우리가 세상의 모든 염려를 내려놓고\n아버지께 드리는 예배를 바르게 준비하게 하소서.\n또한 이 땅에서 누리는 쉼이\n하늘에서 약속하신 영원한 안식을 준비하는 시간이 되게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.22-23",
+     "origin": "1979 MP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 6
+     },
+     "title_en": "A Collect for Sabbath Rest",
+     "ko_status": "초벌2",
+     "title_ko": "안식을 위한 기도"
+    }
+   ]
+  },
+  {
+   "id": "midday.opening",
+   "title": "여는 말씀",
+   "role": "leader",
+   "type": "scripture",
+   "variants": [
+    {
+     "ref": "Ps 118:24",
+     "label": "시편 118:24",
+     "krv": "이 날은 여호와의 정하신 것이라 이 날에 우리가 즐거워하고 기뻐하리로다",
+     "rights": "krv-pd",
+     "bcp_ref": "Eph 1:3",
+     "note": "BCP 지정 엡 1:3은 개역한글에서 4절로 문장이 이어져 끝맺음이 없음. 대체 제안",
+     "status": "제안"
+    }
+   ]
+  },
+  {
+   "id": "midday.psalm",
+   "title": "시편",
+   "role": "together",
+   "type": "scripture",
+   "source": "BCP 2019 Family Prayer p.68(지정 시편)",
+   "note": "설계 3.3에 새로 추가",
+   "variants": [
+    {
+     "ref": "Ps 113:1-4",
+     "label": "시편 113:1-4",
+     "krv": "할렐루야, 여호와의 종들아 찬양하라 여호와의 이름을 찬양하라 이제부터 영원까지 여호와의 이름을 찬송할찌로다 해 돋는데서부터 해 지는데까지 여호와의 이름이 찬양을 받으시리로다 여호와는 모든 나라 위에 높으시며 그 영광은 하늘 위에 높으시도다",
+     "rights": "krv-pd"
+    }
+   ]
+  },
+  {
+   "id": "midday.reading",
+   "title": "짧은 성경 말씀",
+   "role": "leader",
+   "type": "scripture",
+   "source": "BCP 2019 Family Prayer p.68-69",
+   "variants": [
+    {
+     "ref": "John 15:4-5",
+     "label": "요한복음 15:4-5",
+     "krv": "내 안에 거하라 나도 너희 안에 거하리라 가지가 포도나무에 붙어 있지 아니하면 절로 과실을 맺을 수 없음 같이 너희도 내 안에 있지 아니하면 그러하리라 나는 포도나무요 너희는 가지니 저가 내 안에, 내가 저 안에 있으면 이 사람은 과실을 많이 맺나니 나를 떠나서는 너희가 아무 것도 할 수 없음이라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 0
+     },
+     "note": "BCP",
+     "status": "확정"
+    },
+    {
+     "ref": "Phil 4:6-7",
+     "label": "빌립보서 4:6-7",
+     "krv": "아무 것도 염려하지 말고 오직 모든 일에 기도와 간구로, 너희 구할 것을 감사함으로 하나님께 아뢰라 그리하면 모든 지각에 뛰어난 하나님의 평강이 그리스도 예수 안에서 너희 마음과 생각을 지키시리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 1
+     },
+     "note": "BCP",
+     "status": "확정"
+    },
+    {
+     "ref": "Matt 6:33",
+     "label": "마태복음 6:33",
+     "krv": "너희는 먼저 그의 나라와 그의 의를 구하라 그리하면 이 모든 것을 너희에게 더하시리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 2
+     },
+     "status": "확정"
+    },
+    {
+     "ref": "Isa 40:31",
+     "label": "이사야 40:31",
+     "krv": "오직 여호와를 앙망하는 자는 새 힘을 얻으리니 독수리의 날개치며 올라감 같을 것이요 달음박질하여도 곤비치 아니하겠고 걸어가도 피곤치 아니하리로다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 3
+     },
+     "status": "확정"
+    },
+    {
+     "ref": "Col 3:17",
+     "label": "골로새서 3:17",
+     "krv": "또 무엇을 하든지 말에나 일에나 다 주 예수의 이름으로 하고 그를 힘입어 하나님 아버지께 감사하라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 4
+     },
+     "status": "확정"
+    },
+    {
+     "ref": "1Pet 5:7",
+     "label": "베드로전서 5:7",
+     "krv": "너희 염려를 다 주께 맡겨 버리라 이는 저가 너희를 권고하심이니라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 5
+     },
+     "status": "확정"
+    },
+    {
+     "ref": "Mic 6:8",
+     "label": "미가 6:8",
+     "krv": "사람아 주께서 선한 것이 무엇임을 네게 보이셨나니 여호와께서 네게 구하시는 것이 오직 공의를 행하며 인자를 사랑하며 겸손히 네 하나님과 함께 행하는 것이 아니냐",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 6
+     },
+     "status": "확정"
+    }
+   ]
+  },
+  {
+   "id": "midday.collect",
+   "title": "낮의 기도",
+   "role": "leader",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "Blessed Savior, at this hour you hung upon the Cross, stretching out your loving arms: Grant that all the peoples of the earth may look to you and be saved; for your tender mercies’ sake. Amen.",
+     "ko": "복되신 구주,\n이 시간 주님은 십자가에 달려 사랑의 팔을 펼치셨습니다.\n온 땅의 모든 사람이 주님을 바라보고 구원을 얻게 하소서.\n주님의 자비에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 p.69",
+     "origin": "1979 Noonday Prayer",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    }
+   ]
+  },
+  {
+   "id": "evening.opening",
+   "title": "여는 말씀",
+   "role": "leader",
+   "type": "scripture",
+   "source": "BCP 2019 p.40, pp.53-55(절기), Family Prayer p.70",
+   "rule": "절기 변형이 있으면 요일 변형보다 우선",
+   "variants": [
+    {
+     "ref": "John 8:12",
+     "label": "요한복음 8:12",
+     "krv": "예수께서 또 일러 가라사대 나는 세상의 빛이니 나를 따르는 자는 어두움에 다니지 아니하고 생명의 빛을 얻으리라",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 0
+     }
+    },
+    {
+     "ref": "Ps 26:8",
+     "label": "시편 26:8",
+     "krv": "여호와여 내가 주의 계신 집과 주의 영광이 거하는 곳을 사랑하오니",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 1
+     }
+    },
+    {
+     "ref": "Ps 141:2",
+     "label": "시편 141:2",
+     "krv": "나의 기도가 주의 앞에 분향함과 같이 되며 나의 손 드는 것이 저녁 제사 같이 되게 하소서",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 2
+     }
+    },
+    {
+     "ref": "Ps 36:7,9",
+     "label": "시편 36:7,9",
+     "krv": "하나님이여 주의 인자하심이 어찌 그리 보배로우신지요 인생이 주의 날개 그늘 아래 피하나이다 대저 생명의 원천이 주께 있사오니 주의 광명 중에 우리가 광명을 보리이다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 3
+     }
+    },
+    {
+     "ref": "Ps 16:7-8",
+     "label": "시편 16:7-8",
+     "krv": "나를 훈계하신 여호와를 송축할찌라 밤마다 내 심장이 나를 교훈하도다 내가 여호와를 항상 내 앞에 모심이여 그가 내 우편에 계시므로 내가 요동치 아니하리로다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 4
+     },
+     "bcp_ref": "Ps 16:8-9",
+     "note": "BCP 2019 시편(New Coverdale) 절 번호와 한국어 성경이 다름"
+    },
+    {
+     "ref": "Ps 96:9",
+     "label": "시편 96:9",
+     "krv": "아름답고 거룩한 것으로 여호와께 경배할찌어다 온 땅이여 그 앞에서 떨찌어다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 5
+     }
+    },
+    {
+     "ref": "Ps 46:4",
+     "label": "시편 46:4",
+     "krv": "한 시내가 있어 나뉘어 흘러 하나님의 성 곧 지극히 높으신 자의 장막의 성소를 기쁘게 하도다",
+     "rights": "krv-pd",
+     "when": {
+      "weekday": 6
+     }
+    },
+    {
+     "ref": "Mark 13:35-36",
+     "label": "마가복음 13:35-36",
+     "krv": "그러므로 깨어 있으라 집 주인이 언제 올는지 혹 저물 때엘는지, 밤중엘는지, 닭 울 때엘는지, 새벽엘는지 너희가 알지 못함이라 그가 홀연히 와서 너희의 자는 것을 보지 않도록 하라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "advent"
+     }
+    },
+    {
+     "ref": "John 1:14",
+     "label": "요한복음 1:14",
+     "krv": "말씀이 육신이 되어 우리 가운데 거하시매 우리가 그 영광을 보니 아버지의 독생자의 영광이요 은혜와 진리가 충만하더라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "christmas"
+     },
+     "bcp_ref": "Rev 21:3",
+     "note": "개역한글 문장이 끊겨 같은 절기의 다른 구절로 바꿈"
+    },
+    {
+     "ref": "Ps 51:3",
+     "label": "시편 51:3",
+     "krv": "대저 나는 내 죄과를 아오니 내 죄가 항상 내 앞에 있나이다",
+     "rights": "krv-pd",
+     "when": {
+      "season": "lent"
+     },
+     "bcp_ref": "1John 1:8-9",
+     "note": "개역한글 문장이 끊겨 같은 절기의 다른 구절로 바꿈"
+    },
+    {
+     "ref": "Isa 53:6",
+     "label": "이사야 53:6",
+     "krv": "우리는 다 양 같아서 그릇 행하여 각기 제 길로 갔거늘 여호와께서는 우리 무리의 죄악을 그에게 담당시키셨도다",
+     "rights": "krv-pd",
+     "when": {
+      "season": "holyweek"
+     }
+    },
+    {
+     "ref": "1Cor 15:57",
+     "label": "고린도전서 15:57",
+     "krv": "우리 주 예수 그리스도로 말미암아 우리에게 이김을 주시는 하나님께 감사하노니",
+     "rights": "krv-pd",
+     "when": {
+      "season": "easter"
+     }
+    },
+    {
+     "ref": "Ps 47:5",
+     "label": "시편 47:5",
+     "krv": "하나님이 즐거이 부르는 중에 올라가심이여 여호와께서 나팔 소리 중에 올라 가시도다",
+     "rights": "krv-pd",
+     "when": {
+      "season": "ascension"
+     },
+     "bcp_ref": "Heb 9:24",
+     "note": "개역한글 문장이 끊겨 같은 절기의 다른 구절로 바꿈"
+    },
+    {
+     "ref": "Rev 22:17",
+     "label": "요한계시록 22:17",
+     "krv": "성령과 신부가 말씀하시기를 오라 하시는도다 듣는 자도 오라 할 것이요 목마른 자도 올 것이요 또 원하는 자는 값 없이 생명수를 받으라 하시더라",
+     "rights": "krv-pd",
+     "when": {
+      "season": "pentecost"
+     }
+    }
+   ]
+  },
+  {
+   "id": "psalter.evening",
+   "title": "시편",
+   "role": "antiphonal",
+   "type": "psalter",
+   "rubric": "인도자와 나머지가 한 절씩 번갈아 읽습니다. 한 사람이면 이어서 읽습니다.",
+   "variants": [
+    {
+     "from": "psalter-cycle.json",
+     "rule": "psalterIndex(date)"
+    }
+   ]
+  },
+  {
+   "id": "evening.collect.weekday",
+   "title": "요일 기도",
+   "role": "leader",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "Lord God, whose Son our Savior Jesus Christ triumphed over the powers of death and prepared for us our place in the new Jerusalem: Grant that we, who have this day given thanks for his resurrection, may praise you in that City of which he is the light, and where he lives and reigns for ever and ever. Amen.",
+     "ko": "주 하나님,\n아버지의 아들 우리 구주 예수 그리스도께서\n죽음의 권세를 이기시고\n새 예루살렘에 우리의 자리를 마련하셨습니다.\n오늘 그분의 부활을 감사드린 우리가,\n그분이 빛이 되시어 영원히 다스리시는 그 성에서\n아버지를 찬양하게 하소서. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 0
+     },
+     "title_en": "A Collect for Resurrection Hope",
+     "ko_status": "초벌2",
+     "title_ko": "부활의 소망을 위한 기도"
+    },
+    {
+     "en": "O God, the source of all holy desires, all good counsels, and all just works: Give to your servants that peace which the world cannot give, that our hearts may be set to obey your commandments, and that we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Savior. Amen.",
+     "ko": "하나님, 거룩한 소원과 올바른 판단과 의로운 행동이\n모두 하나님께로부터 말미암습니다.\n세상이 줄 수 없는 평화를 우리에게 베푸시고,\n우리가 한마음으로 아버지의 계명에 순종하게 하소서.\n또한 아버지의 보호하심으로 모든 두려움에서 벗어나,\n참된 안식과 고요함 가운데 머물게 하소서.\n우리 구주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1662 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 1
+     },
+     "title_en": "A Collect for Peace",
+     "ko_status": "검수",
+     "title_ko": "평화를 위한 기도"
+    },
+    {
+     "en": "Lighten our darkness, we beseech you, O Lord; and by your great mercy defend us from all perils and dangers of this night; for the love of your only Son, our Savior Jesus Christ. Amen.",
+     "ko": "주님, 어둠 속에서 우리의 빛이 되소서.\n크신 자비로 이 밤의 모든 재난과 위험에서 우리를 지키소서.\n하나님의 외아들 예수 그리스도의 사랑에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1662 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 2
+     },
+     "title_en": "A Collect for Aid against Perils",
+     "ko_status": "초벌2",
+     "title_ko": "보호를 위한 기도"
+    },
+    {
+     "en": "O God, the life of all who live, the light of the faithful, the strength of those who labor, and the repose of the dead: We thank you for the blessings of the day that is past, and humbly ask for your protection through the coming night. Bring us in safety to the morning hours; through him who died and rose again for us, your Son our Savior Jesus Christ. Amen.",
+     "ko": "살아 있는 모든 이의 생명, 믿는 이의 빛,\n일하는 이의 힘, 죽은 이의 안식이신 하나님,\n오늘 하루 복 가운데 지내게 하심을 감사합니다.\n겸손히 구하오니, 이 밤에 우리를 지키시고\n안전하게 내일 아침을 맞게 하소서.\n우리를 위해 죽으시고 부활하신\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 3
+     },
+     "title_en": "A Collect for Protection",
+     "ko_status": "초벌2",
+     "title_ko": "밤의 보호를 위한 기도"
+    },
+    {
+     "en": "Lord Jesus, stay with us, for evening is at hand and the day is past; be our companion in the way, kindle our hearts, and awaken hope, that we may know you as you are revealed in Scripture and the breaking of bread. Grant this for the sake of your love. Amen.",
+     "ko": "주 예수님, 날이 저물고 하루가 지났으니\n우리와 함께 머무소서.\n우리 길의 동행이 되시고\n우리 마음을 뜨겁게 하시며 소망을 일깨우셔서,\n성경을 풀어 주시고 떡을 떼실 때 자신을 보이신 주님을\n우리가 알아보게 하소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 4
+     },
+     "title_en": "A Collect for the Presence of Christ",
+     "ko_status": "초벌2",
+     "title_ko": "그리스도의 임재를 위한 기도"
+    },
+    {
+     "en": "Lord Jesus Christ, by your death you took away the sting of death: Grant to us your servants so to follow in faith where you have led the way, that we may at length fall asleep peacefully in you and wake up in your likeness; for your tender mercies’ sake. Amen.",
+     "ko": "주 예수 그리스도,\n주님은 죽으심으로 죽음의 권세를 꺾으셨습니다.\n주님이 앞서 가신 길을 우리가 믿음으로 따르게 하셔서,\n마침내 주님 안에서 평안히 잠들고\n주님을 닮은 모습으로 깨어나게 하소서.\n주님의 자비에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 5
+     },
+     "title_en": "A Collect for Faith",
+     "ko_status": "초벌2",
+     "title_ko": "믿음을 위한 기도"
+    },
+    {
+     "en": "O God, the source of eternal light: Shed forth your unending day upon us who watch for you, that our lips may praise you, our lives may bless you, and our worship on the morrow give you glory; through Jesus Christ our Lord. Amen.",
+     "ko": "영원한 빛의 근원이신 하나님,\n아버지를 기다리는 우리에게 끝없는 빛을 비추소서.\n우리 입술이 아버지를 찬양하고,\n우리 삶이 아버지를 높이며,\n내일의 예배가 아버지께 영광이 되게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 pp.48-49",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "weekday": 6
+     },
+     "title_en": "A Collect for the Eve of Worship",
+     "ko_status": "초벌2",
+     "title_ko": "예배를 준비하는 기도"
+    }
+   ]
+  },
+  {
+   "id": "evening.mission",
+   "title": "선교를 위한 기도",
+   "role": "leader",
+   "type": "prayer",
+   "variants": [
+    {
+     "en": "O God and Father of all, whom the whole heavens adore: Let the whole earth also worship you, all nations obey you, all tongues confess and bless you, and men, women, and children everywhere love you and serve you in peace; through Jesus Christ our Lord. Amen.",
+     "ko": "온 하늘이 경배하는 하나님, 모든 사람의 아버지,\n온 땅도 아버지께 예배하고\n모든 민족이 아버지께 순종하며\n모든 입이 아버지를 고백하고 찬양하게 하소서.\n어디서나 남녀노소 모두가\n아버지를 사랑하고 평화 가운데 섬기게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.50",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "cycle3": 0
+     },
+     "ko_status": "초벌2"
+    },
+    {
+     "en": "Keep watch, dear Lord, with those who work, or watch, or weep this night, and give your angels charge over those who sleep. Tend the sick, Lord Christ; give rest to the weary, bless the dying, soothe the suffering, pity the afflicted, shield the joyous; and all for your love’s sake. Amen.",
+     "ko": "사랑의 주님,\n이 밤에 일하는 이들과 잠들지 못하는 이들을 보호하시고,\n슬피 우는 이들과 고통받는 이들을 위로하소서.\n병든 이들을 돌보시고, 삶에 지친 이들에게 쉼을 주시며,\n죽음의 문턱에 있는 이들 곁에 함께하시고,\n기뻐하는 이들을 지키소서.\n이 밤에 잠드는 모든 이들을 지켜 주소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 p.50",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "cycle3": 1
+     },
+     "ko_status": "검수"
+    },
+    {
+     "en": "O God, you manifest in your servants the signs of your presence: Send forth upon us the Spirit of love, that in companionship with one another your abounding grace may increase among us; through Jesus Christ our Lord. Amen.",
+     "ko": "하나님, 우리 가운데 당신의 살아 계심을 나타내심에 감사합니다.\n성령 안에서 우리 가운데 아버지의 은혜가 더욱 자라나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.50",
+     "origin": "1979 EP",
+     "rights": "acna-2019",
+     "when": {
+      "cycle3": 2
+     },
+     "ko_status": "검수"
+    }
+   ]
+  },
+  {
+   "id": "season.collect",
+   "title": "절기 기도",
+   "role": "leader",
+   "type": "prayer",
+   "rule": "seasons.json의 collects 규칙. 요일 기도 앞에 추가(아침·밤). 본문은 BCP 2019 Collects of the Christian Year(pp.597-613)",
+   "variants": [
+    {
+     "when": {
+      "collect": "adv1"
+     },
+     "title": "대림절 첫째 주",
+     "en": "Almighty God, give us grace to cast away the works of darkness, and put on the armor of light, now in the time of this mortal life in which your Son Jesus Christ came to visit us in great humility; that in the last day, when he shall come again in his glorious majesty to judge both the living and the dead, we may rise to the life immortal; through him who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지의 아들 예수 그리스도께서 이 땅의 삶 가운데\n낮고 겸손한 모습으로 우리를 찾아오셨습니다.\n이 삶에서 우리가 어둠의 일을 벗고 빛의 갑옷을 입게 하소서.\n그리하여 마지막 날 그분이 영광 가운데 다시 오셔서\n산 자와 죽은 자를 심판하실 때,\n우리가 영원한 생명으로 일어나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.597",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "adv2"
+     },
+     "title": "대림절 둘째 주",
+     "en": "Blessed Lord, who caused all Holy Scriptures to be written for our learning: Grant us so to hear them, read, mark, learn, and inwardly digest them, that by patience and the comfort of your holy Word we may embrace and ever hold fast the blessed hope of everlasting life, which you have given us in our Savior Jesus Christ; who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "하나님, 우리를 가르치시려고 모든 성경을 기록하게 하셨습니다.\n우리가 말씀을 듣고 읽고 배우고 마음에 새기게 하소서.\n말씀이 주는 인내와 위로로,\n우리 구주 예수 그리스도 안에서 주신 영원한 생명의 소망을\n끝까지 굳게 붙들게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.597",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "adv3"
+     },
+     "title": "대림절 셋째 주",
+     "en": "O Lord Jesus Christ, you sent your messengers the prophets to preach repentance and prepare the way for our salvation: Grant that the ministers and stewards of your mysteries may likewise make ready your way, by turning the hearts of the disobedient toward the wisdom of the just, that at your second coming to judge the world, we may be found a people acceptable in your sight; for with the Father and the Holy Spirit you live and reign, one God, now and for ever. Amen.",
+     "ko": "주 예수 그리스도,\n주님은 예언자들을 보내 회개를 전하게 하시고\n구원의 길을 예비하셨습니다.\n주님의 일을 맡은 이들도 그와 같이 주님의 길을 예비하게 하시고,\n순종하지 않는 마음을 의로운 지혜로 돌이키게 하소서.\n주님이 세상을 심판하러 다시 오실 때,\n우리가 주님 앞에 합당한 백성으로 서게 하소서.\n주님의 사랑에 의지하여 기도합니다. 아멘.",
+     "source": "BCP 2019 p.598",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "adv4"
+     },
+     "title": "대림절 넷째 주",
+     "en": "Stir up your power, O Lord, and with great might come among us; and as we are sorely hindered by our sins from running the race that is set before us, let your bountiful grace and mercy speedily help and deliver us; through Jesus Christ our Lord, to whom, with you and the Holy Spirit, be honor and glory, now and for ever. Amen.",
+     "ko": "주님, 능력을 떨치시고 크신 힘으로 우리 가운데 오소서.\n우리가 죄에 매여 우리 앞에 놓인 길을 달리지 못하오니,\n넘치는 은혜와 자비로 속히 우리를 도우시고 건지소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.598",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "christmas"
+     },
+     "title": "성탄일",
+     "en": "Almighty God, you have given your only-begotten Son to take our nature upon him, and to be born [this day] of a pure virgin: Grant that we, who have been born again and made your children by adoption and grace, may daily be renewed by your Holy Spirit; through Jesus Christ our Lord, to whom with you and the same Spirit be honor and glory, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지는 외아들을 보내 우리와 같은 몸을 입게 하시고\n[오늘] 동정녀에게서 나게 하셨습니다.\n은혜로 우리를 거듭나게 하시고 아버지의 자녀로 삼으셨으니,\n우리가 날마다 성령으로 새로워지게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.599",
+     "rights": "acna-2019",
+     "note": "[this day]는 12월 25일에만 읽음",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "christmas1"
+     },
+     "title": "성탄 후 첫째 주",
+     "en": "Almighty God, you have poured upon us the new light of your incarnate Word: Grant that this light, kindled in our hearts, may shine forth in our lives; through Jesus Christ our Lord, who lives and reigns with you in the unity of the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n육신이 되신 말씀의 새 빛을 우리에게 부어 주셨습니다.\n우리 마음에 켜진 이 빛이\n우리 삶에서 환히 빛나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.599",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "christmas2"
+     },
+     "title": "성탄 후 둘째 주",
+     "en": "O God, who wonderfully created, and yet more wonderfully restored, the dignity of human nature: Grant that we may share the divine life of him who humbled himself to share our humanity, your Son Jesus Christ our Lord; who lives and reigns with you, in the unity of the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "하나님, 사람의 존엄을 놀랍게 지으시고\n더욱 놀랍게 회복하셨습니다.\n스스로 낮아져 우리와 같이 되신 아들 예수 그리스도의\n생명을 우리도 함께 나누게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.600",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "ash"
+     },
+     "title": "재의 수요일",
+     "en": "Almighty and everlasting God, you hate nothing you have made, and you forgive the sins of all who are penitent: Create and make in us new and contrite hearts, that we, worthily lamenting our sins and acknowledging our wretchedness, may obtain of you, the God of all mercy, perfect remission and forgiveness; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하시고 영원하신 하나님,\n아버지는 지으신 것을 하나도 미워하지 않으시고\n회개하는 모든 사람의 죄를 용서하십니다.\n우리 안에 새롭고 통회하는 마음을 지으셔서,\n우리가 죄를 슬퍼하고 우리의 비참함을 깨닫고,\n모든 자비의 하나님이신 아버지께 온전한 용서를 받게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.604",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "lent1"
+     },
+     "title": "사순절 첫째 주",
+     "en": "Almighty God, whose blessed Son was led by the Spirit to be tempted by Satan: Come quickly to help us who are assaulted by many temptations, and, as you know the weaknesses of each of us, let each one find you mighty to save; through Jesus Christ your Son our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지의 아들은 성령에 이끌려 광야에서 사탄에게 시험을 받으셨습니다.\n많은 유혹에 시달리는 우리를 속히 도우소서.\n아버지는 우리 각자의 약함을 아시니,\n우리 모두가 아버지의 구원하시는 능력을 만나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.604",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "lent2"
+     },
+     "title": "사순절 둘째 주",
+     "en": "Almighty God, you know that we have no power in ourselves to help ourselves: Keep us both outwardly in our bodies and inwardly in our souls, that we may be defended from all adversities that may happen to the body, and from all evil thoughts that may assault and hurt the soul; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n우리에게는 스스로를 도울 힘이 없음을 아버지는 아십니다.\n우리의 몸과 마음을 지키셔서,\n몸에 닥치는 모든 어려움과\n마음을 해치는 모든 악한 생각에서 벗어나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.604",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "lent3"
+     },
+     "title": "사순절 셋째 주",
+     "en": "Heavenly Father, you have made us for yourself, and our hearts are restless until they rest in you: Look with compassion upon the heartfelt desires of your servants, and purify our disordered affections, that we may behold your eternal glory in the face of Christ Jesus; who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "하늘에 계신 아버지,\n아버지께서 당신을 위해 우리를 지으셨으니,\n우리 마음은 아버지 안에서 쉬기까지 평안하지 못합니다.\n아버지의 종들의 간절한 소원을 긍휼히 돌아보시고\n우리의 어지러운 마음을 깨끗하게 하셔서,\n그리스도 예수의 얼굴에서 아버지의 영원한 영광을 보게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.605",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "lent4"
+     },
+     "title": "사순절 넷째 주",
+     "en": "Gracious Father, whose blessed Son Jesus Christ came down from heaven to be the true bread which gives life to the world: Evermore give us this bread, that he may live in us, and we in him; who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "은혜로우신 아버지,\n아버지의 아들 예수 그리스도는 하늘에서 내려오신 참된 빵,\n세상에 생명을 주는 빵이십니다.\n이 빵을 우리에게 늘 주셔서,\n그분이 우리 안에, 우리가 그분 안에 살게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.605",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "lent5"
+     },
+     "title": "사순절 다섯째 주",
+     "en": "Almighty God, you alone can bring into order the unruly wills and affections of sinners: Grant your people grace to love what you command and desire what you promise; that, among the swift and varied changes of this world, our hearts may surely there be fixed where true joys are to be found; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n죄인의 어지러운 뜻과 마음을 바로잡으실 분은 아버지뿐입니다.\n아버지의 백성에게 은혜를 주셔서,\n아버지가 명하신 것을 사랑하고 약속하신 것을 바라게 하소서.\n그리하여 빠르게 변하는 이 세상 가운데서도\n우리 마음이 참된 기쁨이 있는 곳에 굳게 머물게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.605",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "palm"
+     },
+     "title": "종려주일",
+     "en": "Almighty and everlasting God, in your tender love for us you sent your Son our Savior Jesus Christ to take upon himself our nature, and to suffer death upon the Cross, giving us the example of his great humility: Mercifully grant that we may walk in the way of his suffering, and come to share in his resurrection; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하시고 영원하신 하나님,\n아버지는 우리를 사랑하셔서 아들 우리 구주 예수 그리스도를 보내시고,\n우리와 같은 몸을 입어 십자가의 죽음을 겪게 하심으로\n크신 겸손의 본을 보여 주셨습니다.\n자비를 베푸셔서, 우리가 그분의 고난의 길을 걷고\n그분의 부활에 함께 이르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.606",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "maundy"
+     },
+     "title": "성목요일",
+     "en": "Almighty Father, whose most dear Son, on the night before he suffered, instituted the Sacrament of his Body and Blood: Mercifully grant that we may receive it in thankful remembrance of Jesus Christ our Savior, who in these holy mysteries gives us a pledge of eternal life; and who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 아버지,\n아버지의 사랑하는 아들은 고난받기 전날 밤\n자신의 몸과 피의 성찬을 세우셨습니다.\n우리가 감사함으로 이 성찬을 받으며\n우리 구주 예수 그리스도를 기억하게 하소서.\n그분은 이 거룩한 신비 가운데 영원한 생명의 보증을 주십니다.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.607",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "goodfri"
+     },
+     "title": "성금요일",
+     "en": "Almighty God, we beseech you graciously to behold this your family, for whom our Lord Jesus Christ was willing to be betrayed and given into the hands of sinners, and to suffer death upon the Cross; who now lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지께서 가족으로 삼으신 우리를 은혜로 돌아보소서.\n우리 주 예수 그리스도께서는 우리를 위해\n배반당하고 죄인들의 손에 넘겨지셔서\n십자가의 죽음을 받아들이셨습니다.\n그분은 지금 아버지와 성령과 함께 영원히 살아 계시며 다스리십니다. 아멘.",
+     "source": "BCP 2019 p.607",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "holysat"
+     },
+     "title": "성토요일",
+     "en": "O God, Creator of heaven and earth: Grant that, as the crucified body of your dear Son was laid in the tomb and rested on this holy Sabbath, so we may await with him the coming of the third day, and rise with him to newness of life; through Jesus Christ our Lord. Amen.",
+     "ko": "하늘과 땅을 지으신 하나님,\n십자가에 달리신 아버지의 사랑하는 아들의 몸이\n무덤에 놓여 이 거룩한 안식일에 쉬었습니다.\n우리도 그분과 함께 셋째 날이 오기를 기다리고,\n그분과 함께 새로운 생명으로 일어나게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.607",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter"
+     },
+     "title": "부활주일",
+     "en": "Almighty God, who through your only-begotten Son Jesus Christ overcame death and opened to us the gate of everlasting life: Grant that we, who celebrate with joy the day of the Lord’s resurrection, may, by your life-giving Spirit, be delivered from sin and raised from death; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, now and for ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지는 외아들 예수 그리스도로 죽음을 이기시고\n우리에게 영원한 생명의 문을 여셨습니다.\n주님의 부활을 기쁨으로 기념하는 우리를\n생명을 주시는 성령으로 죄에서 건지시고\n죽음에서 일으키소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.608",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter2"
+     },
+     "title": "부활절 둘째 주",
+     "en": "Almighty and everlasting God, who in the Paschal mystery established the new covenant of reconciliation: Grant that all who have been reborn into the fellowship of Christ’s Body may show forth in their lives what they profess by their faith; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하시고 영원하신 하나님,\n아버지는 그리스도의 죽음과 부활로 화해의 새 언약을 세우셨습니다.\n그리스도의 몸 된 교회 안에서 새로 태어난 모든 사람이\n믿음으로 고백하는 바를 삶으로 드러내게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.611",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter3"
+     },
+     "title": "부활절 셋째 주",
+     "en": "Almighty God, you gave your only Son to be for us both a sacrifice for sin and an example of godly living: Give us grace thankfully to receive his inestimable benefits, and daily to follow the blessed steps of his most holy life; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지는 외아들을 우리를 위한 속죄의 제물로,\n또한 경건한 삶의 본으로 주셨습니다.\n우리가 그분이 주신 헤아릴 수 없는 은혜를 감사함으로 받고,\n날마다 그분의 거룩한 삶의 발자취를 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.611",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter4"
+     },
+     "title": "부활절 넷째 주",
+     "en": "O God, whose Son Jesus Christ is the Good Shepherd of your people: Grant that, when we hear his voice, we may know him who calls us each by name, and follow where he leads; who, with you and the Holy Spirit, lives and reigns, one God, for ever and ever. Amen.",
+     "ko": "하나님,\n아버지의 아들 예수 그리스도는 아버지 백성의 선한 목자이십니다.\n우리가 그분의 음성을 들을 때,\n우리 각자의 이름을 부르시는 그분을 알아보고\n그분이 이끄시는 곳으로 따라가게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.611",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter5"
+     },
+     "title": "부활절 다섯째 주",
+     "en": "Almighty God, whom truly to know is everlasting life: Grant us so perfectly to know your Son Jesus Christ to be the way, the truth, and the life, that we may steadfastly follow his steps in the way that leads to eternal glory; through Jesus Christ your Son our Lord, who lives and reigns with you, in the unity of the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지를 참으로 아는 것이 영원한 생명입니다.\n아버지의 아들 예수 그리스도가 길이요 진리요 생명이심을\n우리가 온전히 알게 하셔서,\n영원한 영광에 이르는 길에서 그분의 발자취를 굳게 따르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.611",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter6"
+     },
+     "title": "부활절 여섯째 주",
+     "en": "O God, you have prepared for those who love you such good things as surpass our understanding: Pour into our hearts such love towards you, that we, loving you in all things and above all things, may obtain your promises, which exceed all that we can desire; through Jesus Christ our Lord, who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "하나님,\n아버지께서는 당신을 사랑하는 이들을 위해\n우리의 생각을 뛰어넘는 좋은 것을 마련하셨습니다.\n우리 마음에 아버지를 향한 사랑을 부어 주셔서,\n모든 일에서 무엇보다 아버지를 사랑하고,\n우리가 바라는 모든 것을 넘어서는 아버지의 약속을 받게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.612",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "ascension"
+     },
+     "title": "승천일",
+     "en": "Almighty God, whose only-begotten Son our Lord Jesus Christ ascended into heaven: May our hearts and minds also there ascend, and with him continually dwell; who lives and reigns with you and the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지의 외아들 우리 주 예수 그리스도께서 하늘에 오르셨습니다.\n우리의 마음과 생각도 그곳에 올라\n그분과 함께 늘 머물게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.612",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "easter7"
+     },
+     "title": "부활절 일곱째 주",
+     "en": "O God, the King of glory, you have exalted your only Son Jesus Christ with great triumph to your kingdom in heaven: Do not leave us comfortless, but send us your Holy Spirit to strengthen us, and exalt us to that place where our Savior Christ has gone before; who lives and reigns with you and the Holy Spirit, one God, in glory everlasting. Amen.",
+     "ko": "영광의 왕이신 하나님,\n아버지는 외아들 예수 그리스도를 큰 승리 가운데\n하늘나라로 높이 올리셨습니다.\n우리를 홀로 두지 마시고 성령을 보내셔서 우리를 굳세게 하시고,\n우리 구주 그리스도께서 먼저 가신 그곳으로 우리도 올리소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.612",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    },
+    {
+     "when": {
+      "collect": "pentecost"
+     },
+     "title": "성령강림주일",
+     "en": "Almighty God, on this day, through the outpouring of the Holy Spirit, you revealed the way of eternal life to every race and nation: Pour out this gift anew, that by the preaching of the Gospel your salvation may reach to the ends of the earth; through Jesus Christ our Lord, who lives and reigns with you, in the unity of the Holy Spirit, one God, for ever and ever. Amen.",
+     "ko": "전능하신 하나님,\n아버지는 이날 성령을 부어 주셔서\n모든 민족과 나라에 영원한 생명의 길을 열어 보이셨습니다.\n이 선물을 오늘 우리에게 새롭게 부어 주셔서,\n복음이 전해지는 곳마다 아버지의 구원이 땅끝까지 이르게 하소서.\n우리 주 예수 그리스도의 이름으로 기도합니다. 아멘.",
+     "source": "BCP 2019 p.613",
+     "rights": "acna-2019",
+     "ko_status": "초벌2"
+    }
+   ]
+  }
+ ]
+}

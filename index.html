@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fdf8ff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141318" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="함께 기도하고 함께 읽는 매일의 순서" />
+    <title>매일, 함께</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="매일, 함께" />
+    <!-- 카카오톡·메신저 미리보기. 이미지는 절대 주소여야 한다(vite.config.ts) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="매일, 함께" />
+    <meta property="og:title" content="매일, 함께" />
+    <meta property="og:description" content="함께 기도하고 함께 읽는 매일의 순서. 아침·낮·밤 기도와 성경 통독." />
+    <meta property="og:url" content="%VITE_SITE_URL%" />
+    <meta property="og:image" content="%VITE_SITE_URL%og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="둥근 십자가와 「매일, 함께」" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- crossorigin: 서비스 워커가 글꼴 CSS를 보통 응답으로 담도록(불투명 응답은 저장 공간을 크게 잡는다) -->
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+    />
+    <!-- 쓰는 아이콘만, 채움 없는 선 아이콘 한 벌로 받아 온다(이름은 알파벳 순서) -->
+    <link
+      rel="stylesheet"
+      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back,bedtime,check,check_circle,chevron_left,chevron_right,close,folded_hands,home,install_mobile,ios_share,menu_book,open_in_new,person,settings,sunny,wb_twilight&display=block"
+    />
+  </head>
+  <body>
+    <p id="storage-notice" class="storage-notice" role="status" hidden></p>
+    <main id="screen" tabindex="-1"></main>
+    <nav class="navbar" aria-label="화면">
+      <a href="#/home" data-route="home" id="nav-home">
+        <span class="ind"><md-icon aria-hidden="true">home</md-icon><md-ripple for="nav-home"></md-ripple><md-focus-ring for="nav-home"></md-focus-ring></span>
+        <span>홈</span>
+      </a>
+      <a href="#/pray" data-route="pray" id="nav-pray">
+        <span class="ind"><md-icon aria-hidden="true">folded_hands</md-icon><md-ripple for="nav-pray"></md-ripple><md-focus-ring for="nav-pray"></md-focus-ring></span>
+        <span>기도</span>
+      </a>
+      <a href="#/read" data-route="read" id="nav-read">
+        <span class="ind"><md-icon aria-hidden="true">menu_book</md-icon><md-ripple for="nav-read"></md-ripple><md-focus-ring for="nav-read"></md-focus-ring></span>
+        <span>말씀</span>
+      </a>
+    </nav>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "dailyoffice",
+  "private": true,
+  "version": "0.0.0",
+  "description": "매일, 함께 — 함께 기도·함께 읽기 PWA",
+  "type": "module",
+  "scripts": {
+    "plan": "node scripts/build-plan.mjs",
+    "prebible": "npm run plan",
+    "bible": "node scripts/build-bible.mjs",
+    "predev": "npm run plan",
+    "dev": "vite",
+    "prebuild": "npm run plan",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "pretest": "npm run plan",
+    "test": "node --test tests/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0"
+  },
+  "dependencies": {
+    "@material/web": "^2.5.0",
+    "idb-keyval": "^6.3.0"
+  }
+}

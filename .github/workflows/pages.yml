@@ -1,0 +1,48 @@
+# main에 푸시하면 테스트 → 빌드 → GitHub Pages 배포.
+# 저장소 Settings → Pages → Source를 "GitHub Actions"로 한 번 바꿔 둔다.
+name: Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      # 프로젝트 페이지 주소는 https://<계정>.github.io/<저장소>/ 이므로 base를 저장소 이름으로 둔다.
+      - run: npm run build -- --base=/${{ github.event.repository.name }}/
+        env:
+          # 카카오톡 미리보기 이미지(og:image)의 절대 주소
+          VITE_SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

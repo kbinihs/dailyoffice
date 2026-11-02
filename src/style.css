@@ -1,0 +1,1095 @@
+/*
+ * 「매일, 함께」 화면 스타일. 정본은 디자인 시스템 「매일, 함께」(design.md 8절).
+ * Material 3를 뼈대로(@material/web이 읽는 --md-sys-* 변수), 교회 보라와 한글 글꼴을 입혔다.
+ * 각진 모서리 없음. 경고색 없음. 아이콘은 Material Symbols Rounded 선 아이콘 한 결(이모지·채운 아이콘 없음).
+ */
+
+/* ── 토큰: 밝게 ─────────────────────────────────── */
+:root {
+  --md-sys-color-primary: #403966;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #e6deff;
+  --md-sys-color-on-primary-container: #48416e;
+  --md-sys-color-secondary: #605c71;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #e6dff9;
+  --md-sys-color-on-secondary-container: #484459;
+  --md-sys-color-tertiary: #4559a9;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #dde1ff;
+  --md-sys-color-on-tertiary-container: #2c4090;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-surface: #fdf8ff;
+  --md-sys-color-on-surface: #1c1b20;
+  --md-sys-color-on-surface-variant: #48454e;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f7f2fa;
+  --md-sys-color-surface-container: #f1ecf4;
+  --md-sys-color-surface-container-high: #ebe6ee;
+  --md-sys-color-surface-container-highest: #e5e1e9;
+  --md-sys-color-outline: #79757f;
+  --md-sys-color-outline-variant: #c9c5d0;
+  --md-sys-color-inverse-surface: #312f36;
+  --md-sys-color-inverse-on-surface: #f4eff7;
+  --md-sys-color-inverse-primary: #c9beff;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-shadow: #000000;
+
+  /* 이 앱만의 역할 */
+  --app-quote-bg: #403966;
+  --app-on-quote: #ffffff;
+  --app-quote-muted: #e6deff;
+  --app-splash-bg: #403966;
+  --app-on-splash: #ffffff;
+  --app-ray: #bac9f4;
+  --app-cross: #051142;
+
+  /* 글꼴: 제목·단추는 Noto Sans KR, 기도문·성경은 나눔고딕 */
+  --font-noto: 'Noto Sans KR', 'Nanum Gothic', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --font-nanum: 'Nanum Gothic', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  --md-ref-typeface-brand: var(--font-noto);
+  --md-ref-typeface-plain: var(--font-noto);
+  --md-icon-font: 'Material Symbols Rounded';
+
+  /* M3 모양 단계 */
+  --md-sys-shape-corner-extra-small: 4px;
+  --md-sys-shape-corner-small: 8px;
+  --md-sys-shape-corner-medium: 12px;
+  --md-sys-shape-corner-large: 16px;
+  --md-sys-shape-corner-extra-large: 28px;
+  --md-sys-shape-corner-full: 9999px;
+
+  /* M3 높이(그림자는 떠 있는 것에만) */
+  --elevation-1: 0 1px 2px 0 rgb(0 0 0 / 0.3), 0 1px 3px 1px rgb(0 0 0 / 0.15);
+
+  /* M3 모션 */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-decel: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --ease-accel: cubic-bezier(0.3, 0, 0.8, 0.15);
+
+  --topbar-height: 4rem;
+  --navbar-height: 5rem;
+  --fab-space: 5.5rem;
+  /* 소리 내어 읽는 글: 설정의 글자 크기(--font-scale)가 이것만 키운다 */
+  --reading-size: calc(1.125rem * var(--font-scale, 1));
+  /* 기도·말씀의 요소 제목: 본문보다 한 단계 크게 */
+  --section-size: max(1.25rem, calc(var(--reading-size) + 0.125rem));
+
+  color-scheme: light dark;
+}
+
+/* ── 토큰: 어둡게(자동 또는 설정) ─────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --md-sys-color-primary: #c9beff;
+    --md-sys-color-on-primary: #31285f;
+    --md-sys-color-primary-container: #483f77;
+    --md-sys-color-on-primary-container: #e6deff;
+    --md-sys-color-secondary: #c9c3dc;
+    --md-sys-color-on-secondary: #312e41;
+    --md-sys-color-secondary-container: #484459;
+    --md-sys-color-on-secondary-container: #e6dff9;
+    --md-sys-color-tertiary: #b8c4ff;
+    --md-sys-color-on-tertiary: #102878;
+    --md-sys-color-tertiary-container: #2c4090;
+    --md-sys-color-on-tertiary-container: #dde1ff;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-surface: #141318;
+    --md-sys-color-on-surface: #e5e1e9;
+    --md-sys-color-on-surface-variant: #c9c5d0;
+    --md-sys-color-surface-container-lowest: #0e0d13;
+    --md-sys-color-surface-container-low: #1c1b20;
+    --md-sys-color-surface-container: #201f25;
+    --md-sys-color-surface-container-high: #2b292f;
+    --md-sys-color-surface-container-highest: #36343a;
+    --md-sys-color-outline: #938f99;
+    --md-sys-color-outline-variant: #48454e;
+    --md-sys-color-inverse-surface: #e5e1e9;
+    --md-sys-color-inverse-on-surface: #312f36;
+    --md-sys-color-inverse-primary: #605790;
+    --app-quote-bg: #483f77;
+    --app-on-quote: #e6deff;
+    --app-quote-muted: #c9beff;
+    --app-splash-bg: #312a56;
+    --app-cross: #e5e1e9;
+  }
+}
+
+:root[data-theme='dark'] {
+  --md-sys-color-primary: #c9beff;
+  --md-sys-color-on-primary: #31285f;
+  --md-sys-color-primary-container: #483f77;
+  --md-sys-color-on-primary-container: #e6deff;
+  --md-sys-color-secondary: #c9c3dc;
+  --md-sys-color-on-secondary: #312e41;
+  --md-sys-color-secondary-container: #484459;
+  --md-sys-color-on-secondary-container: #e6dff9;
+  --md-sys-color-tertiary: #b8c4ff;
+  --md-sys-color-on-tertiary: #102878;
+  --md-sys-color-tertiary-container: #2c4090;
+  --md-sys-color-on-tertiary-container: #dde1ff;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-surface: #141318;
+  --md-sys-color-on-surface: #e5e1e9;
+  --md-sys-color-on-surface-variant: #c9c5d0;
+  --md-sys-color-surface-container-lowest: #0e0d13;
+  --md-sys-color-surface-container-low: #1c1b20;
+  --md-sys-color-surface-container: #201f25;
+  --md-sys-color-surface-container-high: #2b292f;
+  --md-sys-color-surface-container-highest: #36343a;
+  --md-sys-color-outline: #938f99;
+  --md-sys-color-outline-variant: #48454e;
+  --md-sys-color-inverse-surface: #e5e1e9;
+  --md-sys-color-inverse-on-surface: #312f36;
+  --md-sys-color-inverse-primary: #605790;
+  --app-quote-bg: #483f77;
+  --app-on-quote: #e6deff;
+  --app-quote-muted: #c9beff;
+  --app-splash-bg: #312a56;
+  --app-cross: #e5e1e9;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+
+/* ── 바탕 ─────────────────────────────────────── */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--md-sys-color-surface);
+  color: var(--md-sys-color-on-surface);
+}
+
+body {
+  font-family: var(--font-nanum);
+  font-size: 1rem;
+  line-height: 1.5;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* 누르는 것: md-ripple·md-focus-ring이 붙을 자리 */
+.press {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+main {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: var(--topbar-height) 1rem calc(var(--navbar-height) + 2rem + env(safe-area-inset-bottom));
+  outline: none;
+}
+
+main:has(.fab-bar) {
+  padding-bottom: calc(var(--navbar-height) + var(--fab-space) + 2rem + env(safe-area-inset-bottom));
+}
+
+.storage-notice {
+  position: fixed;
+  z-index: 1;
+  inset: var(--topbar-height) 0 auto 0;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+  background: var(--md-sys-color-surface-container);
+  border-radius: 0 0 var(--md-sys-shape-corner-large) var(--md-sys-shape-corner-large);
+}
+
+.storage-notice[hidden] {
+  display: none;
+}
+
+/* ── 상단 바(M3 small top app bar) ───────────────── */
+/* 떠 있는 막대·단추는 z-index 1. md-dialog의 가림막도 1이고 문서 뒤쪽에 붙어, 대화창이 열리면 이것들을 덮는다. */
+.topbar {
+  position: fixed;
+  z-index: 1;
+  inset: 0 0 auto 0;
+  height: var(--topbar-height);
+  display: flex;
+  justify-content: center;
+  background: var(--md-sys-color-surface);
+  transition: background-color 200ms var(--ease-standard);
+}
+
+body.scrolled .topbar {
+  background: var(--md-sys-color-surface-container);
+}
+
+.topbar-inner {
+  width: 100%;
+  max-width: 37.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.25rem 0 1rem;
+}
+
+.topbar-inner.has-back {
+  padding-left: 0.25rem;
+}
+
+.topbar h1 {
+  flex: 1;
+  margin: 0;
+  font: 400 1.375rem/1.75rem var(--font-noto);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cross {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--app-cross);
+}
+
+.topbar md-icon-button {
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* ── 하단 탭(M3 navigation bar) ─────────────────── */
+.navbar {
+  position: fixed;
+  z-index: 1;
+  inset: auto 0 0 0;
+  height: calc(var(--navbar-height) + env(safe-area-inset-bottom));
+  padding-bottom: env(safe-area-inset-bottom);
+  display: flex;
+  justify-content: center;
+  background: var(--md-sys-color-surface-container);
+  border-radius: var(--md-sys-shape-corner-extra-large) var(--md-sys-shape-corner-extra-large) 0 0;
+}
+
+.navbar a {
+  flex: 1;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--md-sys-color-on-surface-variant);
+  text-decoration: none;
+  font: 500 0.75rem/1rem var(--font-noto);
+  outline: none;
+}
+
+.navbar .ind {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  border-radius: var(--md-sys-shape-corner-full);
+  display: grid;
+  place-items: center;
+  transition: background-color 200ms var(--ease-standard);
+  --md-focus-ring-shape: var(--md-sys-shape-corner-full);
+}
+
+.navbar a[aria-current='page'] {
+  color: var(--md-sys-color-on-surface);
+  font-weight: 700;
+}
+
+.navbar a[aria-current='page'] .ind {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+/* ── 고르는 단추 묶음(M3 button group): 칸마다 떨어진 둥근 사각형 ── */
+.seg {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.seg button {
+  flex: 1;
+  min-height: 2.5rem;
+  padding: 0 0.75rem;
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-sys-shape-corner-medium);
+  background: none;
+  color: var(--md-sys-color-on-surface);
+  font: 500 0.875rem/1.25rem var(--font-noto);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  --md-focus-ring-shape: var(--md-sys-shape-corner-medium);
+}
+
+.seg button[aria-pressed='true'] {
+  background: var(--md-sys-color-secondary-container);
+  border-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  font-weight: 700;
+}
+
+.seg md-icon {
+  --md-icon-size: 1.125rem;
+}
+
+/* ── 떠 있는 마침 단추(M3 extended FAB) ──────────── */
+.fab-bar {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--navbar-height) + 1rem + env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.fab-bar md-fab {
+  pointer-events: auto;
+  --md-fab-label-text-size: 1rem;
+  --md-fab-label-text-weight: 500;
+}
+
+/* ── 홈 ─────────────────────────────────────────── */
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.date-line {
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.season {
+  font: 500 0.75rem/1rem var(--font-noto);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--md-sys-shape-corner-small);
+  background: var(--md-sys-color-tertiary-container);
+  color: var(--md-sys-color-on-tertiary-container);
+}
+
+.quote {
+  background: var(--app-quote-bg);
+  color: var(--app-on-quote);
+  padding: 1.5rem;
+  border-radius: var(--md-sys-shape-corner-extra-large);
+}
+
+.quote-eyebrow {
+  font: 500 0.6875rem/1rem var(--font-noto);
+  color: var(--app-quote-muted);
+  margin-bottom: 0.75rem;
+}
+
+.quote blockquote {
+  margin: 0;
+  font: 400 1.25rem/2.125rem var(--font-noto);
+}
+
+.quote-anchor {
+  margin-top: 1rem;
+  font: 400 0.875rem/1.375rem var(--font-nanum);
+  color: var(--app-quote-muted);
+}
+
+.quote-anchor cite {
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* M3 elevated card */
+.card {
+  position: relative;
+  background: var(--md-sys-color-surface-container-low);
+  border-radius: var(--md-sys-shape-corner-medium);
+  box-shadow: var(--elevation-1);
+  padding: 0.75rem 1rem 1rem;
+}
+
+.card h2 {
+  margin: 0 0 0.75rem;
+  min-height: 2.5rem;
+  font: 700 1.125rem/1.5rem var(--font-noto);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.slot {
+  position: relative;
+  min-height: 5rem;
+  border-radius: var(--md-sys-shape-corner-large);
+  background: var(--md-sys-color-surface-container-high);
+  color: var(--md-sys-color-on-surface);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  text-decoration: none;
+  font: 500 0.875rem/1.25rem var(--font-noto);
+  --md-focus-ring-shape: var(--md-sys-shape-corner-large);
+}
+
+.slot .glyph {
+  display: flex;
+  --md-icon-size: 1.75rem;
+}
+
+.slot.now {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+}
+
+.slot.done {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.slot .badge {
+  position: absolute;
+  top: 0.375rem;
+  right: 0.375rem;
+  --md-icon-size: 1.125rem;
+  color: var(--md-sys-color-primary);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.card-head h2 {
+  margin: 0;
+}
+
+.card-head md-text-button {
+  margin-right: -0.75rem;
+}
+
+.card-reading {
+  font: 400 1rem/1.5rem var(--font-nanum);
+}
+
+.card-meta {
+  margin-top: 0.25rem;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* 설치 안내(설정의 "설치" 칸) */
+.setting p + p,
+.setting ol + p {
+  margin-top: 0.5rem;
+}
+
+.steps {
+  margin: 0 0 0.5rem;
+  padding-left: 1.25rem;
+  font: 400 1rem/1.75rem var(--font-nanum);
+}
+
+.inline-icon {
+  display: inline-flex;
+  vertical-align: -0.25rem;
+  margin: 0 0.125rem;
+  color: var(--md-sys-color-primary);
+  --md-icon-size: 1.25rem;
+}
+
+/* ── 기도 ───────────────────────────────────────── */
+.pray-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.pray-mode {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pray-mode .seg {
+  flex: 1;
+}
+
+.office-meta {
+  margin: 0.75rem 0 0;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.guide {
+  margin: 0.75rem 0 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--md-sys-shape-corner-medium);
+  background: var(--md-sys-color-surface-container);
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+}
+
+.office .el {
+  margin: 2.5rem 0 0;
+}
+
+/* 요소마다 제목은 본문보다 크고 굵게(글자 크기 설정을 따라 늘 본문보다 한 단계 크다), 주색 */
+.office h2,
+.scripture .chapter h3 {
+  font: 700 var(--section-size) / 1.4 var(--font-noto);
+  color: var(--md-sys-color-primary);
+}
+
+.office h2 {
+  margin: 0 0 0.625rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.office .role {
+  font: 500 0.75rem/1rem var(--font-noto);
+  color: var(--md-sys-color-on-surface);
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-sys-shape-corner-small);
+  padding: 0.125rem 0.5rem;
+}
+
+.office .sub {
+  margin: 0 0 0.5rem;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.office .rubric {
+  margin: 0 0 0.5rem;
+  font: italic 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.office .text {
+  font: 400 var(--reading-size) / 1.78 var(--font-nanum);
+  white-space: pre-line;
+}
+
+.office .source {
+  margin-top: 0.25rem;
+  font: 400 0.75rem/1rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+  text-align: right;
+}
+
+.office .line {
+  margin: 0 0 0.25rem;
+  font: 400 var(--reading-size) / 1.78 var(--font-nanum);
+}
+
+.vn {
+  font: 400 0.6875rem/1 var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+  vertical-align: super;
+  margin-right: 0.25rem;
+}
+
+.office .seg {
+  margin: 0.25rem 0 0.75rem;
+}
+
+/* 함께 모드: 인도자 줄은 굵게, 다 함께·서로에게는 면. 혼자 모드에는 덧입히지 않는다. */
+.together .role-leader .text,
+.together .who-leader {
+  font-weight: 700;
+}
+
+.together .role-together,
+.together .role-mutual {
+  background: var(--md-sys-color-surface-container-high);
+  border-radius: var(--md-sys-shape-corner-large);
+  padding: 0.75rem 1rem;
+}
+
+.after {
+  margin-top: 2.5rem;
+}
+
+/* ── 말씀 ───────────────────────────────────────── */
+md-tabs {
+  margin: 0 -1rem;
+  --md-primary-tab-container-color: var(--md-sys-color-surface);
+  --md-primary-tab-label-text-font: var(--font-noto);
+}
+
+.today-line {
+  margin: 1rem 0 0.25rem;
+  font: 400 1.5rem/2.125rem var(--font-noto);
+}
+
+.read-meta {
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.back {
+  margin: 0.5rem 0 0 -0.75rem;
+}
+
+.read-title {
+  margin: 0.5rem 0 0.25rem;
+  font: 400 1.5rem/2.125rem var(--font-noto);
+}
+
+.read-rest {
+  margin: 1.5rem 0 0;
+  font: 400 1.5rem/2.125rem var(--font-noto);
+}
+
+.scripture .chapter h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2.5rem 0 0.75rem;
+}
+
+.scripture .role {
+  font: 500 0.75rem/1rem var(--font-noto);
+  border: 1px solid var(--md-sys-color-outline);
+  border-radius: var(--md-sys-shape-corner-small);
+  padding: 0.125rem 0.5rem;
+}
+
+.scripture .verse {
+  margin: 0 0 0.375rem;
+  font: 400 var(--reading-size) / 1.78 var(--font-nanum);
+}
+
+.scripture .rubric,
+.rubric {
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+md-list {
+  margin: 0.5rem -1rem 0;
+  background: transparent;
+  --md-list-container-color: transparent;
+  --md-list-item-label-text-font: var(--font-nanum);
+  --md-list-item-supporting-text-font: var(--font-nanum);
+}
+
+.lead-note {
+  margin: 1rem 0 0;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.percent {
+  margin: 1.5rem 0 0;
+  font: 400 2.75rem/3.25rem var(--font-noto);
+  color: var(--md-sys-color-primary);
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.month h2 {
+  margin: 0;
+  font: 500 1rem/1.5rem var(--font-noto);
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.calendar .wd {
+  font: 500 0.75rem/2rem var(--font-noto);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.calendar .cell {
+  position: relative;
+  aspect-ratio: 1;
+  max-width: 3rem;
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--md-sys-shape-corner-full);
+  font: 400 0.875rem/1 var(--font-noto);
+  text-decoration: none;
+  --md-focus-ring-shape: var(--md-sys-shape-corner-full);
+}
+
+.calendar a.cell:not(.read) {
+  border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+.calendar .off {
+  color: var(--md-sys-color-on-surface-variant);
+  opacity: 0.5;
+}
+
+/* 읽은 날은 바탕과 점 둘 다(색만으로 구분하지 않는다) */
+.calendar .read {
+  background: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  font-weight: 700;
+}
+
+.calendar .read::after {
+  content: '';
+  position: absolute;
+  bottom: 0.3rem;
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.calendar .today {
+  outline: 2px solid var(--md-sys-color-primary);
+  outline-offset: -2px;
+}
+
+.hint {
+  margin-top: 0.75rem;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+/* ── 설정 ───────────────────────────────────────── */
+.setting {
+  margin-top: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--md-sys-shape-corner-medium);
+  background: var(--md-sys-color-surface-container-low);
+}
+
+.setting h2 {
+  margin: 0 0 0.75rem;
+  font: 700 1.125rem/1.5rem var(--font-noto);
+}
+
+.setting .label {
+  margin: 1rem 0 0.5rem;
+  font: 500 0.875rem/1.25rem var(--font-noto);
+  color: var(--md-sys-color-on-surface-variant);
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting md-slider {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.note {
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.notice:empty {
+  display: none;
+}
+
+.notice {
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: var(--md-sys-shape-corner-medium);
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+}
+
+.about {
+  margin: 0;
+}
+
+.about dt {
+  margin-top: 0.75rem;
+  font: 500 0.75rem/1rem var(--font-noto);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.about dd {
+  margin: 0.125rem 0 0;
+  font: 400 0.875rem/1.25rem var(--font-nanum);
+}
+
+/* ── 대화창(md-dialog) 안 ─────────────────────────── */
+md-dialog {
+  --md-dialog-container-shape: var(--md-sys-shape-corner-extra-large);
+  --md-dialog-headline-font: var(--font-noto);
+  --md-dialog-supporting-text-font: var(--font-nanum);
+  max-width: min(28rem, calc(100vw - 2rem));
+}
+
+.add {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.add md-outlined-text-field {
+  flex: 1;
+}
+
+/* 인도자 고르기: 이름 한 줄 = 고르는 단추 + 빼기 아이콘 단추 */
+.people {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.people li {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pick {
+  flex: 1;
+  min-height: 3rem;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: var(--md-sys-shape-corner-full);
+  background: none;
+  color: var(--md-sys-color-on-surface);
+  font: 400 1rem/1.5rem var(--font-nanum);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  --md-focus-ring-shape: var(--md-sys-shape-corner-full);
+}
+
+.pick[aria-pressed='true'] {
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+  font-weight: 700;
+}
+
+.pick md-icon {
+  --md-icon-size: 1.25rem;
+}
+
+/* ── 첫 화면(모션) ─────────────────────────────── */
+.splash {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  background: var(--app-splash-bg);
+  color: var(--app-on-splash);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body.splash-flying .topbar h1 {
+  visibility: hidden;
+}
+
+.splash.lift {
+  transform: translateY(-100%);
+  transition: transform 400ms var(--ease-accel);
+}
+
+.splash-mark {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.splash-rays {
+  position: absolute;
+  inset: -3.75rem;
+  width: 15rem;
+  height: 15rem;
+  stroke: var(--app-ray);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  opacity: 0;
+  transform-origin: 50% 42.5%;
+}
+
+.splash-mark svg.cross-art {
+  position: relative;
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.splash .bar {
+  fill: var(--app-on-splash);
+}
+
+.splash .v {
+  transform-origin: 60px 112px;
+  transform: scaleY(0);
+}
+
+.splash .h {
+  transform-origin: 60px 42px;
+  transform: scaleX(0);
+}
+
+.splash-name {
+  margin: 2rem 0 0;
+  font: 400 2.75rem/3.25rem var(--font-noto);
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.splash-line {
+  margin: 0.75rem 0 0;
+  font: 400 1rem/1.5rem var(--font-nanum);
+  opacity: 0;
+}
+
+.splash.play .v {
+  animation: splash-v 600ms var(--ease-decel) forwards;
+}
+
+.splash.play .h {
+  animation: splash-h 400ms 300ms var(--ease-decel) forwards;
+}
+
+.splash.play .splash-rays {
+  animation: splash-rays 800ms 500ms var(--ease-standard) forwards;
+}
+
+.splash.play .splash-name {
+  animation: splash-rise 600ms 900ms var(--ease-decel) forwards;
+}
+
+.splash.play .splash-line {
+  animation: splash-fade 500ms 1200ms var(--ease-standard) forwards;
+}
+
+@keyframes splash-v {
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes splash-h {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes splash-rays {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  55% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+}
+
+@keyframes splash-rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes splash-fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash .v,
+  .splash .h {
+    transform: none;
+  }
+  .splash .splash-rays {
+    opacity: 0.35;
+  }
+  .splash .splash-name,
+  .splash .splash-line {
+    opacity: 1;
+    transform: none;
+  }
+  .splash.play *,
+  body.splash-flying .topbar h1 {
+  visibility: hidden;
+}
+
+.splash.lift {
+    animation: none !important;
+    transition: none !important;
+  }
+}

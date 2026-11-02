@@ -1,0 +1,11 @@
+{
+ "planId": "2026",
+ "planTitle": "2026 그리스도 중심 성경읽기표",
+ "planFile": "plan.csv",
+ "startDate": null,
+ "restWeekdays": [
+  0
+ ],
+ "totalDays": 276,
+ "note": "startDate가 null이면 그해 1월 1일에 시작한다(확정). 통독표가 같으면 해가 바뀌어도 고칠 것이 없다. 다른 날 시작할 때만 'YYYY-MM-DD'로 적는다."
+}

@@ -1,0 +1,50 @@
+{
+ "meta": {
+  "title": "매일, 함께 — 예식 순서",
+  "note": "season.collect는 절기 안에서만 나타남. 혼자 모드에서는 역할 라벨만 감춘다(요소는 같음)."
+ },
+ "morning": {
+  "name": "아침",
+  "minutes": "2~4",
+  "order": [
+   "morning.opening",
+   "morning.psalm",
+   "morning.reading",
+   "common.lordsPrayer",
+   "season.collect",
+   "morning.collect.weekday",
+   "common.grace"
+  ],
+  "after": "오늘 통독 링크(주일에는 \"주일 — 통독 쉼\")"
+ },
+ "midday": {
+  "name": "낮",
+  "minutes": "1~2",
+  "order": [
+   "midday.opening",
+   "midday.psalm",
+   "midday.reading",
+   "common.lordsPrayer",
+   "midday.collect",
+   "common.grace"
+  ]
+ },
+ "evening": {
+  "name": "밤",
+  "minutes": "7~10",
+  "order": [
+   "evening.opening",
+   "common.confession.invite",
+   "common.confession",
+   "common.absolution.lay",
+   "psalter.evening",
+   "common.lordsPrayer",
+   "season.collect",
+   "evening.collect.weekday",
+   "evening.mission",
+   "common.thanksgiving",
+   "common.blessing",
+   "common.dismissal"
+  ]
+ }
+}
