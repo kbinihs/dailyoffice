@@ -10,6 +10,7 @@ import type { PassageText } from '../data/bible.ts';
 import { planConfig, planEntry } from '../data/content.ts';
 import * as store from '../data/store.ts';
 import { type ReadingStatus, monthCells, readingStatus } from '../reading/progress.ts';
+import { OTHER_VERSIONS, otherVersionUrl } from '../reading/versions.ts';
 import { doneFab, fillPassages, h, icon, linkItem, pressable, readingLine } from '../ui.ts';
 
 interface View {
@@ -119,11 +120,33 @@ function renderDay(root: HTMLElement, view: View, day: number): void {
 
 function chapter(p: PassageText, isKey: boolean): HTMLElement {
   const book = bookOf(p.book)!;
+  const name = `${book.ko} ${p.chapter}${p.book === 'Ps' ? '편' : '장'}`;
   return h(
     'section',
     { class: 'chapter' },
-    h('h3', null, `${book.ko} ${p.chapter}${p.book === 'Ps' ? '편' : '장'}`, isKey ? h('span', { class: 'role' }, h('span', { class: 'sr' }, ', '), '핵심장') : null),
+    h('h3', null, name, isKey ? h('span', { class: 'role' }, h('span', { class: 'sr' }, ', '), '핵심장') : null),
+    otherVersions(p, name),
     ...p.verses.map((v) => h('p', { class: 'verse' }, h('span', { class: 'vn' }, String(v.verse)), v.text)),
+  );
+}
+
+/** 같은 장을 다른 역본으로 여는 칩(대한성서공회 페이지, 새 창). 본문은 앱에 싣지 않는다. */
+function otherVersions(p: PassageText, name: string): HTMLElement {
+  return h(
+    'div',
+    { class: 'versions' },
+    ...OTHER_VERSIONS.map((v) =>
+      h(
+        'md-assist-chip',
+        {
+          label: v.name,
+          href: otherVersionUrl(p.book, p.chapter, v.id),
+          target: '_blank',
+          'aria-label': `${name}, ${v.name}으로 보기(새 창)`,
+        },
+        icon('open_in_new', 'icon'),
+      ),
+    ),
   );
 }
 

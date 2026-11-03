@@ -4,6 +4,8 @@ import { josa } from '../src/core/josa.ts';
 import { planDate, planDaysBefore, planIndex, planStart } from '../src/core/resolve.ts';
 import { planDays } from '../src/data/content.ts';
 import { monthCells, readingStatus } from '../src/reading/progress.ts';
+import { BSK_BOOK_COUNT, otherVersionUrl } from '../src/reading/versions.ts';
+import { BOOKS } from '../src/core/books.ts';
 
 describe('통독 일차 ↔ 날짜', () => {
   test('일차의 날짜는 planIndex의 거꾸로', () => {
@@ -111,5 +113,20 @@ describe('조사', () => {
     assert.equal(josa('말씀', '이/가'), '말씀이');
     assert.equal(josa('하루', '이/가'), '하루가');
     assert.equal(josa('시편 23', '과/와'), '시편 23과');
+  });
+});
+
+describe('다른 역본으로 보기(대한성서공회 링크)', () => {
+  test('66권 모두 책 코드가 있다', () => {
+    assert.equal(BSK_BOOK_COUNT, BOOKS.length);
+    for (const b of BOOKS) assert.match(otherVersionUrl(b.code, 1, 'GAE'), /&book=[0-9a-z]{3}&chap=1$/, b.code);
+  });
+
+  test('역본·책·장이 주소에 그대로 들어간다', () => {
+    const base = 'https://www.bskorea.or.kr/bible/korbibReadpage.php';
+    assert.equal(otherVersionUrl('Heb', 7, 'GAE'), `${base}?version=GAE&book=heb&chap=7`);
+    assert.equal(otherVersionUrl('Ps', 23, 'SAENEW'), `${base}?version=SAENEW&book=psa&chap=23`);
+    assert.equal(otherVersionUrl('Song', 1, 'SAENEW'), `${base}?version=SAENEW&book=sng&chap=1`);
+    assert.equal(otherVersionUrl('3John', 1, 'GAE'), `${base}?version=GAE&book=3jn&chap=1`);
   });
 });
