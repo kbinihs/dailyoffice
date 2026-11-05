@@ -14,7 +14,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "pretest": "npm run plan",
-    "test": "node --test tests/*.test.ts"
+    "test": "node --test tests/*.test.ts",
+    "prayers:export": "node scripts/prayers.mjs export",
+    "prayers:import": "node scripts/prayers.mjs import"
   },
   "engines": {
     "node": ">=22.18"

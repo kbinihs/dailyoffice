@@ -52,6 +52,8 @@ export interface Element {
   rubric?: string;
   /** 본문 뒤에 두는 지시문(침묵 등) */
   rubric_after?: string;
+  /** "daily"면 조건 없는 변형들이 날마다 차례로 돈다(날 수 % 편 수) */
+  rotate?: 'daily';
   variants: Variant[];
 }
 
@@ -107,11 +109,22 @@ export function element(id: string): Element {
 /**
  * 그날 쓸 변형을 고른다. 맞는 변형이 없으면 null(절기 밖의 절기 기도).
  * 우선순위: 여는 말씀 키(부활·승천·성령강림) > 절기 > 요일·순환·절기 기도 > 조건 없음.
+ * `rotate: "daily"`인 요소는 조건이 맞는 변형(토요일 기도 등)이 없으면, 조건 없는 변형들이 날마다 차례로 돈다.
  */
 export function pickVariant(el: Element, r: Resolved): Variant | null {
+  if (el.rotate === 'daily') {
+    const matched = pickBest(el.variants.filter((v) => v.when), r);
+    if (matched && matchScore(matched.when, r) > 0) return matched;
+    const pool = el.variants.filter((v) => !v.when);
+    return pool[r.dayIndex % pool.length] ?? null;
+  }
+  return pickBest(el.variants, r);
+}
+
+function pickBest(variants: Variant[], r: Resolved): Variant | null {
   let best: Variant | null = null;
   let bestScore = -1;
-  for (const v of el.variants) {
+  for (const v of variants) {
     const score = matchScore(v.when, r);
     if (score > bestScore) {
       best = v;

@@ -1,7 +1,7 @@
 // 예식 하나를 화면에 그릴 블록 목록으로 바꾼다. DOM을 모르는 순수 함수라 테스트에서 바로 검사한다.
 // 혼자 모드가 원형이다. 함께 모드에서 달라지는 것은 축복 꼴 하나뿐이고, 나머지(굵게·라벨·안내)는 그리는 쪽이 덧입힌다.
 import type { OfficeId } from '../core/office.ts';
-import type { Passage } from '../core/ref.ts';
+import { type Passage, parseRefs } from '../core/ref.ts';
 import type { Resolved } from '../core/resolve.ts';
 import type { Verse } from '../data/bible.ts';
 import {
@@ -59,8 +59,14 @@ export function buildOffice(office: OfficeId, r: Resolved, opts: OfficeOptions):
     const base = { id, title: el.title, role: el.role };
 
     if (el.type === 'psalter') {
-      const entry = psalterEntry(r.psalterDay);
-      blocks.push({ ...base, kind: 'psalter', rubric: el.rubric, label: entry.label, passages: psalterPassages(entry) });
+      // 182일 주기(psalter-cycle.json), 또는 밤기도처럼 정해진 시편 몇 편이 도는 것(변형마다 ref)
+      const v = el.variants[0].ref ? pickVariant(el, r) : null;
+      if (v?.ref) {
+        blocks.push({ ...base, kind: 'psalter', rubric: el.rubric, label: required(v.label, id), passages: parseRefs(v.ref) });
+      } else {
+        const entry = psalterEntry(r.psalterDay);
+        blocks.push({ ...base, kind: 'psalter', rubric: el.rubric, label: entry.label, passages: psalterPassages(entry) });
+      }
       continue;
     }
 
@@ -68,13 +74,17 @@ export function buildOffice(office: OfficeId, r: Resolved, opts: OfficeOptions):
     if (!v) continue; // 절기 밖의 절기 기도
 
     if (el.type === 'versicle') {
+      // 주고받음: 줄마다 짝을 짓는다(인도자 1줄 → 나머지 1줄 → 인도자 2줄 → …)
+      const leader = required(v.leader_ko, id).split('\n');
+      const people = required(v.people_ko, id).split('\n');
+      if (leader.length !== people.length) throw new Error(`주고받음의 줄 수가 다릅니다: ${id}`);
       blocks.push({
         ...base,
         kind: 'lines',
-        lines: [
-          { who: 'leader', text: required(v.leader_ko, id) },
-          { who: 'people', text: required(v.people_ko, id) },
-        ],
+        lines: leader.flatMap((text, i): Line[] => [
+          { who: 'leader', text },
+          { who: 'people', text: people[i] },
+        ]),
       });
       continue;
     }

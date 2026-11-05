@@ -98,6 +98,13 @@ describe('5년 동안 날마다 세 예식이 빈틈없이 정해진다', () => 
     }
   });
 
+  test('낮의 기도는 나흘마다 네 편이 돈다', () => {
+    const collect = element('midday.collect');
+    const seen = ['2026-11-02', '2026-11-03', '2026-11-04', '2026-11-05', '2026-11-06'].map((d) => pickVariant(collect, resolve(d)));
+    assert.equal(new Set(seen.slice(0, 4)).size, 4);
+    assert.equal(seen[4], seen[0]);
+  });
+
   test('선교 기도는 사흘마다 돈다', () => {
     const mission = element('evening.mission');
     const seen = ['2026-11-02', '2026-11-03', '2026-11-04', '2026-11-05'].map((d) => pickVariant(mission, resolve(d)));

@@ -46,6 +46,7 @@ describe('오늘(2026-11-02 월)', () => {
       weekday: 1,
       psalterDay: 124,
       missionIdx: dayNumber(2026, 11, 2) % 3,
+      dayIndex: dayNumber(2026, 11, 2),
       planDay: 262,
       season: null,
       openingKey: null,
@@ -55,12 +56,13 @@ describe('오늘(2026-11-02 월)', () => {
 });
 
 describe('연·월 경계', () => {
-  test('요일과 선교 순환은 해·달이 바뀌어도 끊기지 않는다', () => {
+  test('요일·선교 순환과 날 수는 해·달이 바뀌어도 끊기지 않는다', () => {
     for (const span of [['2026-12-28', '2027-01-04'], ['2027-01-29', '2027-02-02'], ['2028-02-27', '2028-03-02']]) {
       const list = days(span[0], span[1]).map(resolve);
       for (let i = 1; i < list.length; i++) {
         assert.equal(list[i].weekday, (list[i - 1].weekday + 1) % 7, list[i].date);
         assert.equal(list[i].missionIdx, (list[i - 1].missionIdx + 1) % 3, list[i].date);
+        assert.equal(list[i].dayIndex, list[i - 1].dayIndex + 1, list[i].date);
       }
     }
   });

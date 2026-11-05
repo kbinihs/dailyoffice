@@ -22,6 +22,8 @@ export interface Resolved {
   psalterDay: number;
   /** 0~2, 선교 기도 3일 순환 */
   missionIdx: number;
+  /** 1970-01-01부터 센 날 수. 날마다 차례로 도는 요소(`rotate: "daily"`)가 쓴다 */
+  dayIndex: number;
   /** 1~totalDays. 쉬는 요일, 통독 기간 밖이면 null */
   planDay: number | null;
   season: SeasonId | null;
@@ -65,6 +67,7 @@ export function resolve(date: DateKey): Resolved {
     weekday: weekdayOf(n),
     psalterDay: psalterOf(n),
     missionIdx: ((n % 3) + 3) % 3,
+    dayIndex: n,
     planDay: planOf(n, planConfig),
     season: (season?.id ?? null) as SeasonId | null,
     openingKey: season ? (findRange(season.openingSub ?? [], n)?.id ?? season.id) : null,
