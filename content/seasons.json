@@ -4,7 +4,8 @@
   "scope": "대림·성탄·사순·고난주간·부활(승천·성령강림 포함). 그 밖(주현절, 성령강림 후)은 평상시.",
   "collectRule": "절기 안에서는 가장 최근 주일(또는 축일)의 기도를 그 주 내내 쓴다. 고난주간 목·금·토만 그날 기도. 아침·밤 예식에서 요일 기도 앞에 추가한다. 낮 예식은 바꾸지 않는다.",
   "openingRule": "절기 여는 말씀이 요일 여는 말씀을 대신한다(아침·밤).",
-  "dismissalRule": "부활주일~성령강림주일에는 마침 교송에 \"알렐루야, 알렐루야\"를 붙인다."
+  "dismissalRule": "부활주일~성령강림주일에는 마침 교송에 \"알렐루야, 알렐루야\"를 붙인다.",
+  "toneRule": "화면의 강조색(전례색)은 tones에서 처음 맞는 구간을 따른다: 성금요일·성토요일·성령강림일 하루 > 절기 > 평상시. 개신교 관행으로 대림 파랑, 사순·고난주간 보라, 성탄·부활 흰색(크림 면 + 금 강조), 성령강림일 빨강, 그 밖은 초록. 성금요일·성토요일은 검정. 날마다 빈 날 없이 하나가 맞는다."
  },
  "anchors": {
   "easter": "그레고리력 부활절(Meeus/Jones/Butcher 계산식)",
@@ -64,6 +65,88 @@
      "to": "pentecost"
     }
    ]
+  }
+ ],
+ "tones": [
+  {
+   "id": "goodfri",
+   "name": "성금요일",
+   "color": "black",
+   "from": "easter - 2",
+   "to": "easter - 2",
+   "desc": "주님이 십자가에서 죽으신 날. 침묵의 검정."
+  },
+  {
+   "id": "holysat",
+   "name": "성토요일",
+   "color": "black",
+   "from": "easter - 1",
+   "to": "easter - 1",
+   "desc": "무덤에 누우신 주님과 함께 기다리는 날. 검정."
+  },
+  {
+   "id": "pentecost",
+   "name": "성령강림일",
+   "color": "red",
+   "from": "pentecost",
+   "to": "pentecost",
+   "desc": "성령이 불같이 임하신 날, 교회의 생일. 빨강."
+  },
+  {
+   "id": "advent",
+   "name": "대림절",
+   "color": "blue",
+   "from": "advent1",
+   "to": "12-24",
+   "desc": "오시는 주님을 기다리는 네 주간. 새벽 하늘의 파랑."
+  },
+  {
+   "id": "christmas",
+   "name": "성탄절",
+   "color": "white",
+   "from": "12-25",
+   "to": "01-05",
+   "desc": "말씀이 사람이 되어 오신 열두 날. 빛의 흰색과 금색."
+  },
+  {
+   "id": "epiphany",
+   "name": "주현절 후",
+   "color": "green",
+   "from": "01-06",
+   "to": "ashWednesday - 1",
+   "desc": "온 세상에 드러나신 그리스도를 따라 사는 날들. 자라남의 초록."
+  },
+  {
+   "id": "lent",
+   "name": "사순절",
+   "color": "violet",
+   "from": "ashWednesday",
+   "to": "palmSunday - 1",
+   "desc": "부활을 앞두고 돌이키며 걷는 마흔 날. 회개의 보라."
+  },
+  {
+   "id": "holyweek",
+   "name": "고난주간",
+   "color": "violet",
+   "from": "palmSunday",
+   "to": "easter - 3",
+   "desc": "예루살렘 입성부터 십자가까지, 주님의 마지막 한 주. 보라."
+  },
+  {
+   "id": "easter",
+   "name": "부활절",
+   "color": "white",
+   "from": "easter",
+   "to": "pentecost - 1",
+   "desc": "죽음을 이기신 주님을 기뻐하는 쉰 날. 흰색과 금색."
+  },
+  {
+   "id": "ordinary",
+   "name": "성령강림절 후",
+   "color": "green",
+   "from": "pentecost + 1",
+   "to": "advent1 - 1",
+   "desc": "성령과 함께 일상을 사는 긴 계절. 자라남의 초록."
   }
  ],
  "collects": [

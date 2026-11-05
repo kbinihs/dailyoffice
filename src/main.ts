@@ -8,7 +8,7 @@ import { resolve } from './core/resolve.ts';
 import { loadBook } from './data/bible.ts';
 import { planEntry, psalterEntry, psalterPassages } from './data/content.ts';
 import { type StorageStatus, loadStore, onStorageStatus, storageStatus } from './data/store.ts';
-import { applyDisplay } from './display.ts';
+import { applyDisplay, applyTone } from './display.ts';
 import { isInstalled, watchInstall } from './install.ts';
 import { renderHome } from './screens/home.ts';
 import { renderPray } from './screens/pray.ts';
@@ -66,9 +66,13 @@ function homeTitle(): DocumentFragment {
 
 function render(): void {
   const [route, params] = currentRoute();
+  const date = currentDate();
   const root = document.getElementById('screen')!;
   document.body.dataset.route = route;
   if (route !== 'settings') returnTo = location.hash || '#/home';
+  // 그날의 전례색(04:00을 넘기거나 ?date=가 바뀌면 여기서 따라온다)
+  applyTone(date);
+  applyDisplay();
 
   const bar =
     route === 'home'
@@ -80,7 +84,7 @@ function render(): void {
   document.body.prepend(bar);
 
   root.replaceChildren();
-  screens[route](root, currentDate(), params);
+  screens[route](root, date, params);
 
   for (const tab of document.querySelectorAll<HTMLAnchorElement>('.navbar a')) {
     const on = tab.dataset.route === route;

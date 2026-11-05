@@ -3,7 +3,7 @@ import { type DateKey, formatKo } from '../core/date.ts';
 import { josa } from '../core/josa.ts';
 import { OFFICE_IDS, type OfficeId, officeAt } from '../core/office.ts';
 import { planStart, resolve } from '../core/resolve.ts';
-import { discourseTitle, homeQuote, offices, planEntry, seasonName } from '../data/content.ts';
+import { discourseTitle, homeQuote, offices, planEntry } from '../data/content.ts';
 import * as store from '../data/store.ts';
 import { readingStatus } from '../reading/progress.ts';
 import { h, icon, pressable, readingLine } from '../ui.ts';
@@ -13,10 +13,11 @@ const GLYPH: Record<OfficeId, string> = { morning: 'wb_twilight', midday: 'sunny
 
 export function renderHome(root: HTMLElement, date: DateKey): void {
   const r = resolve(date);
-  const dateLine = h('p', { class: 'date-line' }, formatKo(date));
-  if (r.season) dateLine.append(h('span', { class: 'season' }, seasonName(r.season)));
+  // 절기 이름은 평상시에도 보인다(주현절 후·성령강림절 후). 칩의 색이 그날의 전례색이고, 아래 한 줄이 그 뜻.
+  const dateLine = h('p', { class: 'date-line' }, formatKo(date), h('span', { class: 'season' }, r.tone.name));
+  const seasonDesc = h('p', { class: 'season-desc' }, r.tone.desc);
 
-  root.append(h('div', { class: 'home' }, dateLine, quoteHero(date), prayerCard(date), readingCard(date)));
+  root.append(h('div', { class: 'home' }, dateLine, seasonDesc, quoteHero(date), prayerCard(date), readingCard(date)));
 }
 
 function quoteHero(date: DateKey): HTMLElement {

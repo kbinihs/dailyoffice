@@ -51,7 +51,51 @@ describe('오늘(2026-11-02 월)', () => {
       season: null,
       openingKey: null,
       collectId: null,
+      tone: (({ id, name, color, desc }) => ({ id, name, color, desc }))(seasonsJson.tones.find((t) => t.id === 'ordinary')!),
     });
+  });
+});
+
+describe('절기 색(전례색)', () => {
+  const tone = (date: string) => {
+    const t = resolve(date).tone;
+    return [t.id, t.color];
+  };
+
+  test('2026~2027: 대림 파랑, 성탄·부활 흰색, 사순·고난주간 보라, 성금·성토 검정, 성령강림일 빨강, 그 밖 초록', () => {
+    assert.deepEqual(tone('2026-11-28'), ['ordinary', 'green']);
+    assert.deepEqual(tone('2026-11-29'), ['advent', 'blue']);
+    assert.deepEqual(tone('2026-12-24'), ['advent', 'blue']);
+    assert.deepEqual(tone('2026-12-25'), ['christmas', 'white']);
+    assert.deepEqual(tone('2027-01-05'), ['christmas', 'white']);
+    assert.deepEqual(tone('2027-01-06'), ['epiphany', 'green']);
+    assert.deepEqual(tone('2027-02-09'), ['epiphany', 'green']);
+    assert.deepEqual(tone('2027-02-10'), ['lent', 'violet']);
+    assert.deepEqual(tone('2027-03-20'), ['lent', 'violet']);
+    assert.deepEqual(tone('2027-03-21'), ['holyweek', 'violet']);
+    assert.deepEqual(tone('2027-03-25'), ['holyweek', 'violet']);
+    assert.deepEqual(tone('2027-03-26'), ['goodfri', 'black']);
+    assert.deepEqual(tone('2027-03-27'), ['holysat', 'black']);
+    assert.deepEqual(tone('2027-03-28'), ['easter', 'white']);
+    assert.deepEqual(tone('2027-05-06'), ['easter', 'white']);
+    assert.deepEqual(tone('2027-05-15'), ['easter', 'white']);
+    assert.deepEqual(tone('2027-05-16'), ['pentecost', 'red']);
+    assert.deepEqual(tone('2027-05-17'), ['ordinary', 'green']);
+  });
+
+  test('5년 동안 빈 날이 없고, 이름과 한 줄 설명이 있다', () => {
+    for (let n = parseKey('2026-01-01'); n <= parseKey('2030-12-31'); n++) {
+      const t = resolve(toKey(n)).tone;
+      assert.ok(t.name && t.desc && t.color, toKey(n));
+    }
+  });
+
+  test('성탄절은 해를 넘겨 1월 5일까지, 1월 6일부터 주현절 후', () => {
+    for (const year of [2027, 2028, 2029, 2030]) {
+      assert.equal(tone(`${year}-01-01`)[0], 'christmas');
+      assert.equal(tone(`${year}-01-05`)[0], 'christmas');
+      assert.equal(tone(`${year}-01-06`)[0], 'epiphany');
+    }
   });
 });
 

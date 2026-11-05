@@ -5,6 +5,10 @@ declare module 'node:test' {
   export function test(name: string, fn: () => void | Promise<void>): void;
 }
 
+declare module 'node:fs' {
+  export function readFileSync(path: string | URL, encoding: string): string;
+}
+
 declare module 'node:assert/strict' {
   interface Assert {
     equal(actual: unknown, expected: unknown, message?: string): void;

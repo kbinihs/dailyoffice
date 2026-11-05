@@ -14,6 +14,17 @@ import {
 
 export type SeasonId = 'advent' | 'christmas' | 'lent' | 'holyweek' | 'easter';
 
+/** 전례색. 화면 강조색 토큰(style.css [data-tone])의 이름 */
+export type ToneId = 'violet' | 'blue' | 'white' | 'green' | 'red' | 'black';
+
+/** 그날의 전례색과 절기 이름·한 줄 설명(seasons.json tones). 평상시에도 있다(주현절 후·성령강림절 후). */
+export interface Tone {
+  id: string;
+  name: string;
+  color: ToneId;
+  desc: string;
+}
+
 export interface Resolved {
   date: DateKey;
   /** 0=일 … 6=토 */
@@ -31,6 +42,8 @@ export interface Resolved {
   openingKey: string | null;
   /** 절기 기도 id(adv1 … pentecost). 절기 밖이면 null */
   collectId: string | null;
+  /** 전례색과 절기 설명. 날마다 하나가 있다 */
+  tone: Tone;
 }
 
 export interface PlanConfig {
@@ -49,19 +62,28 @@ interface SeasonRange extends Range {
   openingSub?: Range[];
 }
 
+interface ToneRange extends Range {
+  name: string;
+  color: ToneId;
+  desc: string;
+}
+
 interface SeasonRules {
   anchors: Record<string, string>;
   seasons: SeasonRange[];
+  tones: ToneRange[];
   collects: Range[];
 }
 
-const rules: SeasonRules = seasonsJson;
+const rules = seasonsJson as SeasonRules;
 const planConfig: PlanConfig = planConfigJson;
 const PSALTER_CYCLE = 182;
 
 export function resolve(date: DateKey): Resolved {
   const n = parseKey(date);
   const season = findRange(rules.seasons, n);
+  // tones는 빈 날이 없게 짜여 있다(tests/resolve.test.ts). 혹시 비면 평상시 초록.
+  const tone = findRange(rules.tones, n) ?? rules.tones.find((t) => t.id === 'ordinary')!;
   return {
     date,
     weekday: weekdayOf(n),
@@ -72,6 +94,7 @@ export function resolve(date: DateKey): Resolved {
     season: (season?.id ?? null) as SeasonId | null,
     openingKey: season ? (findRange(season.openingSub ?? [], n)?.id ?? season.id) : null,
     collectId: findRange(rules.collects, n)?.id ?? null,
+    tone: { id: tone.id, name: tone.name, color: tone.color, desc: tone.desc },
   };
 }
 

@@ -63,7 +63,7 @@ export function renderPray(root: HTMLElement, date: DateKey, params: string[] = 
         together ? leaderChip(leader, redraw) : null,
       ),
     ),
-    h('p', { class: 'office-meta' }, `${formatKo(date)} · ${offices[office].name} · ${offices[office].minutes}분`),
+    h('p', { class: 'office-meta' }, `${formatKo(date)} · ${r.tone.name} · ${offices[office].name} · ${offices[office].minutes}분`),
   );
   if (together) root.append(h('p', { class: 'guide' }, `굵은 글씨는 ${leader ? `인도자(${leader})` : '인도자'}가 읽습니다.`));
   root.append(article);

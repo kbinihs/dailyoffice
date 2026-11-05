@@ -11,13 +11,13 @@
 6. 기도문 한글 본문은 `content/elements.json`의 `ko`가 정본이다. 코드에 기도문을 하드코딩하지 않는다. 번역을 고칠 때는 `content/translation-notes.md`를 따른다.
 7. 의존성은 `vite`, `vite-plugin-pwa`, `idb-keyval`, `typescript`, `@material/web` 다섯 개를 넘기지 않는다. 프레임워크 없이 DOM 직접(웹 컴포넌트는 `@material/web`의 정식 컴포넌트만, labs 제외). 필요하면 먼저 `docs/design.md` 10절을 고치고 넣는다.
 8. 접기·펼치기(details/accordion) UI를 쓰지 않는다. 기도 화면은 스크롤 하나로 끝까지.
-9. 기도 화면에 경고색·순위·연속 실패 문구를 두지 않는다.
+9. 기도 화면에 경고색·순위·연속 실패 문구를 두지 않는다. 절기 색(전례색)은 강조색만 바꾸고 면·본문은 그대로 둔다. 빨강은 성령강림일 하루뿐이다. 새 색을 넣으면 `tests/tones.test.ts`의 명암비 AA를 통과해야 한다.
 
 ## 데이터 파일 (읽기 전용으로 다룬다)
 - `content/elements.json` 기도 요소 35개(변형 135). `when`: weekday 0=일…6=토 / cycle3 / season / collect. 요소에 `"rotate": "daily"`면 조건 없는 변형이 날마다 차례로 돈다(낮의 기도, 밤기도의 시편·말씀·기도).
 - 밤 예식은 밤기도(Compline, 2026-11-03). 182일 시편 통독은 아침 예식에 있다. 예식 순서에서 뺀 요소는 `offices.json` `meta.archived`에 적고 보관한다.
 - `content/offices.json` 세 예식의 순서. `season.collect`는 절기 안에서만 렌더.
-- `content/seasons.json` 절기 경계와 절기 기도 적용 구간. `check`에 2026~2030 검산표.
+- `content/seasons.json` 절기 경계와 절기 기도 적용 구간, `tones`(날짜 → 전례색·절기 이름·한 줄 설명, 빈 날 없음). `check`에 2026~2030 검산표.
 - `content/psalter-cycle.json` 시편 182일 주기(1년 2독). `dateRule` 참고.
 - `content/plan.csv` + `plan-config.json` 통독표(일차 기준, 일요일 제외 주 6일, 매년 1월 1일 시작).
 - `content/henry-quotes.json` `slots.home`: 홈의 오늘의 인용. 날마다 다음 편으로 돈다(날 수 % 편 수). 편을 더하거나 빼면 순서가 다시 짜인다. 시간대별 슬롯(morning·midday·evening)과 `elements.json`의 `henry.*` 세 요소는 기도 화면에서 뺐고 보관만 한다.

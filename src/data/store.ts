@@ -20,6 +20,8 @@ export interface Settings {
   lastLeader: string | null;
   /** 함께 모드의 축복 꼴. 혼자 모드는 늘 2인칭(받는 말씀) */
   blessingForm: BlessingForm;
+  /** 절기를 따라 화면 강조색을 바꿀지(전례색). 끄면 늘 교회 보라 */
+  seasonColor: boolean;
 }
 
 /** 기도는 날짜 기준: { "2026-11-02": { morning: true, evening: true } } */
@@ -37,6 +39,7 @@ const DEFAULT_SETTINGS: Settings = {
   mode: 'solo',
   lastLeader: null,
   blessingForm: '2인칭',
+  seasonColor: true,
 };
 
 const KEYS = ['settings', 'people', 'checks', 'reading'] as const;

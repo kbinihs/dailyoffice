@@ -118,6 +118,7 @@ export function cleanSettings(v: unknown): Partial<Settings> {
   if (v.theme === 'auto' || v.theme === 'light' || v.theme === 'dark') out.theme = v.theme;
   if (v.mode === 'solo' || v.mode === 'together') out.mode = v.mode;
   if (v.blessingForm === '2인칭' || v.blessingForm === '1인칭 복수') out.blessingForm = v.blessingForm as BlessingForm;
+  if (typeof v.seasonColor === 'boolean') out.seasonColor = v.seasonColor;
   if (v.lastLeader === null) out.lastLeader = null;
   else if (cleanName(v.lastLeader)) out.lastLeader = cleanName(v.lastLeader);
   return out;

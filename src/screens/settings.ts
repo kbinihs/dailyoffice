@@ -4,7 +4,7 @@ import type { DateKey } from '../core/date.ts';
 import { FONT_PX, parseBackup, toBackup } from '../data/backup.ts';
 import { planConfig } from '../data/content.ts';
 import * as store from '../data/store.ts';
-import { applyDisplay } from '../display.ts';
+import { applyDisplay, applyTone } from '../display.ts';
 import { installGuide } from '../install.ts';
 import { h, openDialog, segmented } from '../ui.ts';
 
@@ -27,7 +27,7 @@ export function renderSettings(root: HTMLElement, date: DateKey): void {
   };
 
   root.append(
-    displaySection(redraw),
+    displaySection(date, redraw),
     recordsSection(date, say, status),
     section('설치', ...installGuide()),
     aboutSection(),
@@ -38,7 +38,7 @@ function section(title: string, ...children: (Node | null)[]): HTMLElement {
   return h('section', { class: 'setting' }, h('h2', null, title), ...children);
 }
 
-function displaySection(redraw: () => void): HTMLElement {
+function displaySection(date: DateKey, redraw: () => void): HTMLElement {
   const s = store.settings();
   const px = Math.round(s.fontScale * FONT_PX.base);
   const value = h('span', null, `${px}px`);
@@ -72,12 +72,31 @@ function displaySection(redraw: () => void): HTMLElement {
     },
   );
 
+  // 절기 색(전례색): 대림 파랑, 사순·고난주간 보라, 성탄·부활 금색, 성금요일·성토요일 검정, 성령강림일 빨강, 그 밖 초록
+  const seasonColor = segmented(
+    '절기 색',
+    [
+      ['on', '켬'],
+      ['off', '끔'],
+    ],
+    s.seasonColor ? 'on' : 'off',
+    (key) => {
+      store.updateSettings({ seasonColor: key === 'on' });
+      applyTone(date);
+      applyDisplay();
+      redraw();
+    },
+  );
+
   return section(
     '보기',
     h('p', { class: 'label' }, h('span', null, '글자 크기'), value),
     slider,
     h('p', { class: 'label' }, '화면'),
     theme,
+    h('p', { class: 'label' }, '절기 색'),
+    seasonColor,
+    h('p', { class: 'note' }, '절기를 따라 화면의 강조색이 바뀝니다. 대림절 파랑, 사순절 보라, 성탄·부활절 금색, 성금요일 검정, 성령강림일 빨강, 그 밖은 초록.'),
   );
 }
 

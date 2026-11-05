@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import { type Snapshot, countAdded, mergeSnapshot, parseBackup, summarize, toBackup } from '../src/data/backup.ts';
 
 const EMPTY: Snapshot = {
-  settings: { fontScale: 1, theme: 'auto', mode: 'solo', lastLeader: null, blessingForm: '2인칭' },
+  settings: { fontScale: 1, theme: 'auto', mode: 'solo', lastLeader: null, blessingForm: '2인칭', seasonColor: true },
   people: [],
   checks: {},
   reading: {},
 };
 
 const DEVICE_A: Snapshot = {
-  settings: { fontScale: 22 / 18, theme: 'dark', mode: 'together', lastLeader: '하늘', blessingForm: '1인칭 복수' },
+  settings: { fontScale: 22 / 18, theme: 'dark', mode: 'together', lastLeader: '하늘', blessingForm: '1인칭 복수', seasonColor: false },
   people: ['하늘', '바다'],
   checks: { '2026-11-01': { evening: true }, '2026-11-02': { morning: true, midday: true } },
   reading: { '2026': { '260': true, '261': true, '262': true } },
